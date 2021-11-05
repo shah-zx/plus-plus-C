@@ -1,64 +1,96 @@
 
-// Here we will be learning about single inheritance //
-// Private members are not inherited //
+// This is the practice of single inheritance in classes //
+// In public mode //
+
 #include <iostream>
 using namespace std;
 
-class base
+class  A
 {
-    int data1; // Private member :- not inheritable //
-public:
-    int data2;
-    void setdata(void);
-    int getdata1(void);
-    int getdata2(void);
-};
-
-void base::setdata(void)
-{
-    data1 = 10;
-    data2 = 20;
-};
-int base::getdata1(void)
-{   // As we are not directly able to use the value of data1 in our derived class because it is a private member of base class
-    // therefore we are using a public method of base class only to access the data 1. //
-    return data1;
-    
-};
-
-int base::getdata2()
-{
-    return data2;
-}
-
-class derived : public base
-{
-    int data3;
+    int a;
 
 public:
-    void process();
-    void display();
+    int mul(int p, int r)
+    {
+        a = p * r;
+        cout << a << endl;
+    }
+    int add(int k, int j)
+    {
+        a = k + j;
+        cout << a << endl;
+    }
 };
 
-void derived::process()
-{
-    data3 = data2 * getdata1(); // getdata1 = data1 //
-}
+// Inheriting the class A from B in public mode //
 
-void derived::display()
+// class B : public A
+// {
+//     int d, e;
+
+// public:
+//     int getdata()
+//     {
+//         return d;
+//         return e;
+//     }
+// };
+
+// Inheriting the class B privately , in which the public members of the class B will be now private of class A //
+
+// class B : private A
+// {
+//     int d, e;
+
+// public:
+//     int getdata(int d, int e)
+//     {
+//         return d;
+//         return e;
+//     }
+
+//     void Amul()
+//     {
+//         mul(d, e); // This was a public member of class B , but it can accessed like this inside the member function //
+//     }
+//     int Aadd()
+//     {
+//         add(d, e);
+//     }
+// };
+
+// Now we will be inherting the class B by A in protected mode // 
+
+class B : protected A   // Derived class is B //   // Base class is A //
 {
-    cout << "Value of data 1 is :- " << getdata1() << endl; // This will give the value of data 1 //
-    cout << "Value of data 2 is :- " << data2 << endl;
-    cout << "Value of data 3 is :- " << data3 << endl;
-}
+    int d, e;
+
+public:
+    int getdata(int d, int e)
+    {
+        return d;
+        return e;
+    }
+
+    void Amul()
+    {
+        mul(d, e); // This was a public member of class B , but it can accessed like this inside the member function //
+    }
+    int Aadd()
+    {
+        add(d, e);
+    }
+};
+
 int main()
-
 {
 
-    derived der;
-    der.setdata();
-    der.process();
-    der.display();
+    A elm1;
+    // elm1.add(4, 5); // This is possible because the class A is having access to the public members of class B
+    // elm1.mul(8, 7);
+    // Now we will see what hapepns when we do the private inheritance of class B by class A //
+    // These are the public members of the class A , which are now the private members of the class A //
+    elm1.add(2, 3);
+    elm1.mul(3, 4);
+    return 0;
 }
-
-// For accessing the derived class as private please go to file :- siprivate.cpp //

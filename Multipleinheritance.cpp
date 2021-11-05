@@ -1,65 +1,67 @@
 
-// Here we will be learning about mi]ultiple level inheritance //
-// Classes are templates for making objects //
+// This is the practice of multiple inheritance //
+// Containing more base classes and only one derived class //
+
 #include <iostream>
 using namespace std;
 
-// Syntax for mutiple inheritance //
-
-// class derived : visibility - mode base1 , visibility - mode base2
-// {
-//   class  bidy of class derived //
-// };
-
-class base1
+class mother
 {
-protected:
-    int base1int;
-
 public:
-    void setbase1int(int a)
+    int ears = 2;
+    int eyes = 2;
+    int nose = 1;
+    void apperance_m()
     {
-        base1int = a;
+        cout << "Ears are : " << ears << endl
+             << "Eyes are :" << eyes << endl
+             << "Nose is :" << nose << endl;
     }
 };
 
-class base2
+class father
 {
-protected:
-    int base2int;
-
 public:
-    void setbase2int(int b)
+    int ears = 2;
+    int eyes = 2;
+    int nose = 1;
+    void apperance_f()
     {
-        base2int = b;
+        cout << "Ears are : " << ears << endl
+             << "Eyes are :" << eyes << endl
+             << "Nose is :" << nose << endl;
     }
 };
 
-
-class derived : public base1 , public base2  // inplemetation for the multiple inheritance //
+class child : public father, mother // This is the multiple inheritance //  // Only one derived class and many base classes //
 {
-   public:
-   void show(void){
-       cout<<"The value of base 1 is "<<base1int<<endl;
-       cout<<"The value of base 2 is "<<base2int<<endl;
-       cout<<"The sum of both the values is :- "<<base1int + base2int<<endl;
-
-   }
+public:
+    void display()
+    {
+        cout << "This is the child class derived from the father and mother class" << endl;
+    }
+    void mother_traits()
+    {
+        apperance_m();
+    }
+    void father_traits()
+    {
+        apperance_f();
+    }
 };
-// the derived class will look something like this //
-// Base1int :- protected //
-// Base2int :- protected //
-// public derivation (data member functions) : public //
-// setbase1int //
-// setbase2int //
 
 int main()
+
 {
 
-derived shanu;
-shanu.setbase1int(23);
-shanu.setbase2int(34);
-shanu.show();
-return 0;
-
+    child c1, c2;
+    cout << "This is all for child 1 : " << endl;
+    c1.display();
+    c1.father_traits();
+    c1.mother_traits();
+    cout << "This is all for child 2 : " << endl;
+    c2.display();
+    c2.father_traits();
+    c2.mother_traits();
+    return 0;
 }

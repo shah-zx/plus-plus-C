@@ -1,80 +1,61 @@
-
-// Here we will learn about multilevel inheritance //
-// Class --> derived class one --> derived class two. //
-// Class grandfather --> class father --> class us. //
-// Class grandfather --> protected : fair skin , brown eyes ; public : angry; //
-// Class father : public grandfather //
-// Class child : public father //
-
 #include <iostream>
 using namespace std;
 
-class student
+// Here we will be doing the multi level inheritance //
+
+class grandfather
 {
-protected:
-    int roll;
+    int emotions = 10;
+    int eyes = 2;
+    int ears = 2;
 
 public:
-    void setnum(int);
-    void getnum(void);
-};
+    int nose = 1;
 
-void student::setnum(int r)
-{
-    roll = r;
-}
-void student::getnum(void)
-{
-    cout << "The roll no. is " << roll;
-}
-class exam : public student
-{
-protected:
-    float maths;
-    float phy;
-
-public:
-    void setmarks(float, float);
-    void getmarks(void);
-};
-
-class result : public exam
-{
-    float percentage;
-
-public:
-    void disp()
-
+    void face()
     {
-        getnum();
-        getmarks();
-        cout << "Your percentsge is :- " << (maths + phy) / 2 << endl;
+        cout<<"eyes : "<<eyes<<endl<<"ears "<<ears<<endl<<"emotions : "<<emotions<<endl<<"nose : "<<nose<<endl;
     }
 };
 
-void exam ::setmarks(float m1, float m2)
+class father : protected grandfather
 {
-    maths = m1;
-    phy = m2;
-}
+protected:
+    int power = 90;
 
-void exam ::getmarks(void)
+public:
+    void traits()
+    {
+        face();
+    }
+    void emotions()
+    {
+        cout << "Emotions are :" << emotions;
+    }
+};
+
+class child : protected father
 {
-    cout << "The marks obtained in maths is :-" << maths << endl;
-    cout << "The marks obtained in maths is :-" << phy << endl;
-}
+public:
+    void characteristics()
+    {
+        traits();
+    }
+    void power()
+    {
+        cout << "Power is :" << power;
+    }
+};
 
 int main()
-
 {
-// 1. If we are inheriting b from a and c from b --> {a-->b-->c} //
-// a is the base class for b and b is the base class for c //
-// abc is called the inheritance path //
-
-result shanu;
-shanu.setnum(12);
-shanu.setmarks(94.0 ,96.0);
-shanu.disp();
-return 0;
-
+    // grandfather g;
+    // g.face();
+    father f;
+    f.emotions();
+    // father f;
+    // f.traits();
+    // child c;
+    // c.characteristics();
+    return 0;
 }
