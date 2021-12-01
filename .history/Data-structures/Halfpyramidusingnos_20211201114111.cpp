@@ -9,7 +9,14 @@ int main()
     {
         for (int j = 1; j <= i; j++)
         {
-            cout << i;
+            if (i == num)
+            {
+                cout << i;
+            }
+            else
+            {
+                cout << " ";
+            }
         }
         cout << endl;
     }
