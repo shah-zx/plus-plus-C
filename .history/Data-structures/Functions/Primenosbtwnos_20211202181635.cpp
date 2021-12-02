@@ -8,12 +8,15 @@ bool isPrime(int n)
 
     for (int i = 2; i <= sqrt(n); i++)
     {
-        if (n % i == 0)
+        if (n%i == 0)
         {
             return false;
         }
+        else
+        {
+            return true;
+        }
     }
-    return true;
 }
 
 int main()
@@ -21,7 +24,7 @@ int main()
     int s;
     int f;
     cout << "Enter the two numbers on which you want";
-    cin >> s >> f;
+    cin>>s>>f;
     for (int i = s; i <= f; i++)
     {
         if (isPrime(i))

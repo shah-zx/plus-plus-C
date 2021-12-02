@@ -12,8 +12,11 @@ bool isPrime(int n)
         {
             return false;
         }
+        else
+        {
+            return true;
+        }
     }
-    return true;
 }
 
 int main()
@@ -21,8 +24,8 @@ int main()
     int s;
     int f;
     cout << "Enter the two numbers on which you want";
-    cin >> s >> f;
-    for (int i = s; i <= f; i++)
+    cin>>s>>f;
+    for (int i = s; i =< f; i++)
     {
         if (isPrime(i))
         {

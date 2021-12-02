@@ -10,10 +10,13 @@ bool isPrime(int n)
     {
         if (n % i == 0)
         {
-            return false;
+            cout << "The number is prime";
+        }
+        else
+        {
+            cout << "The number is not prime";
         }
     }
-    return true;
 }
 
 int main()
@@ -21,8 +24,7 @@ int main()
     int s;
     int f;
     cout << "Enter the two numbers on which you want";
-    cin >> s >> f;
-    for (int i = s; i <= f; i++)
+    for (int i = s; i < f; i++)
     {
         if (isPrime(i))
         {
