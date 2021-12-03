@@ -31,10 +31,6 @@ int main()
     cout << "Enter the size of the array :";
     cin >> n;
     int array[n];
-    for (int i = 0; i < array[n]; i++)
-    {
-        cin>>array[i];
-    }
     
     int maxNo = INT_MAX;
     int minNo = INT_MIN;
