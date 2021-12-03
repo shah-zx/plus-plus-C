@@ -18,7 +18,7 @@ int main()
     for (int i = 0; i < array[n]; i++)
     {
         maxNo = max(maxNo, array[i]);
-        minNo = min(minNo, array[i]);s
+        minNo = min(minNo, array[i]);
     }
     cout << maxNo << " " << minNo << endl;
     return 0;
