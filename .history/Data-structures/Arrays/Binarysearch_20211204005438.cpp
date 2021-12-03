@@ -27,14 +27,15 @@ int main()
 {
     int n;
     int key;
-    cout << "Enter the size of the array";
-    cin >> n;
+    cout<< "Enter the size of the array";
+    cin>>n;
     int arr[n];
-    for (int i = 0; i < arr[n]; i++)
+    for (int  i = 0; i < arr[n]; i++)
     {
-        cin >> arr[i];
+        cin>> arr[i];
     }
-    cout << "Enter the key";
-    cin >> key;
-    cout << binarySearch(n, arr, key);
+    cout<<"Enter the key";
+    cin>>key;
+    cout<<binarySearch(n , arr , key);
+
 }
