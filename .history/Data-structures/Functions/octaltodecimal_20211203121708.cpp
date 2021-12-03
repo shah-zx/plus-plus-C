@@ -18,8 +18,8 @@ int octalToDecimal(int num)
 
 int main()
 {
-    int n;
+    int num;
     cout << "Enter the number";
-    cin >> n;
-    cout << octalToDecimal(n);
+    cin >> num;
+    cout << octalToDecimal(num);
 }

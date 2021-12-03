@@ -3,7 +3,7 @@ using namespace std;
 
 int ans = 0;
 int x = 1;
-int octalToDecimal(int num)
+int decimalToBin(int num)
 {
     while (num > 0)
     {
@@ -21,5 +21,5 @@ int main()
     int n;
     cout << "Enter the number";
     cin >> n;
-    cout << octalToDecimal(n);
+    cout << decimalToBin(n);
 }
