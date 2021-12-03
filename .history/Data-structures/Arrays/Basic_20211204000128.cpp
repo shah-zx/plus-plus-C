@@ -1,5 +1,5 @@
 // Here we will study about arrays
-//    cout<<array[0];
+   cout<<array[0];
 
 #include <iostream>
 using namespace std;

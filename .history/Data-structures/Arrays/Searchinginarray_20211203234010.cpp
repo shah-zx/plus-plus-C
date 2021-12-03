@@ -1,8 +1,6 @@
 #include <iostream>
 using namespace std;
 
-// This is the way for linear search 
-
 int linearSearch(int x, int arr[], int k)
 {
     for (int i = 0; i < x; i++)
