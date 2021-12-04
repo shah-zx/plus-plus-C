@@ -2,11 +2,12 @@
 using namespace std;
 int main()
 {
-
+    int key;
     int n;
     int m;
     cout << "Enter the rows and cols";
-    cin >> n>>m;
+    cin >> n >> m;
+
     int array[n][m];
     for (int i = 0; i < n; i++)
     {
@@ -18,10 +19,24 @@ int main()
 
     for (int i = 0; i < n; i++)
     {
-        for (int j = 0; j < m; j++)
+        for (int j = 0; j < n; j++)
         {
             cout << array[i][j] << " ";
         }
         cout << endl;
+    }
+    cout << endl;
+    cout << "Enter the key which you want to search :";
+    cin >> key;
+    for (int i = 0; i < n; i++)
+    {
+        for (int j = 0; j < m; j++)
+        {
+            if (array[i][j] == key)
+            {
+                cout << i << " " << j << endl;
+            }
+        }
+        return -1;
     }
 }

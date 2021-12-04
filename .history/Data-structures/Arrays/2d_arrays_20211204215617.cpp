@@ -4,9 +4,11 @@ int main()
 {
 
     int n;
+    cout << "Enter the rows";
+    cin >> n;
     int m;
-    cout << "Enter the rows and cols";
-    cin >> n>>m;
+    cout << "Enter the cols";
+    cin >> m;
     int array[n][m];
     for (int i = 0; i < n; i++)
     {
