@@ -9,5 +9,5 @@ int GetBit(int n, int pos)
 int main()
 {
 
-    cout<< GetBit(10, 3);
+    cout<< GetBit(7, 3);
 }
