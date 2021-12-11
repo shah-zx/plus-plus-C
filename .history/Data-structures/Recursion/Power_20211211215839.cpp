@@ -1,0 +1,19 @@
+#include<iostream>
+using namespace std;
+
+int Power(int n , int p) {
+    if (n==0)
+    {
+        return 1;
+    }
+    int prevpower = Power(n-1, p);
+    return n*prevpower;
+    
+}
+
+
+
+int main()
+{
+
+}
