@@ -77,7 +77,7 @@ int main()
         {
             for (int j = 0; i < n; j++)
             {
-                cout << solArr[i][j] << " ";
+                cout << solArr[i][j] << endl;
             } cout<< endl;
         }
     }

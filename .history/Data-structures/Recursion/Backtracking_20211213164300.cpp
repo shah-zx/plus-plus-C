@@ -39,7 +39,7 @@ int main()
 {
     int n;
     cin >> n;
-    int **arr = new int *[n]; // Dynamically allocating the array
+    int **arr = new int *[n];  // Dynamically allocating the array
     for (int i = 0; i < n; i++)
     {
         arr[i] = new int[n];
@@ -54,13 +54,14 @@ int main()
     }
 
     int **solArr = new int *[n];
-    for (int i = 0; i < n; i++)
+    for (int j = 0; j < n; j++)
     {
-        arr[i] = new int[n];
+        arr[j] = new int[n];
         for (int j = 0; j < n; j++)
         {
             solArr[i][j] = 0;
         }
+        
     }
 
     for (int i = 0; i < n; i++)
@@ -68,17 +69,6 @@ int main()
         for (int j = 0; i < n; j++)
         {
             cin >> arr[i][j];
-        }
-    }
-
-    if (RatinMaze(arr, 0, 0, n, solArr))
-    {
-        for (int i = 0; i < n; i++)
-        {
-            for (int j = 0; i < n; j++)
-            {
-                cout << solArr[i][j] << " ";
-            } cout<< endl;
         }
     }
 }
