@@ -19,21 +19,21 @@ void Merge(int array[], int l, int r, int mid)
     int i = 0;
     int j = 0;
     int k = l;
-    while (i < n1 && j < n2)
+    while (i<n1 && j < n2)
     {
-        if (a[i] <= b[j])
+        if (a[i]<=b[j])
         {
             array[k] = a[i];
-            k++;
-            i++;
+            k++;i++;
         }
-        if (a[i] == b[j])
+        if (a[i]==b[j])
         {
-            arr[k] = a[i];
-            k++;
-            i++;
+            /* code */
         }
+        
+        
     }
+    
 }
 
 void Mergesort(int arr[], int l, int r)

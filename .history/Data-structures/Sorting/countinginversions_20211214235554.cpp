@@ -16,24 +16,6 @@ void Merge(int array[], int l, int r, int mid)
     {
         b[i] = array[mid + 1 + i];
     }
-    int i = 0;
-    int j = 0;
-    int k = l;
-    while (i < n1 && j < n2)
-    {
-        if (a[i] <= b[j])
-        {
-            array[k] = a[i];
-            k++;
-            i++;
-        }
-        if (a[i] == b[j])
-        {
-            arr[k] = a[i];
-            k++;
-            i++;
-        }
-    }
 }
 
 void Mergesort(int arr[], int l, int r)
