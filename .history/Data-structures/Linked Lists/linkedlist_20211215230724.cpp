@@ -100,7 +100,7 @@ void List(node *head)
 int main()
 {
     // cout<<"Insert";
-    // For displaying the linked list
+
     node *head = NULL;
     InsertAtTail(head, 1);
     InsertAtTail(head, 2);
@@ -113,3 +113,4 @@ int main()
     List(head);
     return 0;
 }
+// For displaying the linked list
