@@ -68,7 +68,7 @@ void InsertAtTail(node *&head, int val)
 
 // For deletion :
 
-void Delete(node* &head, int val)
+void Delete(node *head, int val)
 {
     node *temp = head;
     while (temp->next->data != val)
@@ -80,12 +80,6 @@ void Delete(node* &head, int val)
     delete todelete;
 }
 
-void DeleteatFirst(node * &head)
-{
-    node *todelete = head;
-    head = head->next;
-    delete todelete;
-}
 void List(node *head)
 {
     node *temp = head;
@@ -108,8 +102,7 @@ int main()
     List(head);
     InsertAtHead(head, 4);
     // cout << Search(head, 3);
-    Delete(head, 2);
-    DeleteatFirst(head);
+    Delete(head , 2);
     List(head);
     return 0;
 }

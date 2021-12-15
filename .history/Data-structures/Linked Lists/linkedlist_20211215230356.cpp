@@ -109,7 +109,6 @@ int main()
     InsertAtHead(head, 4);
     // cout << Search(head, 3);
     Delete(head, 2);
-    DeleteatFirst(head);
     List(head);
     return 0;
 }
