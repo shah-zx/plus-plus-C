@@ -13,13 +13,6 @@ public:
     }
 };
 
-void InsertAtHead(node *&head, int val)
-{
-    node *n = new node(val);
-    n->next = head;
-    head = n;
-}
-
 void InsertAtTail(node *&head, int val)
 {
 
@@ -64,8 +57,6 @@ int main()
     InsertAtTail(head, 1);
     InsertAtTail(head, 2);
     InsertAtTail(head, 3);
-    List(head);
-    InsertAtHead(head, 4);
     List(head);
 
     return 0;

@@ -13,26 +13,17 @@ public:
     }
 };
 
-void InsertAtHead(node *&head, int val)
-{
-    node *n = new node(val);
-    n->next = head;
-    head = n;
-}
-
-void InsertAtTail(node *&head, int val)
+void InsertAtTail(node* &head, int val)
 {
 
-    // Now we will make a node :
-    node *n = new node(val);
-    // Now if the linked list is empty :
-
-    if (head == NULL)
+    if (head==NULL)
     {
         head = n;
         return;
     }
-
+    
+    // Now we will make a node :
+    node *n = new node(val);
     // Now we will make another pointer temp , equal to the head :
     node *temp = head;
     // Now we will traverse through the array :
@@ -45,29 +36,27 @@ void InsertAtTail(node *&head, int val)
     temp->next = n;
 }
 
-void List(node *head)
+void List(node* head)
 {
-    node *temp = head;
+    node* temp = head;
     while (temp != NULL)
     {
-        cout << temp->data << "->";
+        cout << temp->data<<"->";
         temp = temp->next;
     }
-    cout << "NULL" << endl;
+    cout << endl;
 }
 
 int main()
 {
-    // cout<<"Insert";
+    cout<<"Insert";
 
-    node *head = NULL;
+    node* head = NULL;
     InsertAtTail(head, 1);
     InsertAtTail(head, 2);
     InsertAtTail(head, 3);
     List(head);
-    InsertAtHead(head, 4);
-    List(head);
 
     return 0;
 }
-// For displaying the linked list
+    // For displaying the linked list
