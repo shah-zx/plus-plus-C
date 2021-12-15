@@ -82,12 +82,12 @@ int main()
     // cout<<"Insert";
 
     node *head = NULL;
-    InsertAtTail(head, 1);
-    InsertAtTail(head, 2);
-    InsertAtTail(head, 3);
-    List(head);
-    InsertAtHead(head, 4);
-    List(head);
+    // InsertAtTail(head, 1);
+    // InsertAtTail(head, 2);
+    // InsertAtTail(head, 3);
+    // List(head);
+    // InsertAtHead(head, 4);
+    // List(head);
     cout<<Search(head, 3);
     return 0;
 }

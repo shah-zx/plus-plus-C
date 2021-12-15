@@ -88,7 +88,7 @@ int main()
     List(head);
     InsertAtHead(head, 4);
     List(head);
-    cout<<Search(head, 3);
+    Search(head, 3);
     return 0;
 }
 // For displaying the linked list

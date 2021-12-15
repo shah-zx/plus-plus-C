@@ -13,33 +13,12 @@ public:
     }
 };
 
-// For searching in the list :
-
-bool Search(node *head, int key)
-{
-    
-    node *temp = head;
-    while (temp != NULL)
-    {
-        if (temp->data == key)
-        {
-            return true;
-        }
-        temp = temp->next;
-    }
-    return false;
-}
-
-// For inserting at head :
-
 void InsertAtHead(node *&head, int val)
 {
     node *n = new node(val);
     n->next = head;
     head = n;
 }
-
-// For inserting at tail :
 
 void InsertAtTail(node *&head, int val)
 {
@@ -88,7 +67,7 @@ int main()
     List(head);
     InsertAtHead(head, 4);
     List(head);
-    cout<<Search(head, 3);
+
     return 0;
 }
 // For displaying the linked list

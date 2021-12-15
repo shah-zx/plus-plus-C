@@ -17,7 +17,6 @@ public:
 
 bool Search(node *head, int key)
 {
-    
     node *temp = head;
     while (temp != NULL)
     {
@@ -88,7 +87,7 @@ int main()
     List(head);
     InsertAtHead(head, 4);
     List(head);
-    cout<<Search(head, 3);
+    search(head, 3);
     return 0;
 }
 // For displaying the linked list

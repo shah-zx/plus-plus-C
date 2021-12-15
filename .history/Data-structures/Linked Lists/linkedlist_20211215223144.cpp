@@ -15,7 +15,7 @@ public:
 
 // For searching in the list :
 
-bool Search(node *head, int key)
+int Search(node *head, int key)
 {
     
     node *temp = head;
@@ -82,13 +82,13 @@ int main()
     // cout<<"Insert";
 
     node *head = NULL;
-    InsertAtTail(head, 1);
-    InsertAtTail(head, 2);
-    InsertAtTail(head, 3);
-    List(head);
-    InsertAtHead(head, 4);
-    List(head);
-    cout<<Search(head, 3);
+    // InsertAtTail(head, 1);
+    // InsertAtTail(head, 2);
+    // InsertAtTail(head, 3);
+    // List(head);
+    // InsertAtHead(head, 4);
+    // List(head);
+    Search(head, 3);
     return 0;
 }
 // For displaying the linked list
