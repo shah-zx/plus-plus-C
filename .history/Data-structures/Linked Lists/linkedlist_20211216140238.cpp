@@ -105,7 +105,7 @@ node *Reverse(node *head)
     node *nextptr;
     while (crtptr != NULL)
     {
-        nextptr = crtptr->next;
+        nextptr->next = crtptr->next;
         crtptr->next = prevptr;
         prevptr = crtptr;
         crtptr = nextptr;
@@ -141,7 +141,7 @@ int main()
 {
     // cout<<"Insert";
     // For displaying the linked list
-    node *head = NULL;
+    node *head;
     InsertAtTail(head, 1);
     InsertAtTail(head, 2);
     InsertAtTail(head, 3);
@@ -150,13 +150,9 @@ int main()
     InsertAtTail(head, 6);
 
     List(head);
-    // int k = 2;
-    // node *newhead = Reversek(head, k);
-    // List(newhead);
-
-    node * newhead = Reverse(head);
+    int k = 2;
+    node *newhead = Reversek(head, k);
     List(newhead);
-    
     // InsertAtHead(head, 4);
     // cout << Search(head, 3);
     // Delete(head, 2);

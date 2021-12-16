@@ -94,7 +94,7 @@ void List(node *head)
         cout << temp->data << "->";
         temp = temp->next;
     }
-    cout << "NULL" << endl;
+    cout<< endl;
 }
 // For reversing the nodes :
 
@@ -105,34 +105,10 @@ node *Reverse(node *head)
     node *nextptr;
     while (crtptr != NULL)
     {
-        nextptr = crtptr->next;
+        nextptr->next = crtptr->next;
         crtptr->next = prevptr;
         prevptr = crtptr;
         crtptr = nextptr;
-    }
-    return prevptr;
-}
-
-// For reversing k nodes :
-
-node *Reversek(node *head, int k)
-{
-    int count = 0;
-    node *prevptr = NULL;
-    node *curptr = head;
-    node *nextptr;
-
-    while (curptr != NULL && count < k)
-    {
-        nextptr = curptr->next;
-        curptr->next = prevptr;
-        prevptr = curptr;
-        curptr = nextptr;
-        count++;
-    }
-    if (nextptr != NULL)
-    {
-        head->next = Reversek(nextptr, k);
     }
     return prevptr;
 }
@@ -145,18 +121,10 @@ int main()
     InsertAtTail(head, 1);
     InsertAtTail(head, 2);
     InsertAtTail(head, 3);
-    InsertAtTail(head, 4);
-    InsertAtTail(head, 5);
-    InsertAtTail(head, 6);
-
     List(head);
-    // int k = 2;
-    // node *newhead = Reversek(head, k);
-    // List(newhead);
-
-    node * newhead = Reverse(head);
+    cout<<"After reversing:";
+    node* newhead = Reverse(head);
     List(newhead);
-    
     // InsertAtHead(head, 4);
     // cout << Search(head, 3);
     // Delete(head, 2);
