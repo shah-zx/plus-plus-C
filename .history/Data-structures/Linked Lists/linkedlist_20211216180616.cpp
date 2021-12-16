@@ -212,7 +212,7 @@ node *Append(node *&head, int k)
     node *newhead;
     node *newTail;
     node *Tail = head;
-    int count = 1;
+    int count = 0;
     int l = Length(head);
     k = k % l;
     while (Tail->next != NULL)
@@ -220,11 +220,11 @@ node *Append(node *&head, int k)
 
         if (count == l - k)
         {
-            newTail = Tail;
+            Tail = newTail;
         }
         if (count == l - k + 1)
         {
-            newhead = Tail;
+            Tail = newhead;
         }
         Tail = Tail->next;
         count++;
@@ -239,36 +239,28 @@ int main()
     // cout<<"Insert";
     // For displaying the linked list
     node *head = NULL;
-    // InsertAtTail(head, 1);
-    // InsertAtTail(head, 2);
-    // InsertAtTail(head, 3);
-    // InsertAtTail(head, 4);
-    // InsertAtTail(head, 5);
-    // InsertAtTail(head, 6);
+    InsertAtTail(head, 1);
+    InsertAtTail(head, 2);
+    InsertAtTail(head, 3);
+    InsertAtTail(head, 4);
+    InsertAtTail(head, 5);
+    InsertAtTail(head, 6);
 
-    // List(head);
+    List(head);
     // int k = 2;
     // node *newhead = Reversek(head, k);
     // List(newhead);
 
-    // node *newhead = Reverse(head);
-    // List(newhead);
-    // makeCycle(head, 3);
+    node *newhead = Reverse(head);
+    List(newhead);
+    makeCycle(head, 3);
     // List(head);
-    // cout << Cycle(head);
+    cout << Cycle(head);
     // RemoveCycle(head);
     // cout << Cycle(head);
     // InsertAtHead(head, 4);
     // cout << Search(head, 3);
     // Delete(head, 2);
     // DeleteatFirst(head);
-    int arr[] = {1,2,3,4,5,6};
-    for (int i = 0; i < 6; i++)
-    {
-        InsertAtTail(head, arr[i]);
-    }
-    List(head);
-    node * n = Append(head , 3);
-    List(n);
     return 0;
 }

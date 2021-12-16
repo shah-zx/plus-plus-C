@@ -212,7 +212,7 @@ node *Append(node *&head, int k)
     node *newhead;
     node *newTail;
     node *Tail = head;
-    int count = 1;
+    int count = 0;
     int l = Length(head);
     k = k % l;
     while (Tail->next != NULL)
@@ -220,11 +220,11 @@ node *Append(node *&head, int k)
 
         if (count == l - k)
         {
-            newTail = Tail;
+            Tail = newTail;
         }
         if (count == l - k + 1)
         {
-            newhead = Tail;
+            Tail = newhead;
         }
         Tail = Tail->next;
         count++;
@@ -262,13 +262,12 @@ int main()
     // cout << Search(head, 3);
     // Delete(head, 2);
     // DeleteatFirst(head);
-    int arr[] = {1,2,3,4,5,6};
-    for (int i = 0; i < 6; i++)
+    int arr[] = {1,2,3,4,5,6,7};
+    for (int i = 0; i < 5; i++)
     {
-        InsertAtTail(head, arr[i]);
+        InsertAtHead(head, arr[i]);
     }
     List(head);
-    node * n = Append(head , 3);
-    List(n);
+    node * n = new Append(head , 3);
     return 0;
 }

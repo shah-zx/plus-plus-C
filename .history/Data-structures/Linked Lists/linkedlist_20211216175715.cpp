@@ -195,11 +195,12 @@ void RemoveCycle(node *&head)
 }
 // For appending last k nodes in the list 👍
 
-int Length(node *head)
+
+int Length (node * head)
 {
-    node *temp = head;
+    node * temp = head;
     int count = 0;
-    while (temp != NULL)
+    while (temp!=NULL)
     {
         count++;
         temp = temp->next;
@@ -207,31 +208,27 @@ int Length(node *head)
     return count;
 }
 
-node *Append(node *&head, int k)
+node * Append(node *&head , int k)
 {
-    node *newhead;
-    node *newTail;
-    node *Tail = head;
-    int count = 1;
-    int l = Length(head);
-    k = k % l;
-    while (Tail->next != NULL)
+    node * newhead;
+    node * newTail;
+    node * Tail = head;
+    int count = 0;
+    while (Tail!=NULL)
     {
-
-        if (count == l - k)
+        int l = Length(head);
+        while (Tail!=NULL)
         {
-            newTail = Tail;
+            if (count==l-k)
+            {
+                     
+            }
+            
         }
-        if (count == l - k + 1)
-        {
-            newhead = Tail;
-        }
-        Tail = Tail->next;
-        count++;
+        
+        
     }
-    newTail->next = NULL;
-    Tail->next = head;
-    return newhead;
+    
 }
 
 int main()
@@ -239,36 +236,28 @@ int main()
     // cout<<"Insert";
     // For displaying the linked list
     node *head = NULL;
-    // InsertAtTail(head, 1);
-    // InsertAtTail(head, 2);
-    // InsertAtTail(head, 3);
-    // InsertAtTail(head, 4);
-    // InsertAtTail(head, 5);
-    // InsertAtTail(head, 6);
+    InsertAtTail(head, 1);
+    InsertAtTail(head, 2);
+    InsertAtTail(head, 3);
+    InsertAtTail(head, 4);
+    InsertAtTail(head, 5);
+    InsertAtTail(head, 6);
 
-    // List(head);
+    List(head);
     // int k = 2;
     // node *newhead = Reversek(head, k);
     // List(newhead);
 
-    // node *newhead = Reverse(head);
-    // List(newhead);
-    // makeCycle(head, 3);
+    node *newhead = Reverse(head);
+    List(newhead);
+    makeCycle(head, 3);
     // List(head);
-    // cout << Cycle(head);
+    cout << Cycle(head);
     // RemoveCycle(head);
     // cout << Cycle(head);
     // InsertAtHead(head, 4);
     // cout << Search(head, 3);
     // Delete(head, 2);
     // DeleteatFirst(head);
-    int arr[] = {1,2,3,4,5,6};
-    for (int i = 0; i < 6; i++)
-    {
-        InsertAtTail(head, arr[i]);
-    }
-    List(head);
-    node * n = Append(head , 3);
-    List(n);
     return 0;
 }

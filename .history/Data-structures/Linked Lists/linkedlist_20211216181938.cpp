@@ -220,11 +220,11 @@ node *Append(node *&head, int k)
 
         if (count == l - k)
         {
-            newTail = Tail;
+            Tail = newTail;
         }
         if (count == l - k + 1)
         {
-            newhead = Tail;
+            Tail = newhead;
         }
         Tail = Tail->next;
         count++;

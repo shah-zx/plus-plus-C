@@ -212,7 +212,7 @@ node *Append(node *&head, int k)
     node *newhead;
     node *newTail;
     node *Tail = head;
-    int count = 1;
+    int count = 0;
     int l = Length(head);
     k = k % l;
     while (Tail->next != NULL)
@@ -220,11 +220,11 @@ node *Append(node *&head, int k)
 
         if (count == l - k)
         {
-            newTail = Tail;
+            Tail = newTail;
         }
         if (count == l - k + 1)
         {
-            newhead = Tail;
+            Tail = newhead;
         }
         Tail = Tail->next;
         count++;
