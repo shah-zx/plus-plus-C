@@ -273,7 +273,6 @@ int Intersection(node *head1, node *head2)
             return ptr1->data;
         }
     }
-    return -1;
 }
 
 int main()
