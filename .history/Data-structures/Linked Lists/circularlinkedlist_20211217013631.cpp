@@ -61,6 +61,7 @@ void Display(node *head)
         cout << temp->data << "->";
         temp = temp->next;
     } while (temp != head);
+    cout << temp->data<<endl;
 }
 
 void DeleteAthead(node *head)
@@ -86,7 +87,7 @@ void Deletion(node *head, int pos)
     }
 
     node *temp = head;
-    int count = 1;
+    int count = 0;
     while (count != pos)
     {
         temp = temp->next;

@@ -106,7 +106,7 @@ int main()
     InsertAtTail(head, 4);
     InsertAtTail(head, 5);
     Display(head);
-    Deletion(head , 2);
+    Deletion(head , 3);
     Display(head);
 }
 

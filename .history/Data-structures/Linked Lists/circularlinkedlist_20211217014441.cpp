@@ -86,7 +86,7 @@ void Deletion(node *head, int pos)
     }
 
     node *temp = head;
-    int count = 1;
+    int count = 0;
     while (count != pos)
     {
         temp = temp->next;
@@ -106,7 +106,7 @@ int main()
     InsertAtTail(head, 4);
     InsertAtTail(head, 5);
     Display(head);
-    Deletion(head , 2);
+    Deletion(head , 3);
     Display(head);
 }
 

@@ -86,7 +86,7 @@ void Deletion(node *head, int pos)
     }
 
     node *temp = head;
-    int count = 1;
+    int count = 0;
     while (count != pos)
     {
         temp = temp->next;
