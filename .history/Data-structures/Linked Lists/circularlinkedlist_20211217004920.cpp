@@ -59,7 +59,6 @@ void Display(node *head)
         cout << temp->data << "->";
         temp = temp->next;
     } while (temp != head);
-    cout<<temp->data;
 }
 int main()
 {

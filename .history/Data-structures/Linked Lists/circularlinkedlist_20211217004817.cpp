@@ -37,8 +37,7 @@ void InsertAtTail(node *&head, int val)
 {
     if (head==NULL)
     {
-        InsertAtHead(head,val);
-        return;
+        InsertAtHead(head,)
     }
     
     node *n = new node(val);
@@ -59,7 +58,6 @@ void Display(node *head)
         cout << temp->data << "->";
         temp = temp->next;
     } while (temp != head);
-    cout<<temp->data;
 }
 int main()
 {
