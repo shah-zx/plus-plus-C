@@ -122,7 +122,7 @@ int main()
     InsertAtTail(head, 2);
     InsertAtTail(head, 3);
     List(head);
-    cout<<"After reversing:";
+    cout<<"After reversing:"
     node* newhead = Reverse(head);
     List(newhead);
     // InsertAtHead(head, 4);

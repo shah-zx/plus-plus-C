@@ -94,7 +94,7 @@ void List(node *head)
         cout << temp->data << "->";
         temp = temp->next;
     }
-    cout<< endl;
+    cout << "NULL" << endl;
 }
 // For reversing the nodes :
 
@@ -121,13 +121,12 @@ int main()
     InsertAtTail(head, 1);
     InsertAtTail(head, 2);
     InsertAtTail(head, 3);
+    node *newhead = Reverse(head);
     List(head);
-    cout<<"After reversing:";
-    node* newhead = Reverse(head);
-    List(newhead);
     // InsertAtHead(head, 4);
     // cout << Search(head, 3);
     // Delete(head, 2);
     // DeleteatFirst(head);
+    List(head);
     return 0;
 }

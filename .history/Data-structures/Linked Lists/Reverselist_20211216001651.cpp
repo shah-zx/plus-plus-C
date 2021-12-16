@@ -63,6 +63,7 @@ int main()
     InsertElement(head, 3);
     InsertElement(head, 4);
     node*newhead = Reverse(head);
-    display(newhead);
+
+    display(head);
 
 }

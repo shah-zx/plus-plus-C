@@ -34,7 +34,6 @@ void InsertElement(node *head, int val)
     if (head == NULL)
     {
         head == n;
-        return;
     }
     node *temp = head;
     while (temp->next != NULL)
@@ -62,7 +61,6 @@ int main()
     InsertElement(head, 2);
     InsertElement(head, 3);
     InsertElement(head, 4);
-    node*newhead = Reverse(head);
-    display(newhead);
+    display(head);
 
 }

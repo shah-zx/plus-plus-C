@@ -68,7 +68,7 @@ void InsertAtTail(node *&head, int val)
 
 // For deletion :
 
-void Delete(node *&head, int val)
+void Delete(node* &head, int val)
 {
     node *temp = head;
     while (temp->next->data != val)
@@ -80,7 +80,7 @@ void Delete(node *&head, int val)
     delete todelete;
 }
 
-void DeleteatFirst(node *&head)
+void DeleteatFirst(node * &head)
 {
     node *todelete = head;
     head = head->next;
@@ -94,9 +94,9 @@ void List(node *head)
         cout << temp->data << "->";
         temp = temp->next;
     }
-    cout<< endl;
+    cout << "NULL" << endl;
 }
-// For reversing the nodes :
+// For reversing the nodes : 
 
 node *Reverse(node *head)
 {
@@ -110,7 +110,6 @@ node *Reverse(node *head)
         prevptr = crtptr;
         crtptr = nextptr;
     }
-    return prevptr;
 }
 
 int main()
@@ -122,12 +121,11 @@ int main()
     InsertAtTail(head, 2);
     InsertAtTail(head, 3);
     List(head);
-    cout<<"After reversing:";
-    node* newhead = Reverse(head);
-    List(newhead);
     // InsertAtHead(head, 4);
     // cout << Search(head, 3);
     // Delete(head, 2);
     // DeleteatFirst(head);
+    Reverse(head);
+    List(head);
     return 0;
 }
