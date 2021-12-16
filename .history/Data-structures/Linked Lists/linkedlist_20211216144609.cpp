@@ -141,13 +141,13 @@ node *Reversek(node *head, int k)
 
 bool Cycle(node *head)
 {
-    node *slow = head;
-    node *fast = head;
+    node *slow;
+    node *fast;
     while (fast != NULL && fast->next != NULL)
     {
-        slow = slow->next;
-        fast = fast->next->next;
-        if (fast==slow)
+        slow->next;
+        fast->next->next;
+        if (slow == fast)
         {
             return true;
         }
@@ -155,12 +155,12 @@ bool Cycle(node *head)
     return false;
 }
 
-void makeCycle(node *&head, int pos)
+bool makeCycle(node *&head, int pos)
 {
     node *temp = head;
     node *startNode;
     int count = 1;
-    while (temp->next != NULL)
+    while (temp != NULL)
     {
         if (count == pos)
         {
@@ -190,9 +190,7 @@ int main()
 
     node *newhead = Reverse(head);
     List(newhead);
-    makeCycle(head, 3);
-    // List(head);
-    cout << Cycle(head);
+
     // InsertAtHead(head, 4);
     // cout << Search(head, 3);
     // Delete(head, 2);

@@ -137,40 +137,6 @@ node *Reversek(node *head, int k)
     return prevptr;
 }
 
-// For detecting cycle in a linked list :
-
-bool Cycle(node *head)
-{
-    node *slow = head;
-    node *fast = head;
-    while (fast != NULL && fast->next != NULL)
-    {
-        slow = slow->next;
-        fast = fast->next->next;
-        if (fast==slow)
-        {
-            return true;
-        }
-    }
-    return false;
-}
-
-void makeCycle(node *&head, int pos)
-{
-    node *temp = head;
-    node *startNode;
-    int count = 1;
-    while (temp->next != NULL)
-    {
-        if (count == pos)
-        {
-            startNode = temp;
-        }
-        temp - temp->next;
-        count++;
-    }
-    temp->next = startNode;
-}
 int main()
 {
     // cout<<"Insert";
@@ -188,11 +154,9 @@ int main()
     // node *newhead = Reversek(head, k);
     // List(newhead);
 
-    node *newhead = Reverse(head);
+    node * newhead = Reverse(head);
     List(newhead);
-    makeCycle(head, 3);
-    // List(head);
-    cout << Cycle(head);
+    
     // InsertAtHead(head, 4);
     // cout << Search(head, 3);
     // Delete(head, 2);
