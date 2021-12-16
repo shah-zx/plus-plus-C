@@ -216,8 +216,6 @@ int main()
     makeCycle(head, 3);
     // List(head);
     cout << Cycle(head);
-    // RemoveCycle(head);
-    // cout << Cycle(head);
     // InsertAtHead(head, 4);
     // cout << Search(head, 3);
     // Delete(head, 2);

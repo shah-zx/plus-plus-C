@@ -215,7 +215,7 @@ int main()
     List(newhead);
     makeCycle(head, 3);
     // List(head);
-    cout << Cycle(head);
+    // cout << Cycle(head);
     // RemoveCycle(head);
     // cout << Cycle(head);
     // InsertAtHead(head, 4);

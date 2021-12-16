@@ -147,14 +147,13 @@ bool Cycle(node *head)
     {
         slow = slow->next;
         fast = fast->next->next;
-        if (fast == slow)
+        if (fast==slow)
         {
             return true;
         }
     }
     return false;
 }
-// For making a cycle :
 
 void makeCycle(node *&head, int pos)
 {
@@ -167,33 +166,11 @@ void makeCycle(node *&head, int pos)
         {
             startNode = temp;
         }
-        temp = temp->next;
+        temp - temp->next;
         count++;
     }
     temp->next = startNode;
 }
-
-// For remoing a cycle :
-
-void RemoveCycle(node *&head)
-{
-    node *fast = head;
-    node *slow = head;
-    do
-    {
-        slow = slow->next;
-        fast = fast->next->next;
-    } while (slow != fast);
-    while (fast->next != slow->next)
-        ;
-    {
-        slow = slow->next;
-        fast = fast->next;
-    }
-
-    slow->next = NULL;
-}
-
 int main()
 {
     // cout<<"Insert";
@@ -216,8 +193,6 @@ int main()
     makeCycle(head, 3);
     // List(head);
     cout << Cycle(head);
-    // RemoveCycle(head);
-    // cout << Cycle(head);
     // InsertAtHead(head, 4);
     // cout << Search(head, 3);
     // Delete(head, 2);
