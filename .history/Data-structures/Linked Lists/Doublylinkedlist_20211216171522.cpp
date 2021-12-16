@@ -104,7 +104,4 @@ int main()
     InsertAtHead(head, 5);
     DisplayDLinkedList(head);
     Deletion(head , 2);
-    DisplayDLinkedList(head);
-    DeleteatFirst(head);
-    DisplayDLinkedList(head);
 }

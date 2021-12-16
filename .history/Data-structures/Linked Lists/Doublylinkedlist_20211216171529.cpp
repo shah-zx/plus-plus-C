@@ -105,6 +105,4 @@ int main()
     DisplayDLinkedList(head);
     Deletion(head , 2);
     DisplayDLinkedList(head);
-    DeleteatFirst(head);
-    DisplayDLinkedList(head);
 }
