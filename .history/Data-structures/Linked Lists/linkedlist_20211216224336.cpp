@@ -245,34 +245,24 @@ int Intersection(node *head1, node *head2)
     if (l1 > l2)
     {
         d = l1 - l2;
-        ptr1 = head1; // Greater list is l1
-        ptr2 = head2; // Smaller list is l2
+        ptr1 = head1;  // Greater list is l1
+        ptr2 = head2;  // Smaller list is l2
     }
     else
     {
-        d = l2 - l1;
+        d = l2-l1;
         ptr1 = head2; // Greater list is l2
         ptr2 = head1; // Less list is l1
     }
     while (d)
     {
-        if (ptr1->next == NULL)
+        if (ptr1->next==NULL)
         {
             return -1;
         }
-
+        
         ptr1 = ptr1->next;
         d--;
-    }
-    while (ptr1->next != NULL && ptr2->next != NULL) 
-    {
-        ptr1 = ptr1->next;
-        ptr2 = ptr2->next;
-        if (ptr1 == ptr2) 
-        {
-            return ptr1->data;
-        }
-        
     }
     
 }
