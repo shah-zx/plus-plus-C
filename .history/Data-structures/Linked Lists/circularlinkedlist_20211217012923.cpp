@@ -61,7 +61,7 @@ void Display(node *head)
         cout << temp->data << "->";
         temp = temp->next;
     } while (temp != head);
-    cout << temp->data<<endl;
+    cout << temp->data;
 }
 
 void DeleteAthead(node *head)
@@ -107,7 +107,7 @@ int main()
     InsertAtTail(head, 4);
     InsertAtTail(head, 5);
     Display(head);
-    Deletion(head , 2);
+    Delete(head , 2);
     Display(head);
 }
 

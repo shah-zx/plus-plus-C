@@ -11,7 +11,7 @@ public:
         data = val;
         next = NULL;
     }
-};
+}
 
 // For inserting at head
 
@@ -61,7 +61,7 @@ void Display(node *head)
         cout << temp->data << "->";
         temp = temp->next;
     } while (temp != head);
-    cout << temp->data<<endl;
+    cout << temp->data;
 }
 
 void DeleteAthead(node *head)

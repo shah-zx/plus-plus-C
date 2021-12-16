@@ -18,7 +18,7 @@ public:
 void InsertAtHead(node *&head, int val)
 {
     node *n = new node(val);
-    if (head == NULL)  // Edge case
+    if (head == NULL)
     {
         n->next = n;
         head = n;
@@ -61,7 +61,7 @@ void Display(node *head)
         cout << temp->data << "->";
         temp = temp->next;
     } while (temp != head);
-    cout << temp->data<<endl;
+    cout << temp->data;
 }
 
 void DeleteAthead(node *head)
@@ -72,9 +72,8 @@ void DeleteAthead(node *head)
         temp = temp->next;
     }
     node *ToDelete = head;
-    temp->next = head->next;
+    tenp->next = head->next;
     head = head->next;
-    delete ToDelete;
 }
 
 
@@ -95,7 +94,6 @@ void Deletion(node *head, int pos)
     }
     node *toDelete = temp->next;
     temp->next = temp->next->next;
-    delete toDelete;
 }
 
 int main()
@@ -107,8 +105,4 @@ int main()
     InsertAtTail(head, 4);
     InsertAtTail(head, 5);
     Display(head);
-    Deletion(head , 2);
-    Display(head);
 }
-
-
