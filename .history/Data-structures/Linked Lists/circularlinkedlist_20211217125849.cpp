@@ -53,22 +53,23 @@ void InsertAtTail(node *&head, int val)
     n->next = head;
 }
 
-void Insertattail(node *&head, int val)
+void Insertattail(node * &head , int val)
 {
-    node *n = new node(val);
+    node * n = new node(val);
 
-    if (head == NULL)
+    if (head==NULL) 
     {
-        head = n;
+        head =n;
         return;
     }
-
-    node *temp = head;
-    while (temp->next != NULL)
+    
+    node * temp = head;
+    while (temp->next!=NULL)
     {
         temp = temp->next;
     }
     temp->next = n;
+    
 }
 
 void Display(node *head)

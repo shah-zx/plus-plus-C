@@ -18,7 +18,7 @@ public:
 void InsertAtHead(node *&head, int val)
 {
     node *n = new node(val);
-    if (head == NULL) // Edge case
+    if (head == NULL)  // Edge case
     {
         n->next = n;
         head = n;
@@ -37,7 +37,7 @@ void InsertAtHead(node *&head, int val)
 
 void InsertAtTail(node *&head, int val)
 {
-    if (head == NULL)
+    if (head == NULL) 
     {
         InsertAtHead(head, val);
         return;
@@ -53,24 +53,6 @@ void InsertAtTail(node *&head, int val)
     n->next = head;
 }
 
-void Insertattail(node *&head, int val)
-{
-    node *n = new node(val);
-
-    if (head == NULL)
-    {
-        head = n;
-        return;
-    }
-
-    node *temp = head;
-    while (temp->next != NULL)
-    {
-        temp = temp->next;
-    }
-    temp->next = n;
-}
-
 void Display(node *head)
 {
     node *temp = head;
@@ -80,16 +62,7 @@ void Display(node *head)
         temp = temp->next;
     } while (temp != head);
 }
-void display(node *head)
-{
-    node *temp = head;
-    while (temp != NULL)
-    {
-        cout << temp->data << "->";
-        temp = temp->next;
-    }
-    cout << endl;
-}
+
 void DeleteAthead(node *head)
 {
     node *temp = head;
@@ -102,6 +75,7 @@ void DeleteAthead(node *head)
     head = head->next;
     delete ToDelete;
 }
+
 
 void Deletion(node *head, int pos)
 {
@@ -124,42 +98,17 @@ void Deletion(node *head, int pos)
 }
 // For adding the even nodes after the odd nodes  :
 
-void AddEvafterOdd(node *&head)
-{
-    node *odd = head;
-    node *even = head->next;
-    node *evenStart = even;
-
-    while (odd->next != NULL && even->next != NULL)
-    {
-        odd->next = even->next;
-        odd = odd->next;
-        even->next = odd->next;
-        even = even->next;
-    }
-    odd->next = evenStart;
-    if (odd->next != NULL)
-    {
-        even->next = NULL;
-    }
-}
-
 int main()
 {
     node *head = NULL;
-    // InsertAtTail(head, 1);
-    // InsertAtTail(head, 2);
-    // InsertAtTail(head, 3);
-    // InsertAtTail(head, 4);
-    // InsertAtTail(head, 5);
-    int arr[] = {1, 2, 3, 4, 5, 6};
-    for (int i = 0; i < 6; i++)
-    {
-        Insertattail(head, arr[i]);
-    }
-    display(head);
-    // Deletion(head, 2);
-    // Display(head);
-    AddEvafterOdd(head);
-    display(head);
+    InsertAtTail(head, 1);
+    InsertAtTail(head, 2);
+    InsertAtTail(head, 3);
+    InsertAtTail(head, 4);
+    InsertAtTail(head, 5);
+    Display(head);
+    Deletion(head , 2);
+    Display(head);
 }
+
+

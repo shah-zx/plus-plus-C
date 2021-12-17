@@ -53,24 +53,6 @@ void InsertAtTail(node *&head, int val)
     n->next = head;
 }
 
-void Insertattail(node *&head, int val)
-{
-    node *n = new node(val);
-
-    if (head == NULL)
-    {
-        head = n;
-        return;
-    }
-
-    node *temp = head;
-    while (temp->next != NULL)
-    {
-        temp = temp->next;
-    }
-    temp->next = n;
-}
-
 void Display(node *head)
 {
     node *temp = head;
@@ -80,16 +62,7 @@ void Display(node *head)
         temp = temp->next;
     } while (temp != head);
 }
-void display(node *head)
-{
-    node *temp = head;
-    while (temp != NULL)
-    {
-        cout << temp->data << "->";
-        temp = temp->next;
-    }
-    cout << endl;
-}
+
 void DeleteAthead(node *head)
 {
     node *temp = head;
@@ -142,7 +115,7 @@ void AddEvafterOdd(node *&head)
     {
         even->next = NULL;
     }
-}
+};
 
 int main()
 {
@@ -155,11 +128,11 @@ int main()
     int arr[] = {1, 2, 3, 4, 5, 6};
     for (int i = 0; i < 6; i++)
     {
-        Insertattail(head, arr[i]);
+        InsertAtTail(head, arr[i]);
     }
-    display(head);
+    Display(head);
     // Deletion(head, 2);
     // Display(head);
     AddEvafterOdd(head);
-    display(head);
+    Display(head);
 }
