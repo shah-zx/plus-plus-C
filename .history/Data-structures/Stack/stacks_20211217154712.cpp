@@ -29,7 +29,6 @@ public:
         {
             cout << "No element to pop: " << endl;
         }
-        top--;
     }
     int Top()
     {
@@ -51,6 +50,7 @@ public:
 
 int main()
 {
+
     stack st;
     st.push(1);
     st.push(2);

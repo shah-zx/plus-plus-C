@@ -1,0 +1,25 @@
+#include<iostream>
+#include<stack>
+using namespace std;
+
+
+void Reverse(string s)
+{
+    for (int i = 0; i < s.size(); i++)
+    {
+        string word = "";  // This will stotre the word in it 
+        while (s[i]!=' '&& i<s.size())
+        {
+            i++;
+        }
+        
+        
+    }
+    
+}
+
+
+int main()
+{
+   stack<string> st;
+}
