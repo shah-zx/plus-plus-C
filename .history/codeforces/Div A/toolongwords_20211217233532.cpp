@@ -8,13 +8,13 @@ int main()
     string s[num];
     for (int i = 1; i <= num; i++)
     {
-        cin >> s[i];
+        cin >> s;
     }
     for (int i = 1; i <= num; i++)
     {
         if (s[i].length() >= 10)
         {
-            cout << s[0] << s[i].length() - 2 << s[i].length() - 1;
+            cout << s[0] << s[i].length() - 2 << s[s.length() - 1];
         }
         else
         {

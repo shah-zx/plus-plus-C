@@ -5,16 +5,16 @@ int main()
 {
     int num = num;
     cin >> num;
-    string s[num];
+    string s;
     for (int i = 1; i <= num; i++)
     {
-        cin >> s[i];
+        cin >> s;
     }
     for (int i = 1; i <= num; i++)
     {
-        if (s[i].length() >= 10)
+        if (s.length() >= 10)
         {
-            cout << s[0] << s[i].length() - 2 << s[i].length() - 1;
+            cout << s[0] << s.length() - 2 << s[s.length() - 1];
         }
         else
         {

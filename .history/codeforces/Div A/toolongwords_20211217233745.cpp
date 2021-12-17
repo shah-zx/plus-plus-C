@@ -5,7 +5,7 @@ int main()
 {
     int num = num;
     cin >> num;
-    string s[num];
+    string arr[] = {};
     for (int i = 1; i <= num; i++)
     {
         cin >> s[i];

@@ -8,7 +8,7 @@ int main()
     string s[num];
     for (int i = 1; i <= num; i++)
     {
-        cin >> s[i];
+        cin >> s;
     }
     for (int i = 1; i <= num; i++)
     {

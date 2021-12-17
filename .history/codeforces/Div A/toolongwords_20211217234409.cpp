@@ -5,16 +5,17 @@ int main()
 {
     int num = num;
     cin >> num;
-    string s[num];
+    string arr[num];
     for (int i = 1; i <= num; i++)
     {
-        cin >> s[i];
+        cin >> arr[i];
     }
     for (int i = 1; i <= num; i++)
     {
-        if (s[i].length() >= 10)
+        if (arr[i].length() >= 10)
         {
             cout << s[0] << s[i].length() - 2 << s[i].length() - 1;
+
         }
         else
         {
@@ -22,3 +23,5 @@ int main()
         }
     }
 }
+
+
