@@ -1,0 +1,1 @@
+{"name":"Local: Reversestack","url":"d:\\C++ course\\Data-structures\\Stack\\Reversestack.cpp","tests":[{"id":1639744479114,"input":"654321","output":"1\n2\n3\n4\n5\n6"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\C++ course\\Data-structures\\Stack\\Reversestack.cpp","group":"local","local":true}
