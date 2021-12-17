@@ -35,7 +35,7 @@ void InsertAtHead(node *&head, int val)
     head = n;
 }
 
-// For Circular linked lists : 
+// For Circular linked lists
 
 void InsertAtTail(node *&head, int val)
 {

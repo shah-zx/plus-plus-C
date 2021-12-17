@@ -35,8 +35,6 @@ void InsertAtHead(node *&head, int val)
     head = n;
 }
 
-// For Circular linked lists : 
-
 void InsertAtTail(node *&head, int val)
 {
     if (head == NULL)
@@ -54,8 +52,6 @@ void InsertAtTail(node *&head, int val)
     temp->next = n;
     n->next = head;
 }
-
-// For linked list :
 
 void Insertattail(node *&head, int val)
 {
