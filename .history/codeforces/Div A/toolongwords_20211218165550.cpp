@@ -10,7 +10,7 @@ int main()
     {
         cin >> s[i];
     }
-    for (int i = 1; i <= s[i].size(); i++)
+    for (int i = 1; i <= arr[i]; i++)
     {
         if (s[i].length() >= 10)
         {

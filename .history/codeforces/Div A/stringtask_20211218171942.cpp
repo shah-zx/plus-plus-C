@@ -5,21 +5,29 @@ int main()
 {
     char c[] = {};
 
-    for (int i = 0; i < sizeof(c) / sizeof(c[0]); i++)
+    for (int i = 0; i < sizeof(c)/ sizeof(c[0]); i++)
     {
-        cin >> c[i];
+        /* code */
     }
+    
+
+
+
+
+
+
+
 
     char arr[] = {'a', 'e', 'i', 'o', 'u'};
     for (int i = 0; i < sizeof(c) / sizeof(c[0]); i++)
     {
         for (int j = 1; j < sizeof(arr) / sizeof(arr[0]); j++)
         {
-            if (c[i] == arr[j])
+            if (s[i] == arr[j])
             {
                 cout << "Mila";
             }
         }
-        cout << c;
+        cout<<s;
     }
 }
