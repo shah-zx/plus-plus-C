@@ -1,4 +1,4 @@
-#include <bits/stdc++.h>
+#include <iostream>
 using namespace std;
 
 class node
@@ -8,7 +8,7 @@ public:
     node *next;
     node(int value)
     {
-        data = value;
+        value = data;
         next = NULL;
     }
 };
@@ -47,38 +47,17 @@ public:
         front = front->next;
         delete todelete;
     }
-    int peek()
+    void peek()
     {
-        if (front == NULL)
+        if (front==NULL)
         {
-            cout << "There is no element in the queue";
-            return -1;
+            cout<<"There is no element in the queue";
+            return;
         }
-        return front->data;
-    }
-    bool empty()
-    {
-        if (front == NULL)
-        {
-            return true;
-        }
-        return false;
+        
     }
 };
 
 int main()
 {
-    Queue q1;
-    q1.enqueue(1);
-    q1.enqueue(2);
-    q1.enqueue(3);
-    q1.enqueue(4);
-    q1.enqueue(5);
-    cout << q1.peek();
-    q1.dequeue();
-    cout << q1.peek();
-    q1.dequeue();
-    cout << q1.peek();
-    q1.dequeue();
-    cout << q1.peek();
 }

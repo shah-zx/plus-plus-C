@@ -8,7 +8,7 @@ public:
     node *next;
     node(int value)
     {
-        data = value;
+        value = data;
         next = NULL;
     }
 };

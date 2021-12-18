@@ -8,7 +8,7 @@ public:
     node *next;
     node(int value)
     {
-        data = value;
+        value = data;
         next = NULL;
     }
 };
@@ -75,10 +75,10 @@ int main()
     q1.enqueue(4);
     q1.enqueue(5);
     cout << q1.peek();
-    q1.dequeue();
-    cout << q1.peek();
-    q1.dequeue();
-    cout << q1.peek();
-    q1.dequeue();
-    cout << q1.peek();
+    // q1.dequeue();
+    // cout << q1.peek();
+    // q1.dequeue();
+    // cout << q1.peek();
+    // q1.dequeue();
+    // cout << q1.peek();
 }

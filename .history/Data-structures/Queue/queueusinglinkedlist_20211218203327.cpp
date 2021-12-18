@@ -75,10 +75,10 @@ int main()
     q1.enqueue(4);
     q1.enqueue(5);
     cout << q1.peek();
-    q1.dequeue();
-    cout << q1.peek();
-    q1.dequeue();
-    cout << q1.peek();
-    q1.dequeue();
-    cout << q1.peek();
+    // q1.dequeue();
+    // cout << q1.peek();
+    // q1.dequeue();
+    // cout << q1.peek();
+    // q1.dequeue();
+    // cout << q1.peek();
 }
