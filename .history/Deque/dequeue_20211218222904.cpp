@@ -20,5 +20,4 @@ int main()
     {
         cout << element << endl;
     }
-    cout<<dq.size() << endl;
 }

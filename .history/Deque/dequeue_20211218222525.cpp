@@ -11,14 +11,14 @@ int main()
     dq.push_back(5);
     dq.push_back(6);
 
-    dq.pop_back();
-    dq.pop_front();
-
     // Printing the values :
 
-    for (auto element : dq)
+    for (auto element :dq)
     {
-        cout << element << endl;
+        cout<<element<<endl;
     }
-    cout<<dq.size() << endl;
+    
+
+
+
 }
