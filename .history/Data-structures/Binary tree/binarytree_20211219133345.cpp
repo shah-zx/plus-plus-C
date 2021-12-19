@@ -37,17 +37,6 @@ void InOrder(struct Node *root)
     InOrder(root->right);
 }
 
-void PostOrder(struct Node *root)
-{
-    if(root==NULL)
-    {
-        return;
-    }
-    PostOrder(root->left);
-    PostOrder(root->right);
-    cout<<root->data<<" ";
-}
-
 int main()
 {
     struct Node *root = new Node(1);
@@ -58,8 +47,7 @@ int main()
     root->right->left = new Node(6);
     root->right->right = new Node(7);
     // preOrder(root);
-    // InOrder(root);
-    PostOrder(root);
+    InOrder(root)
 
 }
 

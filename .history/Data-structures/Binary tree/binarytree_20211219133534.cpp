@@ -58,8 +58,7 @@ int main()
     root->right->left = new Node(6);
     root->right->right = new Node(7);
     // preOrder(root);
-    // InOrder(root);
-    PostOrder(root);
+    InOrder(root);
 
 }
 
