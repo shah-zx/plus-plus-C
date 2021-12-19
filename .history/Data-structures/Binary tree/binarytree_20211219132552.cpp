@@ -1,10 +1,10 @@
-#include <bits/stdc++.h>
+#include <iostream>
 using namespace std;
 
 struct Node
 {
 
-    int data; 
+    int data; // This will be for holding the data
     struct Node *right;
     struct Node *left;
 
@@ -27,6 +27,7 @@ void preOrder(struct Node *root)
 }
 int main()
 {
+
     struct Node *root = new Node(1);
     root->left = new Node(2);
     root->right = new Node(3);
@@ -36,4 +37,3 @@ int main()
     root->right->right = new Node(7);
     preOrder(root);
 }
-
