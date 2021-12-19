@@ -21,18 +21,13 @@ int main()
         {
             if (arr[i][j] == 1)
             {
-                while (arr[3][3] != 1)
-                {
-                    i++;
-                    j++;
-                    i--;
-                    j--;
-                    count++;
-                }
+                count++;
             }
         }
+        cout << endl;
     }
-    cout << count;
+        return count;
+
 }
 
 // 1 1 1 1 1

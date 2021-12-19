@@ -19,24 +19,12 @@ int main()
     {
         for (int j = 1; j <= col; j++)
         {
-            if (arr[i][j] == 1)
+            if (arr[i][j] == )
             {
-                while (arr[3][3] != 1)
-                {
-                    i++;
-                    j++;
-                    i--;
-                    j--;
-                    count++;
-                }
+                /* code */
             }
+            
         }
+        cout << endl;
     }
-    cout << count;
 }
-
-// 1 1 1 1 1
-// 0 0 0 0 0
-// 0 0 0 0 0
-// 0 0 0 0 0
-// 0 1 0 0 1
