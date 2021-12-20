@@ -14,33 +14,35 @@ struct Node
     }
 };
 
-int Hieght(Node *root)
+void SumReplace(Node *root)
 {
     if (root == NULL)
     {
-        return 0;
+        return;
     }
+    SumReplace(root->left);
+    SumReplace(root->right);
 
-    int lhieght = Hieght(root->left);
-    int rhieght = Hieght(root->right);
-    return max(lhieght, rhieght) + 1;
+    if (root->left != NULL)
+    {
+        root->data += root->left->data;
+    }
+    if (root->right != NULL)
+    {
+        root->data += root->right->data;
+    }
 }
 
-int Diameter(Node *root)
+void preOrder(Node *root)
 {
-
-    if (root == NULL)
+    if (root==NULL)
     {
-        return 0;
+        return;
     }
-    int lhieght = Hieght(root->left);
-    int rhieght = Hieght(root->right);
-    int dia = lhieght + rhieght + 1;
-
-    int ldia = Diameter(root->left);
-    int rdia = Diameter(root->right);
-
-    return max(dia, max(ldia, rdia));
+    
+    cout << root->data;
+    preOrder(root->left);
+    preOrder(root->right);
 }
 
 int main()
@@ -53,5 +55,9 @@ int main()
     root->left->right = new Node(5);
     root->right->left = new Node(6);
     root->right->right = new Node(7);
-    cout << Diameter(root);
+
+    preOrder(root);
+    SumReplace(root);
+
+
 }
