@@ -67,7 +67,6 @@ int main()
     InsertAtTail(head, 3);
     InsertAtTail(head, 4);
     Display(head);
-    // Delete(head , 3);
-    // Display(head);    
+    Delete(head , 3);
 
 }

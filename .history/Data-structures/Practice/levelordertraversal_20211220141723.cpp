@@ -2,11 +2,8 @@
 #include <queue>
 using namespace std;
 
-// #define n 100
-
 struct Node
 {
-public:
     int data;
     Node *left;
     Node *right;
@@ -18,25 +15,27 @@ public:
     }
 };
 
-void *LevelOrderTraverse(Node *root)
+void *LevelOrder(Node *root)
 {
+
     queue<Node *> q1;
     q1.push(root);
     q1.push(NULL);
+
     while (!q1.empty())
     {
         Node *node = q1.front();
-        q1.pop();
         if (node != NULL)
         {
-            cout << node->data;
             if (node->left)
                 q1.push(node->left);
             if (node->right)
                 q1.push(node->right);
         }
         else if (!q1.empty())
+        {
             q1.push(NULL);
+        }
     }
 }
 
@@ -47,8 +46,8 @@ int main()
     root->right = new Node(3);
     root->left->left = new Node(4);
     root->left->right = new Node(5);
-    root->right->right = new Node(7);
     root->right->left = new Node(6);
-    LevelOrderTraverse(root);
-}
+    root->right->right = new Node(7);
 
+    LevelOrder(root);
+}
