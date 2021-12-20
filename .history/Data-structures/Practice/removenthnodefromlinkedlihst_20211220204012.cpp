@@ -69,6 +69,6 @@ int main()
     Insert(head, 3);
     Insert(head, 4);
     Display(head);
-    Delete(head, 3);
-    Display(head);
+    // Delete(head, 3);
+    // Display(head);
 }
