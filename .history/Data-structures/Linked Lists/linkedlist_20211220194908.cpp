@@ -311,6 +311,6 @@ int main()
     // }
     // List(head);
     // node *n = Append(head, 3);
-    List(head);
+    List(n);
     return 0;
 }

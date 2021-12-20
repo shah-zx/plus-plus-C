@@ -31,9 +31,12 @@ void InsertAtTail(Node *&head, int x)
 
 void Display(Node *head)
 {
-   
+    if (head == NULL)
+    {
+        return;
+    }
     Node *temp = head;
-    while (temp!= NULL)
+    while (temp->next != NULL)
     {
         cout << temp->data << "->";
         temp = temp->next;

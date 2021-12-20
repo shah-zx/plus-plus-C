@@ -6,6 +6,7 @@ class Node
 public:
     int data;
     Node *next;
+
     Node(int val)
     {
         data = val;
@@ -13,14 +14,16 @@ public:
     }
 };
 
-void InsertAtTail(Node *&head, int x)
+void Insert(Node *&head, int val)
 {
-    Node *n = new Node(x);
+    Node *n = new Node(val);
+
     if (head == NULL)
     {
         head = n;
         return;
     }
+
     Node *temp = head;
     while (temp->next != NULL)
     {
@@ -31,40 +34,25 @@ void InsertAtTail(Node *&head, int x)
 
 void Display(Node *head)
 {
-   
+    if (head == NULL)
+    {
+        return;
+    }
     Node *temp = head;
     while (temp!= NULL)
     {
         cout << temp->data << "->";
         temp = temp->next;
     }
-    cout << "NULL" << endl;
-}
-void Delete(Node *&head, int val)
-{
-    if (head == NULL)
-    {
-        return;
-    }
-    Node *temp = head;
-    while (temp->next->data != val)
-    {
-        temp = temp->next;
-    }
-    Node *todelete = temp->next;
-    temp->next = temp->next->next;
-    delete todelete;
 }
 
 int main()
 {
-    Node *head = NULL;
-    InsertAtTail(head, 1);
-    InsertAtTail(head, 2);
-    InsertAtTail(head, 3);
-    InsertAtTail(head, 4);
-    Display(head);
-    // Delete(head , 3);
-    // Display(head);    
 
+    Node *head = NULL;
+    Insert(head, 1);
+    Insert(head, 2);
+    Insert(head, 3);
+    Insert(head, 4);
+    Display(head);
 }
