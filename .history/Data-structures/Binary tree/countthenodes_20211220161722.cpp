@@ -25,12 +25,15 @@ int countNodes(Node *root)
 
 int sumofnodes(Node *root)
 {
-    if (root == NULL)
+    if(root == NULL)
     {
         return 0;
     }
     return sumofnodes(root->left) + sumofnodes(root->right) + root->data;
 }
+
+
+
 
 int main()
 {
@@ -43,6 +46,5 @@ int main()
     root->right->left = new Node(6);
     root->right->right = new Node(7);
 
-    // cout << countNodes(root) << endl;
-    cout << "Sum is :" << sumofnodes(root);
+    cout<<countNodes(root)<<endl;
 }

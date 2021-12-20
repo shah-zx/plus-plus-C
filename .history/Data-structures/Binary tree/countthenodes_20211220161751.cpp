@@ -44,5 +44,5 @@ int main()
     root->right->right = new Node(7);
 
     // cout << countNodes(root) << endl;
-    cout << "Sum is :" << sumofnodes(root);
+    cout<<"Sum is :"<<sumofnodes(root)
 }
