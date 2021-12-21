@@ -10,7 +10,7 @@ int CI(int p, int r, int n)
         return 1;
     }
     int res = 0;
-    res += (p * (1 + r));
+    res += p * (1 + r);
     CI(p, r, n - 1);
     return res;
 }

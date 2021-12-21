@@ -5,13 +5,13 @@ using namespace std;
 
 int CI(int p, int r, int n)
 {
-    if (n == 1)
+    if(n==1)
     {
         return 1;
     }
     int res = 0;
-    res += (p * (1 + r));
-    CI(p, r, n - 1);
+    p *(1 + r);
+    res += CI(p, r, n-1);
     return res;
 }
 
@@ -23,5 +23,6 @@ int main()
     cin >> principal;
     cin >> rate;
     cin >> time;
-    cout << CI(principal, rate, time);
+    cout<<CI(principal, rate, time);
+    cout<<"Hello";
 }
