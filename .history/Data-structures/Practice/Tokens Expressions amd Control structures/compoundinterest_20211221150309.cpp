@@ -5,13 +5,13 @@ using namespace std;
 
 int CI(int p, int r, int n)
 {
-    if (n == 0)
+    if (n == 1)
     {
         return 1;
     }
-    int res;
+    int res = 1;
+    res *= p * (1 + r);
     CI(p, r, n - 1);
-    res += (p * (1 + r))-p;
     return res;
 }
 
