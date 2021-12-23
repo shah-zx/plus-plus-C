@@ -4,7 +4,7 @@
 #include <algorithm>
 using namespace std;
 
-vector <vector <int>> Pairsum(int arr[], int size, int s)
+void Pairsum(int arr[], int size, int s)
 {
     vector<vector<int>> ans;
 
@@ -16,13 +16,12 @@ vector <vector <int>> Pairsum(int arr[], int size, int s)
             {
                 vector<int> temp;
 
-                temp.push_back(min(arr[i], arr[j])); // As the elements shiuld be in sorted order so we will find min and max
+                temp.push_back(min(arr[i], arr[j]));   // As the elements shiuld be in sorted order so we will find min and max 
                 temp.push_back(max(arr[i], arr[j]));
                 ans.push_back(temp);
             }
         }
     }
-    return ans;
 }
 
 int main()

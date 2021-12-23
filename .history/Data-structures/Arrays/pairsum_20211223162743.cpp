@@ -4,7 +4,7 @@
 #include <algorithm>
 using namespace std;
 
-vector <vector <int>> Pairsum(int arr[], int size, int s)
+vector <int> Pairsum(int arr[], int size, int s)
 {
     vector<vector<int>> ans;
 
