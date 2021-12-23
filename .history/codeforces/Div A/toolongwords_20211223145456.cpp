@@ -11,9 +11,9 @@ int main()
     {
         cin >> s[i];
     }
-    cout << "Your strings :" << endl;
-    for (int i = 0; i < s[i].length(); i++)
+    cout << "Your strings :";
+    for (int i = 0; i < num; i++)
     {
-        cout << s[0] << s[i].length() - 2 << s[i].length() - 1 << endl;
+        cout << s[0] << s[i].length() - 2 << s[i].length() - 1;
     }
 }

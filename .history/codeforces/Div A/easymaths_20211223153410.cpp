@@ -19,7 +19,7 @@ int main()
     string s;
     cin >> s;
     // sort(s.begin(), s.end(), greater<int>());
-    stoi(s);
+    stoi(s.begin(), s.end(), greater<int>());
     Reverse(s,s.size());
     cout<<s;
 }
