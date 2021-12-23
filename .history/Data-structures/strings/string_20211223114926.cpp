@@ -50,14 +50,12 @@ int main()
 
     cout << d4.substr(6, 4);
 
-    // Conversion of string values to numeric :
+    // Conversion of numeric values to strings :
 
-    // string num = "786";
-    // int x = stoi(num);
-    // cout << x + 10;
-
-    // Conversion of string values to numbers :
-
+    string num = "786";
+    int x = stoi(num);
+    cout << x + 10;
+    
     int n = 123;
-    cout << to_string(n) + "45";
+    cout<<to_string(n) + 45;
 }

@@ -45,19 +45,8 @@ int main()
 
     // Insertion :
 
-    d4.insert(2, "lol");
-    cout << d4 << endl;
+    d4.insert(2 , "lol");
+    cout<<d4<<endl;
 
-    cout << d4.substr(6, 4);
-
-    // Conversion of string values to numeric :
-
-    // string num = "786";
-    // int x = stoi(num);
-    // cout << x + 10;
-
-    // Conversion of string values to numbers :
-
-    int n = 123;
-    cout << to_string(n) + "45";
+    cout<<d4.substr(6,4);
 }

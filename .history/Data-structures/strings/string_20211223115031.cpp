@@ -55,9 +55,9 @@ int main()
     // string num = "786";
     // int x = stoi(num);
     // cout << x + 10;
-
+     
     // Conversion of string values to numbers :
 
     int n = 123;
-    cout << to_string(n) + "45";
+    cout<<to_string(n) + "45";
 }

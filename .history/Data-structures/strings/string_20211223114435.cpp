@@ -49,15 +49,4 @@ int main()
     cout << d4 << endl;
 
     cout << d4.substr(6, 4);
-
-    // Conversion of string values to numeric :
-
-    // string num = "786";
-    // int x = stoi(num);
-    // cout << x + 10;
-
-    // Conversion of string values to numbers :
-
-    int n = 123;
-    cout << to_string(n) + "45";
 }
