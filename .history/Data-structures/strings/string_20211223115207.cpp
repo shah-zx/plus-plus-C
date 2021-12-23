@@ -2,7 +2,6 @@
 #include <stack>
 #include <queue>
 #include <string>
-#include <algorithm>
 using namespace std;
 
 int main()
@@ -37,19 +36,19 @@ int main()
     // {
     //     cout << "Its not empty";
     // }
-    // string d4 = "nincompoop";
-    // d4.erase(3, 3);
-    // cout << d4 << endl;
+    string d4 = "nincompoop";
+    d4.erase(3, 3);
+    cout << d4 << endl;
     // Find function :`
 
-    // cout << d4.find("poop");
+    cout << d4.find("poop");
 
     // Insertion :
 
-    // d4.insert(2, "lol");
-    // cout << d4 << endl;
+    d4.insert(2, "lol");
+    cout << d4 << endl;
 
-    // cout << d4.substr(6, 4);
+    cout << d4.substr(6, 4);
 
     // Conversion of string values to numeric :
 
@@ -59,12 +58,6 @@ int main()
 
     // Conversion of string values to numbers :
 
-    // int n = 123;
-    // cout << to_string(n) + "45";
-
-    // Sorting the string values :
-    string d = "uawbcjhsdgcuwcvjhsjciclv";
-    sort(d.begin(),d.end());
-    cout<<d << endl;
-
+    int n = 123;
+    cout << to_string(n) + "45";
 }
