@@ -17,7 +17,7 @@ int main()
 
     // // Converting to lower case
 
-    string s2 = "ASJASJSDLJVBWEUIBVSD";
+    // string s2 = "ASJASJSDLJVBWEUIBVSD";
     // for (int i = 0; i < s2.size(); i++)
     // {
     //     if (s2[i] >= 'A' && s2[i] <= 'Z')
@@ -31,6 +31,4 @@ int main()
 
     transform(s1.begin(), s1.end(), s1.begin(), ::toupper);
     cout << s1 << endl;
-    transform(s2.begin(), s2.end(), s2.begin(), ::tolower);
-    cout<<s2 << endl;
 }
