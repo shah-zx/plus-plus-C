@@ -27,19 +27,13 @@ int main()
 
     string s1 = "shahnawaz";
     string s = "abc";
-    // s.clear();
-    // if (s1.empty())
-    // {
-    //     cout << "String is empty";
-    // }
-    // else
-    // {
-    //     cout << "Its not empty";
-    // }
-    string d4 = "nincompoop";
-    d4.erase(3, 3);
-    cout << d4 << endl;
-    // Find function :`
-
-    cout << d4.find("poop");
+    s.clear();
+    if (s1.empty())
+    {
+        cout << "String is empty";
+    }
+    else
+    {
+        cout << "Its not empty";
+    }
 }

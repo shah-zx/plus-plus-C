@@ -36,7 +36,7 @@ int main()
     // {
     //     cout << "Its not empty";
     // }
-    string d4 = "nincompoop";
+    string d4 = "nincomppoop";
     d4.erase(3, 3);
     cout << d4 << endl;
     // Find function :`
