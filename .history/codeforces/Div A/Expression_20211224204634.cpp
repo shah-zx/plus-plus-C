@@ -34,7 +34,7 @@ int main()
     }
     for (int i = 0; i < 3; i++)
     {
-        cout<<max(arr[i] , arr[i+1] , arr[i+2]);
+        /* code */
     }
     
     return 0;

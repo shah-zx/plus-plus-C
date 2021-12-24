@@ -26,16 +26,14 @@ int minimumValue(int array[], int n)
 
 int main()
 {
-
+    
     int arr[3] = {};
     for (int i = 0; i < 3; i++)
     {
-        cin >> arr[i];
-    }
-    for (int i = 0; i < 3; i++)
-    {
-        cout<<max(arr[i] , arr[i+1] , arr[i+2]);
+     cin>>arr[i];
     }
     
+
+             
     return 0;
 }

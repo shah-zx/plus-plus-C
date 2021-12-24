@@ -1,5 +1,4 @@
 #include <iostream>
-#include <string>
 using namespace std;
 
 int maximumValue(int array[], int n)
@@ -26,16 +25,30 @@ int minimumValue(int array[], int n)
 
 int main()
 {
-
     int arr[3] = {};
     for (int i = 0; i < 3; i++)
     {
         cin >> arr[i];
     }
+    int maxval = maximumValue(arr, 3);
+    int minval = minimumValue(arr, 3);
     for (int i = 0; i < 3; i++)
     {
-        cout<<max(arr[i] , arr[i+1] , arr[i+2]);
+        cout << maxval;
     }
-    
-    return 0;
+    for (int i = 0; i < 3; i++)
+    {
+        cout << minval;
+    }
+
+    int num;
+
+    if (num >= minval && num <= maxval)
+    {
+        cout << num;
+    }
+    else
+    {
+        cout << "Number";
+    }
 }
