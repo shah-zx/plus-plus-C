@@ -17,7 +17,7 @@ struct Node
     }
 };
 
-Node *Inorder(Node *root)
+void Inorder(Node *root)
 {
     Node *curr = root;
     while (curr && curr->left != NULL)
@@ -27,7 +27,7 @@ Node *Inorder(Node *root)
     return curr;
 }
 
-void InO(Node *root)
+Node *InO(Node *root)
 {
     if (root == NULL)
     {
@@ -72,7 +72,6 @@ Node *Delete(Node *root, int k)
     Node *temp = Inorder(root->right);
     root->data = temp->data;
     root->right = Delete(root, temp->data);
-    return root;
 }
 
 int main()

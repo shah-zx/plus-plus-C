@@ -27,13 +27,8 @@ Node *Inorder(Node *root)
     return curr;
 }
 
-void InO(Node *root)
+Node *InO(Node *root)
 {
-    if (root == NULL)
-    {
-        return;
-    }
-
     InO(root->left);
     cout << root->data;
     InO(root->right);
@@ -72,7 +67,6 @@ Node *Delete(Node *root, int k)
     Node *temp = Inorder(root->right);
     root->data = temp->data;
     root->right = Delete(root, temp->data);
-    return root;
 }
 
 int main()
@@ -85,9 +79,5 @@ int main()
     root->left->right = new Node(3);
     root->right->right = new Node(6);
     InO(root);
-    cout << endl;
-    Delete(root, 5);
-    cout << endl;
-    InO(root);
-    cout << endl;
+    Delete(root , 5)
 }

@@ -72,7 +72,6 @@ Node *Delete(Node *root, int k)
     Node *temp = Inorder(root->right);
     root->data = temp->data;
     root->right = Delete(root, temp->data);
-    return root;
 }
 
 int main()
