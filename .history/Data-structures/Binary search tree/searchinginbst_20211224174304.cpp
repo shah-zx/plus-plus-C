@@ -15,7 +15,7 @@ struct Node
         left = NULL;
         right = NULL;
     }
-};
+}
 
 Node * BST(Node *root, int k)
 {
@@ -28,13 +28,13 @@ Node * BST(Node *root, int k)
         return root;
     }
 
-    if (root->data > k)
+    if (val < root->data)
     {
-        return BST(root->left, k);
+        return BST(root->left, k)
     }
     else
     {
-        return BST(root->right, k);
+        return BST(root->right, k)
     }
 }
 
@@ -47,12 +47,10 @@ int main()
     root->left->right = new Node(3);
     root->right->right = new Node(6);
 
-    if (BST(root, 5) == NULL)
+    if (BST(root ,5)== NULL)
     {
-        cout << "Key doesn't exist'";
+        cout<<"Key doesn't exist'"
     }
-    else
-    {
-        cout << "Key exists";
-    }
+    
+
 }

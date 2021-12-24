@@ -15,9 +15,10 @@ struct Node
         left = NULL;
         right = NULL;
     }
-};
+}
 
-Node * BST(Node *root, int k)
+Node *
+BST(Node *root, int k)
 {
     if (root == NULL)
     {
@@ -28,13 +29,13 @@ Node * BST(Node *root, int k)
         return root;
     }
 
-    if (root->data > k)
+    if (val < root->data)
     {
-        return BST(root->left, k);
+        return BST(root->left, k)
     }
     else
     {
-        return BST(root->right, k);
+        return BST(root->right, k)
     }
 }
 

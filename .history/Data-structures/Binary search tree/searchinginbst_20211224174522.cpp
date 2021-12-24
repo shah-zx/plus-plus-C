@@ -28,7 +28,7 @@ Node * BST(Node *root, int k)
         return root;
     }
 
-    if (root->data > k)
+    if (val < root->data)
     {
         return BST(root->left, k);
     }
