@@ -20,18 +20,18 @@ int main()
             starc += 1;
         }
     }
-    if (starc > hashc)
-    {
-        cout << "1";
-    }
-    else if (starc < hashc)
-    {
-        cout << "-1";
-    }
-    else
-    {
-        cout << "0";
-    }
+      if (starc > hashc)
+        {
+            cout << "1";
+        }
+        else if (starc < hashc)
+        {
+            cout << "-1";
+        }
+        else
+        {
+            cout << "0";
+        }
 
     return 0;
 }

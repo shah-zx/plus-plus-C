@@ -31,7 +31,7 @@ int FirstOccur(int arr[], int n, int k)
     return ans;
 }
 
-int LastOccur(int arr[], int n, int k)
+int FirstOccur(int arr[], int n, int k)
 {
     int s = 0;
     int e = n - 1;
@@ -61,7 +61,6 @@ int LastOccur(int arr[], int n, int k)
 int main()
 {
 
-    int arr[6] = {1,2,4,5,4,6};
-    cout << "The first occurrence of the number is at index : " << FirstOccur(arr, 6, 4) << endl;
-    cout << "The Last occurrence of the number is at index : " << LastOccur(arr, 6, 4) << endl;
+    int arr[7] = {1, 2, 4, 3, 5, 6, 3};
+    cout << "The first occurrence of the number is at index : " << FirstOccur(arr, 7, 3);
 }

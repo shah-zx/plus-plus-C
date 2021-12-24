@@ -13,24 +13,24 @@ int main()
     {
         if (s[i] == '#')
         {
-            hashc += 1;
+            hashc++;
         }
         else if (s[i] == '*')
         {
-            starc += 1;
+            starc++;
         }
-    }
-    if (starc > hashc)
-    {
-        cout << "1";
-    }
-    else if (starc < hashc)
-    {
-        cout << "-1";
-    }
-    else
-    {
-        cout << "0";
+        if (starc > hashc)
+        {
+            cout << "1";
+        }
+        else if (starc < hashc)
+        {
+            cout << "-1";
+        }
+        else
+        {
+            cout << "0";
+        }
     }
 
     return 0;

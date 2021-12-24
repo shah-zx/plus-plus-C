@@ -42,7 +42,7 @@ int LastOccur(int arr[], int n, int k)
         if (arr[mid] == k)
         {
             ans = mid;
-            s = mid + 1;
+            s = mid - 1;
         }
         if (k > arr[mid])
         {
@@ -61,7 +61,7 @@ int LastOccur(int arr[], int n, int k)
 int main()
 {
 
-    int arr[6] = {1,2,4,5,4,6};
-    cout << "The first occurrence of the number is at index : " << FirstOccur(arr, 6, 4) << endl;
-    cout << "The Last occurrence of the number is at index : " << LastOccur(arr, 6, 4) << endl;
+    int arr[7] = {1, 2, 4, 3, 5, 6, 3};
+    cout << "The first occurrence of the number is at index : " << FirstOccur(arr, 7, 3) << endl;
+    cout << "The Last occurrence of the number is at index : " << LastOccur(arr, 7, 3);
 }
