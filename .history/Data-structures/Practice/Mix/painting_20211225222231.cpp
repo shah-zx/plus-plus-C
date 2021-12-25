@@ -27,11 +27,11 @@ int main()
     }
     for (int i = 0; i < num1; i++)
     {
-        counti += arr[i] * 18.00;
+        counti += arr[i] * 18;
     }
     for (int i = 0; i < num2; i++)
     {
-        counte += arr2[i] * 12.00;
+        counte += arr2[i] * 12;
     }
-    cout << "Total estimated Cost : " << counti + counte << " INR" << endl;
+    cout << "Total estimated Cost :" << counti + counte << "INR" << endl;
 }
