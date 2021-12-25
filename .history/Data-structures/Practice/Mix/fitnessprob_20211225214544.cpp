@@ -30,9 +30,9 @@ int main()
     int num;
     cin >> num;
     int arr[num] = {};
-    for (int i = 1; i < 9; i++)
+    for (int i = 0; i < 8; i++)
     {
         cin >> arr[i];
     }
-    cout << Max(arr, 8) << endl;
+    cout<<Max(arr , 8)<<endl;
 }

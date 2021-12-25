@@ -4,7 +4,7 @@
 #include <algorithm>
 using namespace std;
 
-int Max(int arr[], int n)
+void Max(int arr[], int n)
 {
     int ans = 0;
     int s = 0;
@@ -20,9 +20,8 @@ int Max(int arr[], int n)
         {
             e = mid;
         }
-        mid = s + (s - e) / 2;
+        mid = s + (s-e)/2;
     }
-    return s;
 }
 
 int main()
@@ -30,9 +29,8 @@ int main()
     int num;
     cin >> num;
     int arr[num] = {};
-    for (int i = 1; i < 9; i++)
+    for (int i = 0; i < 8; i++)
     {
         cin >> arr[i];
     }
-    cout << Max(arr, 8) << endl;
 }
