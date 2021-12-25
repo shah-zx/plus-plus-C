@@ -24,7 +24,7 @@ void Insert(Node *&head, string val)
 
     if (head == NULL)
     {
-        head = n;
+        Insert(head, val);
         return;
     }
     while (temp->next != head)
