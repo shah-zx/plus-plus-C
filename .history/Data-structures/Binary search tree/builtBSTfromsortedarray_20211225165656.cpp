@@ -17,9 +17,9 @@ struct Node
 Node *BSTfromArray(int arr[], int start, int end)
 {
     int mid = (start + end) / 2;
-    Node *root = new Node(arr[mid]);
+    Node *root = new Node(mid);
 
-    if (start > end)
+    if (start >= end)
     {
         return NULL;
     }
@@ -44,7 +44,7 @@ int main()
 
 {
 
-    int arr[] = {10, 20, 30, 40, 50};
+    int arr[] = {1, 2, 3};
     Node *root = BSTfromArray(arr, 0, 4);
     preOrderprint(root);
 }
