@@ -30,7 +30,7 @@ bool isBST(Node *root, Node *min = NULL, Node *max = NULL)
     {
         return false;
     }
-    if (max != NULL && root->data >= max->data)
+    if (max != NULL && root->data > max->data)
     {
         return false;
     }

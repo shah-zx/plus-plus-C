@@ -26,11 +26,11 @@ bool isBST(Node *root, Node *min = NULL, Node *max = NULL)
     {
         return true;
     }
-    if (min != NULL && root->data <= min->data)
+    if (min != NULL && root->data < min->data)
     {
         return false;
     }
-    if (max != NULL && root->data >= max->data)
+    if (max != NULL && root->data > max->data)
     {
         return false;
     }
@@ -45,7 +45,7 @@ int main()
     Node *root = new Node(1);
     root->left = new Node(2);
     root->right = new Node(3);
-    if (isBST(root))
+    if (isBST(root, NULL, NULL))
     {
         cout << "Valid BST";
     }
