@@ -58,7 +58,7 @@ void preOrder(Node *root)
 int main()
 {
 
-    /*  Tree to be build :
+    /*
              10
            /   \
           2    13
