@@ -57,6 +57,6 @@ int main()
     Insert(head, "LU");
     Insert(head, "NI");
     Insert(head, "CA");
-    cout<<Display(head);
+    cout<<Display(head)
 }
 // “TH”, ”GA”, ”IC”, ”HA”, ”TE”, ”LU”, ”NI”,”CA”

@@ -35,16 +35,24 @@ void Insert(Node *&head, string val)
     n->next = head;
 }
 
-int Display(Node *head)
+int Display (Node * head)
 {
-
-    Node *temp = head;
+    if (head == NULL) 
+    {
+        return head;
+    }
+    Node * temp = head;
     do
     {
-        cout << temp->data << "->";
+        cout<<temp->data << "->";
         temp = temp->next;
     } while (temp != head);
+    
+    
+    
 }
+
+
 
 int main()
 {
@@ -57,6 +65,6 @@ int main()
     Insert(head, "LU");
     Insert(head, "NI");
     Insert(head, "CA");
-    cout<<Display(head);
+
 }
 // “TH”, ”GA”, ”IC”, ”HA”, ”TE”, ”LU”, ”NI”,”CA”
