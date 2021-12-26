@@ -29,7 +29,7 @@ void isPrime(int n)
                 flag = 1; 
                 break;
             }
-            else if(flag == 0)
+            else
             {
                 cout << "number is prime" << endl;
             }
