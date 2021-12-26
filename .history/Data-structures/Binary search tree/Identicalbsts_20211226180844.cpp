@@ -43,15 +43,4 @@ bool isIdentical(Node *root1, Node *root2)
 int main()
 {
 
-    Node *root = new Node(2);
-    root->left = new Node(1);
-    root->right = new Node(3);
-
-    if (isIdentical(root, root))
-    {
-        cout << "BST's are identical";
-    }
-    else{
-        cout<< "BST's are not identical";
-    }
 }

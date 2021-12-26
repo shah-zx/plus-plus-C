@@ -52,6 +52,6 @@ int main()
         cout << "BST's are identical";
     }
     else{
-        cout<< "BST's are not identical";
+        cout<< "BST's are not identical'"
     }
 }
