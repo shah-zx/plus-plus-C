@@ -99,7 +99,6 @@ starting:
             {
                 cout << "Bye !!";
             }
-            return 0;
         }
     }
 
@@ -165,7 +164,7 @@ starting:
             {
                 cout << "Bye !!";
             }
-            return 0;
+            return;
         }
     }
     else if (option == 3)
@@ -230,7 +229,6 @@ starting:
             {
                 cout << "Bye !!";
             }
-            return 0;
         }
     }
 
@@ -348,7 +346,6 @@ starting:
             {
                 cout << "Bye !!";
             }
-            return 0;
         }
     }
 

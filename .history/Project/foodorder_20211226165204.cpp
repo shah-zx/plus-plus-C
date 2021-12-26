@@ -99,7 +99,7 @@ starting:
             {
                 cout << "Bye !!";
             }
-            return 0;
+            return;
         }
     }
 
@@ -165,7 +165,7 @@ starting:
             {
                 cout << "Bye !!";
             }
-            return 0;
+            return;
         }
     }
     else if (option == 3)

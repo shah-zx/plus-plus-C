@@ -99,7 +99,7 @@ starting:
             {
                 cout << "Bye !!";
             }
-            return 0;
+            return;
         }
     }
 

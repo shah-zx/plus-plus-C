@@ -95,11 +95,6 @@ starting:
                 goto starting;
                 //return 0;
             }
-            else if (gotobeginning == 'N' || gotobeginning == 'n')
-            {
-                cout << "Bye !!";
-            }
-            return 0;
         }
     }
 
@@ -138,19 +133,19 @@ starting:
             case 1:
                 cout << "\t\t--------Your Order---------\n";
                 cout << "" << qty << " " << burger_1;
-                cout << "\nYour Total Bill is \nRs" << option << "\nYour Order Will be delivered in 40 Minutes";
+                cout << "\nYour Total Bill is \nP" << option << "\nYour Order Will be delivered in 40 Minutes";
                 cout << "\nThank you For Ordering From Adones Fast Food \n";
                 break;
             case 2:
                 cout << "\t\t--------Your Order---------\n";
                 cout << "" << qty << "  " << burger_2;
-                cout << "\nYour Total Bill is \nRs" << option << "\nYour Order Will be delivered in 40 Minutes";
+                cout << "\nYour Total Bill is \nP" << option << "\nYour Order Will be delivered in 40 Minutes";
                 cout << "\nThank you For Ordering From Adones Pizza\n";
                 break;
             case 3:
                 cout << "\t\t--------Your Order---------\n";
                 cout << "" << qty << " " << burger_3;
-                cout << "\nYour Total Bill is \nRs" << option << "\nYour Order Will be delivered in 40 Minutes";
+                cout << "\nYour Total Bill is \nP" << option << "\nYour Order Will be delivered in 40 Minutes";
                 cout << "\nThank you For Ordering From Adones Fast Food\n";
                 break;
             }
@@ -161,11 +156,6 @@ starting:
                 goto starting;
                 //return 0;
             }
-            else if (gotobeginning == 'N' || gotobeginning == 'n')
-            {
-                cout << "Bye !!";
-            }
-            return 0;
         }
     }
     else if (option == 3)
@@ -226,11 +216,6 @@ starting:
                 goto starting;
                 //return 0;
             }
-            else if (gotobeginning == 'N' || gotobeginning == 'n')
-            {
-                cout << "Bye !!";
-            }
-            return 0;
         }
     }
 
@@ -344,11 +329,10 @@ starting:
             {
                 goto starting;
             }
-            else if (gotobeginning == 'N' || gotobeginning == 'n')
+            else if(gotobeginning == 'N' || gotobeginning == 'n')
             {
                 cout << "Bye !!";
             }
-            return 0;
         }
     }
 

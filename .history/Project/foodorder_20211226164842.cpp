@@ -95,11 +95,6 @@ starting:
                 goto starting;
                 //return 0;
             }
-            else if (gotobeginning == 'N' || gotobeginning == 'n')
-            {
-                cout << "Bye !!";
-            }
-            return 0;
         }
     }
 
@@ -161,11 +156,6 @@ starting:
                 goto starting;
                 //return 0;
             }
-            else if (gotobeginning == 'N' || gotobeginning == 'n')
-            {
-                cout << "Bye !!";
-            }
-            return 0;
         }
     }
     else if (option == 3)
@@ -226,11 +216,6 @@ starting:
                 goto starting;
                 //return 0;
             }
-            else if (gotobeginning == 'N' || gotobeginning == 'n')
-            {
-                cout << "Bye !!";
-            }
-            return 0;
         }
     }
 
@@ -344,11 +329,10 @@ starting:
             {
                 goto starting;
             }
-            else if (gotobeginning == 'N' || gotobeginning == 'n')
+            else if(gotobeginning == 'N' || gotobeginning == 'n')
             {
                 cout << "Bye !!";
             }
-            return 0;
         }
     }
 
