@@ -21,7 +21,7 @@ void ZigZag(Node *root)
 {
     stack<Node *> currL;
     stack<Node *> nextL;
-    bool leftToRight = true;   // Initially we will traverse left to right
+    bool leftToRight;
     currL.push(root);
 
     if (root == NULL)
