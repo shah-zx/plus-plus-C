@@ -10,36 +10,28 @@ int main()
     int countsevtoforty = 0;
     int countmoreforty = 0;
     int i = 0;
-    int total = 0;
-    for (int i = 0; i < 20; i++)
+    while(i<20)
     {
-        cout<<"Enter person's age : "<<i;
         cin >> age[i];
-        if (age[i] == 0)
+        if (age[i] == '\n')
         {
             break;
         }
-    }
-    for (int i = 0; i < 20; i++)
-    {
         if (age[i] < 17)
         {
             countseventeen += age[i] * 200;
-            return countseventeen;
         }
         else if (age[i] >= 17 && age[i] <= 40)
         {
             countsevtoforty += age[i] * 400;
-            return countsevtoforty;
         }
         else
         {
             countmoreforty += age[i] * 300;
-            return countmoreforty;
         }
+        i++;
     }
-
-    total = countseventeen + countmoreforty + countmoreforty;
+    int total = countseventeen + countmoreforty + countmoreforty;
     cout << "Total Income" << total << " "
          << " INR";
 }
