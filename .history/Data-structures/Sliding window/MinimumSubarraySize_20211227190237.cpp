@@ -15,7 +15,7 @@ int MinSize(int arr[], int n, int x)
 
     while (end < n)
     {
-        while (sum <= x && end < n)
+        if (sum <= x && end < n)
         {
             sum += arr[end++];
         }
@@ -24,7 +24,7 @@ int MinSize(int arr[], int n, int x)
 
         while (sum > x && start < n)
         {
-            if (end - start < minLength)
+            if (end - start > minLength)
             {
                 minLength = end - start;
             }
@@ -46,7 +46,7 @@ int main()
     }
     else
     {
-        cout << "Found : " << mLength;
+        cout << "Found : "<<mLength;
     }
     return 0;
 }

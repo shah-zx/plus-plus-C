@@ -24,7 +24,7 @@ int MinSize(int arr[], int n, int x)
 
         while (sum > x && start < n)
         {
-            if (end - start < minLength)
+            if (end - start > minLength)
             {
                 minLength = end - start;
             }

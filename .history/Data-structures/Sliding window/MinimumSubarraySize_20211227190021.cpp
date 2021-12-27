@@ -15,7 +15,7 @@ int MinSize(int arr[], int n, int x)
 
     while (end < n)
     {
-        while (sum <= x && end < n)
+        if (sum <= x && end < n)
         {
             sum += arr[end++];
         }
@@ -24,7 +24,7 @@ int MinSize(int arr[], int n, int x)
 
         while (sum > x && start < n)
         {
-            if (end - start < minLength)
+            if (end - start > minLength)
             {
                 minLength = end - start;
             }
@@ -38,15 +38,13 @@ int main()
 
     int arr[] = {1, 4, 45, 6, 10, 19};
     int x = 51;
-    int n = 6;
-    int mLength = MinSize(arr, n, x);
-    if (mLength == n + 1)
+    int mLength = MinSize(arr, 6, x);
+    if (minLength == n + 1)
     {
         cout << "No such sub array exists";
     }
     else
     {
-        cout << "Found : " << mLength;
+        cout << "Found : "<<minLength;
     }
-    return 0;
 }
