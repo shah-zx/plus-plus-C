@@ -8,7 +8,7 @@ using namespace std;
 
 int_fast32_t main()
 {
-    priority_queue<int, vector<int>> pq; // This is our max Heap declaration
+    priority_queue<int, vector<int>> pq; // This is our max Heap dewclaration
     pq.push(1);                          // done in O(log n) time
     pq.push(2);
     pq.push(3);
@@ -24,5 +24,5 @@ int_fast32_t main()
     pq1.push(1);
     pq1.push(3);
     cout << pq1.top() << endl;
-
+    
 }
