@@ -34,7 +34,7 @@ void checkDiv(vector<int> arr, int k)
         sum = sum + arr[j] - arr[j - k];
         if (sum % 3 == 0)
         {
-            ans = make_pair(j - k + 1, j);
+            ans = make_pair(j + k - 1, j);
             found = true;
         }
     }
@@ -47,7 +47,7 @@ void checkDiv(vector<int> arr, int k)
         cout << "No such subarray exists";
     }
     else {
-    for (int i = ans.first; i <=ans.second; i++)
+    for (int i = ans.first; i < ans.second; i++)
     {
         cout << arr[i] << " ";
     }

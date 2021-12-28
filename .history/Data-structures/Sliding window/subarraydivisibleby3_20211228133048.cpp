@@ -34,26 +34,24 @@ void checkDiv(vector<int> arr, int k)
         sum = sum + arr[j] - arr[j - k];
         if (sum % 3 == 0)
         {
-            ans = make_pair(j - k + 1, j);
+            ans = make_pair(j + k - 1, j);
             found = true;
         }
     }
     if (!found)
     {
-        ans = make_pair(-1,0);
+        ans = make_pair(0, -1);
     }
     if (ans.first == -1)
     {
         cout << "No such subarray exists";
     }
-    else {
-    for (int i = ans.first; i <=ans.second; i++)
+    for (int i = ans.first; i < ans.second; i++)
     {
         cout << arr[i] << " ";
     }
 
     cout << endl;
-    }
 }
 
 int main()
@@ -62,5 +60,4 @@ int main()
     vector<int> arr = {84, 23, 45, 12, 56, 82};
     int k = 3;
     checkDiv(arr, k);
-    // return 0;
 }

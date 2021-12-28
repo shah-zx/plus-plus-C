@@ -32,7 +32,7 @@ void checkDiv(vector<int> arr, int k)
             break;
         }
         sum = sum + arr[j] - arr[j - k];
-        if (sum % 3 == 0)
+        if (sum % 5 == 0)
         {
             ans = make_pair(j - k + 1, j);
             found = true;
