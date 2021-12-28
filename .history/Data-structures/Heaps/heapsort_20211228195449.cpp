@@ -16,7 +16,7 @@ void heapify(vi &arr, int n, int i)
     if (l < n && arr[l] > arr[largest])
     {
         largest = l;
-    }  
+    }
     if (r < n && arr[r] > arr[largest])
     {
         largest = r;
