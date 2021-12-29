@@ -2,7 +2,7 @@ Coding Question :
 Write a complete C program to convert a given temperature in Centigrade scale to its equivalent Fahrenheit scale.  : Done
 
 Coding Question :
-Write a function to swap the value of 2 variables without using any additional variable. The change should be permanent. : Done
+Write a function to swap the value of 2 variables without using any additional variable. The change should be permanent.
 
 Coding Question :
 Write a program to check a number whether it is odd or even by the bitwise operator.
