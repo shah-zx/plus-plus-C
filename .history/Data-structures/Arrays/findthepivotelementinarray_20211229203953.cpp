@@ -10,7 +10,7 @@ int GetPivot(int arr[], int size)
 {
     int start = 0;
     int end = size - 1;
-    int mid = start + (end - start) / 2;
+    int mid = start + (end-start) / 2;
     while (start < end)
     {
         if (arr[mid] >= arr[0])
@@ -21,7 +21,7 @@ int GetPivot(int arr[], int size)
         {
             end = mid;
         }
-        mid = start + (end - start) / 2;
+        mid = start + (end-start) / 2;
     }
     return start;
 }
@@ -29,6 +29,7 @@ int GetPivot(int arr[], int size)
 int_fast32_t main()
 {
 
-    int arr[5] = {8, 10, 3, 7, 2};
+    int arr[5] = {8, 10, 3, 7,2};
     cout << GetPivot(arr, 5);
+
 }
