@@ -11,7 +11,7 @@ priority_queue<int, vi, greater<int>> pqmin;
 
 void Insert(int x)
 {
-    // This code is for when the sizes of both the heaps are same  : It is mainly the condition for , where the incoming element comes :
+    // This code is for when the sizes of both the heaps are same
 
     if (pqmax.size() == pqmin.size())
     {
@@ -67,29 +67,19 @@ void Insert(int x)
 
 double FindMedian()
 {
-    if (pqmax.size() == pqmin.size())
-    {
-        return pqmax.top() + pqmin.top() / 2.0;
-    }
-    else if (pqmax.size() > pqmin.size())
-    {
-        return pqmax.top();
-    }
-    else
-    {
-        return pqmin.top();
-    }
+     if (pqmax.size() == pqmin.size())
+     {
+         return pqmax.top() + pqmin.top() / 2.0;
+     }
+     else if(pqmax.size() > pqmin.size()) {
+         return pqmax.top();
+     }
+
+
+
 }
-
-
-
 
 
 int_fast32_t main()
 {
-
-
-
-
-
 }
