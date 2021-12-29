@@ -81,21 +81,22 @@ double FindMedian()
     }
 }
 
+
+
+
+
 int_fast32_t main()
 {
-    Insert(10);
-    cout << FindMedian();
-    Insert(15);
-    cout << FindMedian();
+  Insert(10);
+  Insert(15);
+  Insert(21);
+  Insert(30);
+  Insert(18);
+  Insert(19);
+  
 
-    Insert(21);
-    cout << FindMedian();
 
-    Insert(30);
-    cout << FindMedian();
 
-    Insert(18);
-    cout << FindMedian();
 
-    Insert(19);
+
 }
