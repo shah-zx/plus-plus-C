@@ -85,7 +85,6 @@ int_fast32_t main()
     {
         cout << arr[i] << " ";
     }
-    cout<<endl;
 }
 
-
+// 

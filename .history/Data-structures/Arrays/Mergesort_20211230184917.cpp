@@ -46,7 +46,7 @@ void merge(int arr[], int mid, int l, int r)
         }
     }
 
-    // Checking wether the pointer i has reached to the size //
+    // Checking wether the pointer i has reached to the size // 
 
     while (i < n1)
     {
@@ -54,8 +54,8 @@ void merge(int arr[], int mid, int l, int r)
         k++;
         i++;
     }
-
-    // Checking wether the pointer j has reached to the size //
+    
+    // Checking wether the pointer j has reached to the size // 
 
     while (j < n2)
     {
@@ -78,14 +78,7 @@ void mergesort(int arr[], int l, int r)
 
 int_fast32_t main()
 {
-
-    int arr[] = {5, 4, 3, 2, 1};
-    mergesort(arr, 0, 5);
-    for (int i = 0; i < 5; i++)
-    {
-        cout << arr[i] << " ";
-    }
-    cout<<endl;
 }
 
-
+// I can code whole the long and my passion is to code all the day
+// Last but not the least , i want a big company and a seven figures salry //

@@ -83,9 +83,8 @@ int_fast32_t main()
     mergesort(arr, 0, 5);
     for (int i = 0; i < 5; i++)
     {
-        cout << arr[i] << " ";
+        cout << arr[i] << " " << endl;
     }
-    cout<<endl;
 }
 
-
+// 
