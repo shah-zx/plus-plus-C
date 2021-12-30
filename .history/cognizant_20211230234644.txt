@@ -16,7 +16,7 @@ Write a C program to print the following pattern(till n rows, where n is taken a
 1 0 1  0 1
 
 Coding Question :
-Write a C program to accept three integer numbers as the length of three sides of a triangle, test the validity of lengths, and classify the triangle.  : Done
+Write a C program to accept three integer numbers as the length of three sides of a triangle, test the validity of lengths, and classify the triangle.
 
 Coding Question :
 Write a program to generates all combinations of 1,2 and 3 using for loop.
