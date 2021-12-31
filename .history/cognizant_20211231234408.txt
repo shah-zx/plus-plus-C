@@ -71,7 +71,7 @@ Coding Question :
 Write a C program to count the frequency of each vowel from a user-supplied string. : Done
 
 Coding Question :
-The equation x2+y2=r2 represent a circle which centers at origin and radius is r. Write a program that read r from the keyboard and print the number of points with integer co-ordinate that lie on the circumference of the circle. : Hold 
+The equation x2+y2=r2 represent a circle which centers at origin and radius is r. Write a program that read r from the keyboard and print the number of points with integer co-ordinate that lie on the circumference of the circle.   
 
 Coding Question :
 Write a program to print Pascal’s triangle. : Done
