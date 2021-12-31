@@ -11,13 +11,8 @@ using namespace std;
 
 signed main(){
 
-int n;
-char arr[100] =  "n";
+char arr[100];
 int i = 0;
-while (i!='\0')
-{
-    
-}
 
 
 

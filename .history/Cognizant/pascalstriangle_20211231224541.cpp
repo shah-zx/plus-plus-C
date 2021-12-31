@@ -6,19 +6,12 @@
 using namespace std;
 #define vi vector<int>
 #define rep(i,a,b) for(int i=a; i<b; i++)
-
-
-
-signed main(){
-
+int_fast32_t main(){
+int m;
+cin>>m;
 int n;
-char arr[100] =  "n";
-int i = 0;
-while (i!='\0')
-{
-    
-}
-
+cin>>n;
+int arr[][]
 
 
  }
