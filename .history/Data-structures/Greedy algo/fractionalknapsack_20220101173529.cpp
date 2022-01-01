@@ -31,20 +31,18 @@ int_fast32_t main()
     }
     sort(a.begin(), a.end(), compare);
     int w;
-    cin >> w;   // Weight of the sack 
-    int ans = 0;  // Total value to be evaluted 
+    cin >> w;
+    int ans = 0;
     rep(i, 0, n)
     {
         if (w >= a[i].second)
         {
             ans += a[i].first;
-            w -= a[i].second;   // wieght remaining //
+            w -= a[i].second;
             continue;
         }
-        double vw = (double) a[i].first / a[i].second;
-        ans += vw * w;  // Remaining value added 
+        int vw = a[i].first / a[i].second;
+        ans += vw * w;
         w = 0;
-        break;
     }
-    cout<<ans<<endl;
 }

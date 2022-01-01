@@ -42,7 +42,7 @@ int_fast32_t main()
             continue;
         }
         double vw = (double) a[i].first / a[i].second;
-        ans += vw * w;  // Remaining value added 
+        ans += vw * w;
         w = 0;
         break;
     }

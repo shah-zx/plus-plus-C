@@ -9,8 +9,6 @@ using namespace std;
 #define pii pair<int, int>
 #define rep(i, a, b) for (int i = a; i < b; i++)
 
-// This is our suctom comparator 
-
 bool compare(pair<int, int> p1, pair<int, int> p2)
 {
     double v1 = (double)p1.first / p1.second;
@@ -23,7 +21,7 @@ int_fast32_t main()
 {
 
     int n;
-    cin >> n;  // Total number of things in the shop
+    cin >> n;
     vii a(n);
     rep(i, 0, n)
     {
@@ -31,20 +29,18 @@ int_fast32_t main()
     }
     sort(a.begin(), a.end(), compare);
     int w;
-    cin >> w;   // Weight of the sack 
-    int ans = 0;  // Total value to be evaluted 
+    cin >> w;
+    int ans = 0;
     rep(i, 0, n)
     {
         if (w >= a[i].second)
         {
             ans += a[i].first;
-            w -= a[i].second;   // wieght remaining //
+            w -= a[i].second;
             continue;
         }
-        double vw = (double) a[i].first / a[i].second;
-        ans += vw * w;  // Remaining value added 
+        int vw = a[i].first / a[i].second;
+        w += vw * w;
         w = 0;
-        break;
     }
-    cout<<ans<<endl;
 }

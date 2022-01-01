@@ -41,10 +41,8 @@ int_fast32_t main()
             w -= a[i].second;   // wieght remaining //
             continue;
         }
-        double vw = (double) a[i].first / a[i].second;
-        ans += vw * w;  // Remaining value added 
+        int vw = a[i].first / a[i].second;
+        ans += vw * w;
         w = 0;
-        break;
     }
-    cout<<ans<<endl;
 }
