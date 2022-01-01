@@ -12,7 +12,7 @@ bool primeorNot(int n)
     bool hai = 1;
     for (int i = 2; i <= sqrt(n); i++)
     {
-        if (n % i == 0)
+        if (n % 2 == 0)
         {
             hai = 0;
         }
@@ -35,7 +35,7 @@ int_fast32_t main()
     cin >> n2;
     for (int i = n1; i <=n2; i++)
     {
-        if (primeorNot(i))
+        if (isPrime(i))
         {
             cout << i << endl;
         }

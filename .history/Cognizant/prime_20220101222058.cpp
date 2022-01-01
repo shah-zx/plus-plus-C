@@ -31,13 +31,10 @@ int_fast32_t main()
 {
     int n1;
     cin >> n1;
-    int n2;
-    cin >> n2;
-    for (int i = n1; i <=n2; i++)
+    if(primeorNot(n1))
     {
-        if (primeorNot(i))
-        {
-            cout << i << endl;
-        }
+        cout << "prime";
+    }else{
+        cout<<"not";
     }
 }

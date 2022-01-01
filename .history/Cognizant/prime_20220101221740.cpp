@@ -12,7 +12,7 @@ bool primeorNot(int n)
     bool hai = 1;
     for (int i = 2; i <= sqrt(n); i++)
     {
-        if (n % i == 0)
+        if (n % 2 == 0)
         {
             hai = 0;
         }

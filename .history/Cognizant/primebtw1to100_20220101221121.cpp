@@ -1,33 +1,31 @@
 #include <bits/stdc++.h>
 #include <stack>
 #include <queue>
-#include <algorithm>
 #include <math.h>
+#include <algorithm>
 using namespace std;
 #define vi vector<int>
+#define vii vector<pair<int, int>>
+#define pii pair<int, int>
 #define rep(i, a, b) for (int i = a; i < b; i++)
 
-bool primeorNot(int n)
+bool isPrime(int a)
 {
     bool hai = 1;
-    for (int i = 2; i <= sqrt(n); i++)
+    for (int i = 2; i*i < a; i++)
     {
-        if (n % i == 0)
+        if (a % i == 0)
         {
-            hai = 0;
+            return 0;
         }
-    }
-    if (hai == 1)
-    {
-        return 1;
-    }
-    else
-    {
-        return 0;
+        else
+        {
+            return 1;
+        }
     }
 }
 
-int_fast32_t main()
+signed main()
 {
     int n1;
     cin >> n1;
@@ -35,7 +33,7 @@ int_fast32_t main()
     cin >> n2;
     for (int i = n1; i <=n2; i++)
     {
-        if (primeorNot(i))
+        if (isPrime(i))
         {
             cout << i << endl;
         }
