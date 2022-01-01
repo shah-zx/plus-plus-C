@@ -35,14 +35,13 @@ int main()
     cin >> n1;
     int n2;
     cin >> n2;
-    int count = 0;
     for (int i = n1; i <= n2; i++)
     {
+        int count = 0;
         if (isPrime(i))
         {
             // cout << i << endl;
             count++;
         }
     }
-    cout<<count<<endl;
 }
