@@ -35,7 +35,7 @@ bool Search(Node *head, int k)
     return false;
 }
 
-void insertAttail(Node *&head, int val)
+void insertAttail(Node *head, int val)
 {
     Node *n = new Node(val);
     if (head == NULL)

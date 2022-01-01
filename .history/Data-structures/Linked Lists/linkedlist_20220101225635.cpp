@@ -316,7 +316,7 @@ int main()
     if (Search(head , key))
     {
         cout<<"Found ";
-    }else{ cout<<"Nothing";}
+    }
     
     return 0;
 }

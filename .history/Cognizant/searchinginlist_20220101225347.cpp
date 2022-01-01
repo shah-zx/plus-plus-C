@@ -21,10 +21,10 @@ public:
     }
 };
 
-bool Search(Node *head, int k)
+bool search(Node *head, int k)
 {
     Node *temp = head;
-    while (temp!= NULL)
+    while (temp->next != NULL)
     {
         if (temp->data == k)
         {
@@ -35,7 +35,7 @@ bool Search(Node *head, int k)
     return false;
 }
 
-void insertAttail(Node *&head, int val)
+void insertAttail(Node *head, int val)
 {
     Node *n = new Node(val);
     if (head == NULL)
@@ -63,8 +63,8 @@ signed main()
     insertAttail(head, 6);
     int key;
     cin >> key;
-    if(Search(head , key))
+    if(search(key))
     {
         cout << "Found";
-    }else{ cout<< "nope";}
+    }
 }

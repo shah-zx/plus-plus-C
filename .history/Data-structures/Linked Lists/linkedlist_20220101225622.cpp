@@ -315,8 +315,8 @@ int main()
     List(head);
     if (Search(head , key))
     {
-        cout<<"Found ";
-    }else{ cout<<"Nothing";}
+        /* code */
+    }
     
     return 0;
 }
