@@ -15,14 +15,14 @@ int main()
     cin >> num;
     int i = 1;
     int rem;
-    int binary = 0;
+    int binary;
 
-    while (num != 0)
+    while (num!=0)
     {
-        rem = num % 2;
-        num = num/ 2;
-        binary = binary + (rem * i);
-        i = i * 10;
+        re = num % 10;
+        num /= 10;
+        binary = binary + (re * i);
+
     }
-    cout << binary << endl;
+    
 }

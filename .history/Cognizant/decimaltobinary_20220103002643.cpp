@@ -1,4 +1,4 @@
-#include <iostream>
+#include <bits/stdc++.h>
 #include <stack>
 #include <queue>
 #include <math.h>
@@ -9,20 +9,22 @@ using namespace std;
 #define pii pair<int, int>
 #define rep(i, a, b) for (int i = a; i < b; i++)
 
+
 int main()
 {
     int num;
-    cin >> num;
-    int i = 1;
-    int rem;
-    int binary = 0;
-
+    cin>>num;
+    int i = 0;
+    int ans = 0;
     while (num != 0)
     {
-        rem = num % 2;
-        num = num/ 2;
-        binary = binary + (rem * i);
-        i = i * 10;
+        int bitss = num & 1;
+
+        ans = (bitss * pow(10,i) ) + ans;
+
+        n = n >> 1;
+        i++;
     }
-    cout << binary << endl;
+    
+
 }

@@ -20,7 +20,7 @@ int main()
     while (num != 0)
     {
         rem = num % 2;
-        num = num/ 2;
+        num /= 10;
         binary = binary + (rem * i);
         i = i * 10;
     }
