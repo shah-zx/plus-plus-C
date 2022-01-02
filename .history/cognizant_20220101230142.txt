@@ -89,7 +89,7 @@ Coding Question :
 Write a C program that will search the kth element in a list of n integers. : Done
 
 Coding Question :
-Write C program to solve: xsin(x) 
+Write C program to solve: xsin(x)
 
 Coding Question :
 Write C programs to solve : x3=249
