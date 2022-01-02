@@ -108,7 +108,7 @@ Coding Question :
 Write a program to print Fibonacci series using recursive. : Done
 
 Coding Question :
-Write a c-program to convert binary number to equivalent decimal number. 
+Write a c-program to convert binary number to equivalent decimal number.
 
 Coding Question :
 Write a program to check a number is special or not. (Special is a number which is  equal to the sum of factorial of each digit of the given number).
