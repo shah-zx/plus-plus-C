@@ -9,7 +9,7 @@ using namespace std;
 #define pii pair<int, int>
 #define rep(i, a, b) for (int i = a; i < b; i++)
 
-int fact(int n)  // Recursive approach 
+int fact(int n)
 {
     int ans = 0;
     if (n == 0)

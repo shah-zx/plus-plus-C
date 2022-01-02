@@ -9,19 +9,20 @@ using namespace std;
 #define pii pair<int, int>
 #define rep(i, a, b) for (int i = a; i < b; i++)
 
-int fact(int n)  // Recursive approach 
-{
-    int ans = 0;
-    if (n == 0)
-    {
-        return 1;
-    }
-    return n * fact(n - 1);
-}
-
 signed main()
 {
-    int n;
-    cin >> n;
-    cout<<fact(n);
+    int num;
+    cin >> num;
+    int sum = 0;
+    int arr[num] = {};
+    rep(i, 0, num)
+    {
+        cin >> arr[i];
+    }
+    rep(i, 0, num)
+    {
+        sum += arr[i];
+    }
+    int avg = sum / num;
+    cout << "Average is: " << avg << endl;
 }
