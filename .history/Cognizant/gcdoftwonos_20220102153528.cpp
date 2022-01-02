@@ -17,7 +17,7 @@ int GCD(int a, int b)
         a = b;
         b = rem;
     }
-    return a;
+    cout << a;
 }
 
 signed main()

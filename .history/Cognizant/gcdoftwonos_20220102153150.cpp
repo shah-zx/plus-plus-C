@@ -11,20 +11,22 @@ using namespace std;
 
 int GCD(int a, int b)
 {
+    int rem = 0;
     while (b != 0)
     {
-        int rem = a % b;
+        rem += a % b;
         a = b;
         b = rem;
     }
-    return a;
+    cout<< a;
 }
 
 signed main()
 {
+
     int n1;
     int n2;
     cin >> n1;
     cin >> n2;
-    cout << GCD(n1, n2);
+    cout<<GCD(n1 , n2);
 }

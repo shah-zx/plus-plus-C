@@ -99,10 +99,10 @@ Coding Question :
 Write a program to convert decimal numbers in the range 1 to 9999 in to Roman numerals where , I=1,V=5, X=10, L=50,C=100,D=500,M=1000 and assuming L=5000.
 
 Coding Question :
-Write a C program to find Greatest Common Divisor(GCD) for n number. : Done
+Write a C program to find Greatest Common Divisor(GCD) for n number.   : Done
 
 Coding Question :
-Write a  recursive function to print the content of an array on reverse order, Write the main() function to call that recursive function.  
+Write a  recursive function to print the content of an array on reverse order, Write the main() function to call that recursive function. 
 
 Coding Question :
 Write a program to print Fibonacci series using recursive.

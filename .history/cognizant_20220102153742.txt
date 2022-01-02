@@ -102,7 +102,7 @@ Coding Question :
 Write a C program to find Greatest Common Divisor(GCD) for n number. : Done
 
 Coding Question :
-Write a  recursive function to print the content of an array on reverse order, Write the main() function to call that recursive function.  
+Write a  recursive function to print the content of an array on reverse order, Write the main() function to call that recursive function. 
 
 Coding Question :
 Write a program to print Fibonacci series using recursive.
