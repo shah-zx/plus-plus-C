@@ -135,7 +135,7 @@ Coding Question :
 Write a C program which will take input in a 2D array and then take one integer as input and search it is available or not, if it is available display the row and column of the integer.
 
 Coding Question :
-Write a program to find the transpose of a matrix. : Done
+Write a program to find the transpose of a matrix.
 
 Coding Question :
 Write a program to insert an element (given by the user) into an array in a particular position(given by the user).
