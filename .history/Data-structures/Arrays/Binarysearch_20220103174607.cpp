@@ -12,7 +12,7 @@ int binarySearch(int n, int array[], int key)
         {
             return mid;
         }
-        else if (array[mid] > key)
+        else if (key < array[mid])
         {
             e = mid - 1;
         }
@@ -26,13 +26,15 @@ int binarySearch(int n, int array[], int key)
 int main()
 {
     int n;
-    cout<< "Enter the size of the array";
-
+    int key;
+    cout << "Enter the size of the array";
+    cin >> n;
     int arr[n];
-    for (int  i = 0; i < arr[n]; i++)
+    for (int i = 0; i < n; i++)
     {
-        cin>> arr[i];
+        cin >> arr[i];
     }
-    cout<<binarySearch(n , arr , key);
-
+    cout << "Enter the key";
+    cin >> key;
+    cout << binarySearch(n, arr, key);
 }

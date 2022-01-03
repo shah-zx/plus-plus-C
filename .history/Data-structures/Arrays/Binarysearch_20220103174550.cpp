@@ -12,7 +12,7 @@ int binarySearch(int n, int array[], int key)
         {
             return mid;
         }
-        else if (array[mid] > key)
+        else if (key < array[mid])
         {
             e = mid - 1;
         }

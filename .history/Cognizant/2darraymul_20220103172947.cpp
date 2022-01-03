@@ -12,11 +12,12 @@ using namespace std;
 signed main()
 {
     int result[3][2];
+
     cout << "Fill the details of the frist array";
     int arr1[3][4];
     for (int i = 0; i < 3; i++)
     {
-        for (int j = 0; j < 4; j++)
+        for (int j = 0; j < 4; i++)
         {
             cin >> arr1[i][j];
         }
@@ -36,21 +37,12 @@ signed main()
     {
         for (int j = 0; j < 2; j++)
         {
-            for (int k = 0; k < 4; k++)
+            for (int k = 0; i < 4; i++)
             {
                 sum += arr1[i][k] * arr2[j][k];
             }
             result[i][j] = sum;
-            sum = 0;
         }
     }
-
-    for (int i = 0; i < 3; i++)
-    {
-        for (int j = 0; j < 2; j++)
-        {
-            cout << result[i][j] << " ";
-        }
-        cout << endl;
-    }
+    sum = 0;
 }

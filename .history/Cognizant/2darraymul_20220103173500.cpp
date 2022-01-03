@@ -36,7 +36,7 @@ signed main()
     {
         for (int j = 0; j < 2; j++)
         {
-            for (int k = 0; k < 4; k++)
+            for (int k = 0; i < 4; i++)
             {
                 sum += arr1[i][k] * arr2[j][k];
             }
