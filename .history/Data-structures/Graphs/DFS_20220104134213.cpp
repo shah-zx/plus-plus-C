@@ -9,7 +9,7 @@ using namespace std;
 #define pii pair<int, int>
 #define rep(i, a, b) for (int i = a; i < b; i++)
 
-class Solution
+class siolution
 {
     void dfs(int Node, vector<int> &vis, vector<int> adj[], vector<int> &storeDFS)
     {
@@ -39,35 +39,9 @@ public:
     }
 };
 
+
+
+
 signed main()
 {
-
-    int tc;
-    cin >> tc;
-    while (tc--)
-    {
-        int V, E;
-        cin >> V >> E;
-
-        vector<int> adj[V];
-
-        for (int i = 0; i < E; i++)
-        {
-            int u, v;
-            cin >> u >> v;
-            adj[u].push_back(v);
-            adj[v].push_back(u);
-        }
-        // string s1;
-        // cin>>s1;
-
-        Solution obj;
-        vector<int> ans = obj.dfsOfgraph(V, adj);
-        for (int i = 0; i < ans.size(); i++)
-        {
-            cout << ans[i] << " ";
-        }
-        cout << endl;
-    }
-    return 0;
-} // } Driver Code Ends
+}

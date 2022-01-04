@@ -14,24 +14,17 @@ using namespace std;
 
 signed main()
 {
-    int ans = 0;
+    int ans =0;
     char arr[40];
-    cin >> arr;
+    cin>>arr;
     int n = strlen(arr);
     for (int i = 0; i < n; i++)
     {
-        if (arr[i] == 'A')
-        {
-            ans += arr[i] & arr[i + 1];
-        }
-        else if (arr[i] == 'B')
-        {
-            ans += arr[i] | arr[i + 1];
-        }
-        else
-        {
-            ans += arr[i] ^ arr[i + 1];
-        }
+        ans += arr[i];
     }
-    cout << ans << endl;
+    
+    
+    
+
+
 }

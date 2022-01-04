@@ -20,18 +20,16 @@ signed main()
     int n = strlen(arr);
     for (int i = 0; i < n; i++)
     {
-        if (arr[i] == 'A')
+        if(arr[i] == 'A')
         {
-            ans += arr[i] & arr[i + 1];
+            arr[i] A arr[i+1];
         }
-        else if (arr[i] == 'B')
+        else if(arr[i] == 'B')
         {
-            ans += arr[i] | arr[i + 1];
-        }
-        else
-        {
-            ans += arr[i] ^ arr[i + 1];
+            arr[i] B arr[i+1];
+        }else{
+            arr[i] C arr[i+1];
         }
     }
-    cout << ans << endl;
+
 }

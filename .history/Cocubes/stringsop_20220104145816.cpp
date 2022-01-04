@@ -1,28 +1,26 @@
 #include <bits/stdc++.h>
 #include <stack>
 #include <queue>
+#include <math.h>
 #include <algorithm>
 using namespace std;
 #define vi vector<int>
+#define vii vector<pair<int, int>>
+#define pii pair<int, int>
 #define rep(i, a, b) for (int i = a; i < b; i++)
+#define A &
 
-bool evenOdd(int n)
+signed main()
 {
+
+    int n;
+    cin >> n;
     if ((n & 1) == 0)
     {
-        return true;
+        cout << "Even";
     }
     else
     {
-        return false;
+        cout << "Odd";
     }
-}
-
-int_fast32_t main()
-{
-
-int n;
-cin>>n;
-if(evenOdd(n))
-{ cout<< "even";}else{ cout<< "odd";};
 }
