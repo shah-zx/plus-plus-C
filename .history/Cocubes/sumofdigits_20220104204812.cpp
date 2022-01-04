@@ -16,9 +16,9 @@ signed main()
     int arr[n];
     for (int i = 0; i < n; i++)
     {
-        cin >> arr[i];
+        cin>>arr[i];
     }
-
+    
     int sum = 0;
 
     for (int i = 0; i < n; i++)

@@ -9,18 +9,16 @@ using namespace std;
 #define pii pair<int, int>
 #define rep(i, a, b) for (int i = a; i <= b; i++)
 
+int sum(int arr[], int n)
+{
+}
+
 signed main()
 {
     int n;
     cin >> n;
-    int arr[n];
-    for (int i = 0; i < n; i++)
-    {
-        cin >> arr[i];
-    }
-
     int sum = 0;
-
+    int arr[n] = {};
     for (int i = 0; i < n; i++)
     {
         sum += arr[i];

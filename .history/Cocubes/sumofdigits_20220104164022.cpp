@@ -7,23 +7,16 @@ using namespace std;
 #define vi vector<int>
 #define vii vector<pair<int, int>>
 #define pii pair<int, int>
-#define rep(i, a, b) for (int i = a; i <= b; i++)
+#define rep(i, a, b) for (int i = a; i <=b; i++)
+
+int sum(int arr[] , int n)
+{
+    
+}
 
 signed main()
 {
     int n;
     cin >> n;
-    int arr[n];
-    for (int i = 0; i < n; i++)
-    {
-        cin >> arr[i];
-    }
-
-    int sum = 0;
-
-    for (int i = 0; i < n; i++)
-    {
-        sum += arr[i];
-    }
-    cout << sum << endl;
+    sum(n);
 }
