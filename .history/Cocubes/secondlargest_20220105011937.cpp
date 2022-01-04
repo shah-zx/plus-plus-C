@@ -1,0 +1,31 @@
+#include <bits/stdc++.h>
+#include <stack>
+#include <queue>
+#include <math.h>
+#include <algorithm>
+#include <unordered_set>
+
+using namespace std;
+#define vi vector<int>
+#define vii vector<pair<int, int>>
+#define pii pair<int, int>
+#define rep(i, a, b) for (int i = a; i < b; i++)
+signed main(){
+
+int n;
+cin>>n;
+int arr[n];
+
+int s = 0;
+int e = n-1;
+int mid = (s+e)/2;
+int mx = INT_MAX;
+
+while (s<=e)
+{
+    
+}
+
+
+
+}
