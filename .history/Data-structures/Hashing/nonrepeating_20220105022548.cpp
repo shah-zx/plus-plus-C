@@ -10,28 +10,34 @@ using namespace std;
 #define vii vector<pair<int, int>>
 #define pii pair<int, int>
 #define rep(i, a, b) for (int i = a; i < b; i++)
-
 signed main()
 {
+
     int n;
     cin >> n;
-    vector<char> vc(n);
+    vi a(n);
+    rep(i, 0, n)
+    {
+        cin >> a[i];
+    }
+
+    map<int, int> mp;
 
     rep(i, 0, n)
     {
-        cin >> vc[i];
-    }
-
-    map<char, int> mp;
-
-    for (int i = 0; i < n; i++)
-    {
-        int k = vc[i];
+        int k = a[i];
         mp[k]++;
     }
 
-    for (auto it : mp)
+    map<int, int>::iterator it;
+
+    for (it = mp.begin(); it != mp.end(); it++)
     {
-        cout << it.first<< it.second;
+        if (it->second == 0)
+        {
+            cout << " " << it->first;
+        }
+        
     }
+    
 }
