@@ -33,8 +33,6 @@ signed main()
     // int diff = maxNo - minNo;
     // cout << diff << endl;
 
-    // Second approach
-
     int max_diff = arr[1] - arr[0];
 
     for (int i = 0; i < n - 1; i++)
