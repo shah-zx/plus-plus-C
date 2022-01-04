@@ -25,9 +25,7 @@ int_fast32_t main()
         int k = a[i];
         freq[k]++; // Increasing the frequency of elelment found
     }
-
     map<int, int>::iterator it;
-    
     for (it = freq.begin(); it != freq.end(); it++)
     {
         cout << it->first << " " << it->second << endl;

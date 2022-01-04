@@ -32,6 +32,9 @@ signed main()
 
     for (auto it : mp)
     {
-        cout << it.first<< it.second;
+        cout<<it.first<<" "<<it.second<<endl;
     }
+    
+    
+    
 }
