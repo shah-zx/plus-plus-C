@@ -30,16 +30,7 @@ signed main()
     if (umap.find(key) != umap.end())
     {
         // Making a iterator using find :
-        auto temp = umap.find(key);
-        cout << "Found" << key;
-    }
-
-    unordered_map<string, int> mp;
-
-    mp["shahnawaz"] = 1;
-    mp["hamza"] = 2;
-    mp["Rahul"] = 3;
-    mp["taran"] = 4;
-
-    cout << mp["shahnawaz"];
+         auto temp = umap.find(key);
+        cout << "Found";
+        }
 }
