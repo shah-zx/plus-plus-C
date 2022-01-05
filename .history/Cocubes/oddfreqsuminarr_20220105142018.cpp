@@ -38,4 +38,4 @@ signed main()
         }
     }
     cout << "sum : " << sum << endl;
-} 
+}

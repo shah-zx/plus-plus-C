@@ -10,8 +10,30 @@ using namespace std;
 #define vii vector<pair<int, int>>
 #define pii pair<int, int>
 #define rep(i, a, b) for (int i = a; i < b; i++)
+
+bool isPrime(int n)
+{
+    bool hai = 1;
+    for (int i = 2; i < sqrt(n); i++)
+    {
+        if (n % i == 0)
+        {
+            hai = 1;
+        }
+        else if (hai == 1)
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+    }
+}
+
 signed main()
 {
+
     int n;
     cin >> n;
     vi a(n);
@@ -19,23 +41,4 @@ signed main()
     {
         cin >> a[i];
     }
-
-    unordered_map<int, int> mp;
-
-    for (int i = 0; i < n; i++)
-    {
-        int k = a[i];
-        mp[k]++;
-    }
-    int sum = 0;
-    unordered_map<int, int>::iterator it;
-    for (it = mp.begin(); it != mp.end(); it++)
-    {
-
-        if (it->second % 2 != 0)
-        {
-            sum += it->first * it->second;
-        }
-    }
-    cout << "sum : " << sum << endl;
-} 
+}
