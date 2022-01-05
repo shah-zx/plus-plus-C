@@ -1,0 +1,8 @@
+Find all symmetric pairs in an array
+Find the sum of all odd frequency elements in an array  : done
+Check whether a number can be expressed as a sum of two prime numbers
+Find all the roots of a quadratic equation
+Convert decimal to octal number
+Convert Octal to Decimal number.
+Convert binary to octal number
+Convert Octal to a binary number
