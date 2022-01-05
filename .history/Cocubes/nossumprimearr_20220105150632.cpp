@@ -45,5 +45,9 @@ signed main()
                 cout << "Yes it can be represented as sum of primes as : " << i << " + " << n - i << "." << endl;
             }
         }
+        else
+        {
+            cout << "ye khud prime number hai";
+        }
     }
 }

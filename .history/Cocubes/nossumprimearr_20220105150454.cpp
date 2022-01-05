@@ -36,7 +36,7 @@ signed main()
 
     int n;
     cin >> n;
-    for (int i = 2; i <= n / 2; i++)
+    for (int i = 2; i <=n / 2; i++)
     {
         if (isPrime(i))
         {
@@ -46,4 +46,5 @@ signed main()
             }
         }
     }
+    cout << "ye khud prime number hai";
 }
