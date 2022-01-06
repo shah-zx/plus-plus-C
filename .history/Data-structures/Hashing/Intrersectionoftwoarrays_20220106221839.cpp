@@ -11,23 +11,25 @@ using namespace std;
 #define pii pair<int, int>
 #define rep(i, a, b) for (int i = a; i < b; i++)
 
-bool prefSum(int arr[], int n)
+int NumberofElementsInIntersection(int a[], int b[], int n, int m)
 {
-    int prefSum = 0;
+
     unordered_set<int> s;
     for (int i = 0; i < n; i++)
     {
-        prefSum += arr[i];
-        if (prefSum == 0)
-        {
-            return true;
-        }
-        if (s.find(prefSum) != s.end())
-            return true;
-        s.insert(prefSum);
+        s.insert(a[i]);
     }
-        return false;
-    // cout <<prefSum << endl;
+    int count = 0;
+    for (int i = 0; i < m; i++)
+    {
+        int key = b[i];
+        if (s.find(key) != s.end())
+        {
+            count++;
+            s.erase(key);
+        }
+    }
+    cout << "Number of common elements : " << count;
 }
 
 signed main()
@@ -40,12 +42,14 @@ signed main()
     {
         cin >> arr[i];
     }
-    if (prefSum(arr, n))
+
+    int m;
+    cin >> m;
+    int arr1[m];
+    for (int i = 0; i < m; i++)
     {
-        cout << "There is subarray with sum 0";
+        cin >> arr1[i];
     }
-    else
-    {
-        cout << "nai hai";
-    }
+
+    NumberofElementsInIntersection(arr, arr1, n, m);
 }

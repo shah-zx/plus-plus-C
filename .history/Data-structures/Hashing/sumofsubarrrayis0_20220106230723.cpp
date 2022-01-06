@@ -23,10 +23,12 @@ bool prefSum(int arr[], int n)
             return true;
         }
         if (s.find(prefSum) != s.end())
+        {
             return true;
+        }
         s.insert(prefSum);
-    }
         return false;
+    }
     // cout <<prefSum << endl;
 }
 

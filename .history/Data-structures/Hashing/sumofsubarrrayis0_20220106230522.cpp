@@ -23,10 +23,12 @@ bool prefSum(int arr[], int n)
             return true;
         }
         if (s.find(prefSum) != s.end())
+        {
             return true;
+        }
+        return false;
         s.insert(prefSum);
     }
-        return false;
     // cout <<prefSum << endl;
 }
 
@@ -40,12 +42,5 @@ signed main()
     {
         cin >> arr[i];
     }
-    if (prefSum(arr, n))
-    {
-        cout << "There is subarray with sum 0";
-    }
-    else
-    {
-        cout << "nai hai";
-    }
+    prefSum(arr, n);
 }
