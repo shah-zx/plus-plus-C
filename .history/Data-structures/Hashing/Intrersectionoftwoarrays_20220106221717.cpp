@@ -29,7 +29,7 @@ int NumberofElementsInIntersection(int a[], int b[], int n, int m)
             s.erase(key);
         }
     }
-    cout << "Number of common elements : " << count;
+    cout << "Number of common elelements : " << count
 }
 
 signed main()
