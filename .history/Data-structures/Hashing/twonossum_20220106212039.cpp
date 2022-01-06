@@ -41,16 +41,18 @@ int getCount(int arr[], int n, int sum)
         {
             ans += m[b];
         }
-
-        m[arr[i]]++;
+        else
+        {
+            m[arr[i]]++;
+        }
     }
-    cout << ans;
+    return ans;
 }
 
 signed main()
 {
     // Approach one :
-    int sum = 2;
+    int sum = 6;
     int n;
     cin >> n;
     int arr[n];

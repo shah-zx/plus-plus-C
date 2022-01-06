@@ -50,7 +50,7 @@ int getCount(int arr[], int n, int sum)
 signed main()
 {
     // Approach one :
-    int sum = 2;
+    int sum = 6;
     int n;
     cin >> n;
     int arr[n];
