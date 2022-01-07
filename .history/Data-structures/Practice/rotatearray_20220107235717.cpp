@@ -20,16 +20,13 @@ signed main()
     {
         cin >> arr[i];
     }
-    for (int i = 0; i < n - 1; i++)
-    {
-        swap(arr[i], arr[i + 1]);
-    }
-    for (int i = 0; i < n - 1; i++)
-    {
-        swap(arr[i], arr[i + 1]);
-    }
     for (int i = 0; i < n; i++)
     {
-        cout << arr[i] << " ";
+        int s = 0;
+        int e = n - 1;
+        while (s <= e)
+        {
+            swap(arr[s], arr[e]);
+        }
     }
 }

@@ -20,13 +20,9 @@ signed main()
     {
         cin >> arr[i];
     }
-    for (int i = 0; i < n - 1; i++)
+    for (int i = 0; i < n-1; i++)
     {
-        swap(arr[i], arr[i + 1]);
-    }
-    for (int i = 0; i < n - 1; i++)
-    {
-        swap(arr[i], arr[i + 1]);
+        swap(arr[i], arr[i+1]);
     }
     for (int i = 0; i < n; i++)
     {
