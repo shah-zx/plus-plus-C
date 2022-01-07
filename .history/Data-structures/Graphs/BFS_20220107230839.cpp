@@ -37,17 +37,6 @@ void Addedge(vector<int> adj[], int u, int v)
     adj[v].push_back(u);
 }
 
-int PrintGraph(vector<int> adj[], int V)
-{
-    for (int i = 0; i < V; i++)
-    {
-        for (auto x : adj[i])
-        {
-            cout << x << " " << endl;
-        }
-    }
-}
-
 signed main()
 {
 
@@ -71,5 +60,5 @@ signed main()
     //   g.addEdge(2, 0);
     //   g.addEdge(2, 3);
     //   g.addEdge(3, 3);
-    PrintGraph(adj, V);
+
 }

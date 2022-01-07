@@ -31,45 +31,16 @@ void BFSofgraph(vector<int> adj[], int V, int s) // Nodes and adjacency list
     }
 }
 
-void Addedge(vector<int> adj[], int u, int v)
-{
-    adj[u].push_back(v);
-    adj[v].push_back(u);
-}
-
-int PrintGraph(vector<int> adj[], int V)
-{
-    for (int i = 0; i < V; i++)
-    {
-        for (auto x : adj[i])
-        {
-            cout << x << " " << endl;
-        }
-    }
-}
-
 signed main()
 {
 
     // creation of an adjency list :
 
-    int V = 5;
-    int s = 0;
+    int V;
     vector<int> adj[V];
-    Addedge(adj, 0, 1);
-    Addedge(adj, 0, 2);
-    Addedge(adj, 1, 2);
-    Addedge(adj, 2, 0);
-    Addedge(adj, 2, 3);
-    Addedge(adj, 3, 3);
-    BFSofgraph(adj, V, s);
+    for (int i = 0; i < V; i++)
+    {
+        adj[i].push_back(i);
+    }
 
-    //  Graph g(4);
-    //   g.addEdge(0, 1);
-    //   g.addEdge(0, 2);
-    //   g.addEdge(1, 2);
-    //   g.addEdge(2, 0);
-    //   g.addEdge(2, 3);
-    //   g.addEdge(3, 3);
-    PrintGraph(adj, V);
 }
