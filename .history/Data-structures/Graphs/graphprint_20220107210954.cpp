@@ -35,11 +35,11 @@ void Addedge(vector<int> adj[], int u, int v)
 signed main()
 {
 
-    int V = 4; // vertices //
+    int V; // vertices //
     vector<int> adj[V];
     Addedge(adj, 0, 1);
+    Addedge(adj, 1, 0);
     Addedge(adj, 0, 2);
     Addedge(adj, 1, 2);
     Addedge(adj, 2, 3);
-    PrintGraph(adj , V);
 }

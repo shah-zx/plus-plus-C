@@ -11,8 +11,6 @@ using namespace std;
 #define pii pair<int, int>
 #define rep(i, a, b) for (int i = a; i < b; i++)
 
-// Function for printing the graph
-
 int PrintGraph(vector<int> adj[], int V)
 {
     for (int i = 0; i < V; i++)
@@ -35,11 +33,11 @@ void Addedge(vector<int> adj[], int u, int v)
 signed main()
 {
 
-    int V = 4; // vertices //
+    int V; // vertices //
     vector<int> adj[V];
     Addedge(adj, 0, 1);
+    Addedge(adj, 1, 0);
     Addedge(adj, 0, 2);
     Addedge(adj, 1, 2);
     Addedge(adj, 2, 3);
-    PrintGraph(adj , V);
 }
