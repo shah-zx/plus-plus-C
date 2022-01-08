@@ -15,7 +15,7 @@ int_fast32_t main()
         rev = (rev * 10) + digit;
         num = num / 10;
     }
-    if (n == num)
+    if (rev == n)
     {
         cout << "Its a palindrome";
     }
