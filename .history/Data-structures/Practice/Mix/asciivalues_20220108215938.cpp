@@ -18,14 +18,16 @@ signed main()
 
     int s = 65;
     char m;
-    m = char(s); // changing the integer into character
+    m = char(s);  // changing the integer into character 
     cout << m;
 
     // integer to character conversion :
 
-    char d = 'A';
+    char d = 56;
     int g;
     g = int(d); // changing the character into integer
-    cout << g;
+    cout<<g;
+
+
 
 }

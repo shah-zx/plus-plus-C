@@ -23,7 +23,7 @@ signed main()
 
     // integer to character conversion :
 
-    char d = 'A';
+    char d = 56;
     int g;
     g = int(d); // changing the character into integer
     cout << g;
