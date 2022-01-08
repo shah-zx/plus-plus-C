@@ -20,16 +20,16 @@ void BFSofgraph(vector<int> adj[], int V, int s) // Nodes and adjacency list
         int u = q.front();
         q.pop();
         cout << u << " ";
-        for (int v : adj[u])
+        for (int V : adj[u])
         {
-            if (vis[v] == false)
+            if (vis[V] == false)
             {
-                vis[v] = true;
-                q.push(v);
+                vis[V] = true;
+                q.push(V);
             }
         }
     }
-}
+};
 
 void Addedge(vector<int> adj[], int u, int v)
 {
@@ -56,24 +56,12 @@ signed main()
     int V = 5;
     int s = 0;
     vector<int> adj[V];
-    
-    // Adding our edges of the graph 
-
     Addedge(adj, 0, 1);
     Addedge(adj, 0, 2);
-    Addedge(adj, 1, 0);
     Addedge(adj, 1, 2);
-    Addedge(adj, 1, 3);
     Addedge(adj, 2, 0);
-    Addedge(adj, 2, 1);
     Addedge(adj, 2, 3);
-    Addedge(adj, 2, 4);
-    Addedge(adj, 3, 1);
-    Addedge(adj, 3, 2);
-    Addedge(adj, 3, 4);
-    Addedge(adj, 4, 2);
-    Addedge(adj, 4, 3);
-
+    Addedge(adj, 3, 3);
     BFSofgraph(adj, V, s);
 
     //  Graph g(4);

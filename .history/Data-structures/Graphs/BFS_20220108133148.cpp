@@ -56,9 +56,6 @@ signed main()
     int V = 5;
     int s = 0;
     vector<int> adj[V];
-    
-    // Adding our edges of the graph 
-
     Addedge(adj, 0, 1);
     Addedge(adj, 0, 2);
     Addedge(adj, 1, 0);
