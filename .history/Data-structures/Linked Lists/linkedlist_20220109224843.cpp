@@ -289,7 +289,7 @@ int main()
     InsertAtTail(head, 6);
     int key;
     cin>>key;
-    List(head);
+    // List(head);
     // int k = 2;
     // node *newhead = Reversek(head, k);
     // List(newhead);

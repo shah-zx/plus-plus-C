@@ -77,7 +77,6 @@ int Display(Node *head)
     Node *temp = head;
     while (temp != NULL)
     {
-        cout << temp->data;
         temp = temp->next;
     }
 }
@@ -96,9 +95,6 @@ signed main()
 
     for (int i = 0; i < 3; i++)
     {
-        InsertAtTail(head2, arr2[i]);
+        InsertAtTail(head1, arr2[i]);
     }
-    Node *newhead = MergeSort(head1, head2);
-
-    Display(newhead);
 }
