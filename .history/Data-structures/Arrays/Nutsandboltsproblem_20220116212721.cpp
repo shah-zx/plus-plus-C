@@ -16,7 +16,7 @@ signed main()
 
     char arr[6] = {'@', '#', '$', '%', '^', '&'};
     int n;
-    cin >> n;
+    cin>>n;
     char arr2[n];
     for (int i = 0; i < n; i++)
     {
@@ -28,9 +28,8 @@ signed main()
         {
             if (arr[i] == arr2[j])
             {
-                cout << "The bolt for the given nut is : " << arr2[j] << " ";
+                cout<<"The bolt for the given nut is : "<<arr2[j]<<" ";
             }
         }
-        cout << endl;
     }
 }

@@ -29,6 +29,9 @@ signed main()
             if (arr[i] == arr2[j])
             {
                 cout << "The bolt for the given nut is : " << arr2[j] << " ";
+            }  else
+            {
+                cout << "No bolt found";
             }
         }
         cout << endl;
