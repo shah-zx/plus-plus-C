@@ -29,7 +29,7 @@ int main()
     m.push_back(40);
     m.push_back(50);
     sort(m.begin(), m.end());
-    m.pop_back();
+
     int k = (int)m.size();
     for (int i = 0; i < k; i++)
     {
