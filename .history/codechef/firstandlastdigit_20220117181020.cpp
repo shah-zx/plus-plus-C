@@ -10,8 +10,7 @@ using namespace std;
 #define vii vector<pair<int, int>>
 #define pii pair<int, int>
 #define rep(i, a, b) for (int i = a; i < b; i++)
-
-int main()
+signed main()
 {
 
     int T;
@@ -23,19 +22,12 @@ int main()
         ostringstream str1;
         str1 << n;
         string s = str1.str();
+        int k = s.size();
         int count = 0;
-        int k = (int)s.size();
         for (int i = 0; i < k; i++)
         {
-            if (s[i] == '4')
-            {
-                count++;
-            }
-            else
-            {
-                count = count;
-            }
+         count += s[0] + s[k - 1];
+    
         }
-        cout << count << endl;
     }
 }
