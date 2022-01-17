@@ -10,6 +10,7 @@ using namespace std;
 #define vii vector<pair<int, int>>
 #define pii pair<int, int>
 #define rep(i, a, b) for (int i = a; i < b; i++)
+
 int main()
 {
 
@@ -19,14 +20,22 @@ int main()
     {
         int n;
         cin >> n;
-        int l = n % 10;   // Last digit
-        int f;   // First digit
-        while (n > 0)
+        ostringstream str1;
+        str1 << n;
+        string s = str1.str();
+        int count = 0;
+        int k = (int)s.size();
+        for (int i = 0; i < k; i++)
         {
-            f = n % 10;
-            n = n / 10;
+            if (s[i] == '4')
+            {
+                count++;
+            }
+            else
+            {
+                count = count;
+            }
         }
-        cout << f + l << endl;
+        cout << count << endl;
     }
 }
-

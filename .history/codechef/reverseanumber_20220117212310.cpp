@@ -10,23 +10,24 @@ using namespace std;
 #define vii vector<pair<int, int>>
 #define pii pair<int, int>
 #define rep(i, a, b) for (int i = a; i < b; i++)
-int main()
+signed main()
 {
 
     int T;
     cin >> T;
-    while (T--)
+    for (int i = 0; i < T; i++)
     {
         int n;
         cin >> n;
-        int l = n % 10;   // Last digit
-        int f;   // First digit
+        bool LeadingZero = true;
         while (n > 0)
         {
-            f = n % 10;
-            n = n / 10;
+            if (n % 10 == 0 && LeadingZero == true)
+            {
+                n = n / 10;
+                continue;
+            } cout << n % 10; n / = 10
+
         }
-        cout << f + l << endl;
     }
 }
-

@@ -10,7 +10,7 @@ using namespace std;
 #define vii vector<pair<int, int>>
 #define pii pair<int, int>
 #define rep(i, a, b) for (int i = a; i < b; i++)
-int main()
+signed main()
 {
 
     int T;
@@ -26,7 +26,7 @@ int main()
             f = n % 10;
             n = n / 10;
         }
-        cout << f + l << endl;
+        cout << f + l;
     }
 }
 
