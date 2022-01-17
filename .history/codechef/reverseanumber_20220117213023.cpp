@@ -27,7 +27,6 @@ signed main()
                 n = n / 10;
                 continue;
             } else {
-            LeadingZero = false;
             cout << n % 10;
             n /= 10;}
         }

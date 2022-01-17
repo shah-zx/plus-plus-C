@@ -10,26 +10,28 @@ using namespace std;
 #define vii vector<pair<int, int>>
 #define pii pair<int, int>
 #define rep(i, a, b) for (int i = a; i < b; i++)
+
+int fact(int n)
+{
+    int res = 0;
+    if (n == 1)
+    {
+        return 1;
+    }
+    res = n * fact(n - 1);
+    return res;
+    
+}
+
 signed main()
 {
 
     int T;
     cin >> T;
-    for (int i = 0; i < T; i++)
+    rep(i, 0, T)
     {
         int n;
         cin >> n;
-        bool LeadingZero = true;
-        while (n > 0)
-        {
-            if (n % 10 == 0 && LeadingZero)
-            {
-                n = n / 10;
-                continue;
-            } else {
-            LeadingZero = false;
-            cout << n % 10;
-            n /= 10;}
-        }
+        cout<<fact(n);
     }
 }

@@ -22,12 +22,11 @@ signed main()
         bool LeadingZero = true;
         while (n > 0)
         {
-            if (n % 10 == 0 && LeadingZero)
+            if (n % 10 == 0 && LeadingZero == true)
             {
                 n = n / 10;
                 continue;
             } else {
-            LeadingZero = false;
             cout << n % 10;
             n /= 10;}
         }
