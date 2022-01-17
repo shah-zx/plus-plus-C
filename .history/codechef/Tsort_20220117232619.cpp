@@ -10,31 +10,19 @@ using namespace std;
 #define vii vector<pair<int, int>>
 #define pii pair<int, int>
 #define rep(i, a, b) for (int i = a; i < b; i++)
-
-int fact(int n)
+signed main()
 {
-    int res = 0;
-    if (n == 1)
+
+    int n;
+    cin >> n;
+    int arr[n];
+    for (int i = 0; i < n; i++)
     {
-        return 1;
+        cin >> arr[i];
     }
-    if (n == 0)
+    sort(arr, arr + n);
+    for (int i = 0; i < n; i++)
     {
-        return 0;
+        cout << arr[i] << " ";
     }
-    res = n * fact(n - 1);
-    return res;
 }
-
-int main()
-{
-
-    int T;
-    cin >> T;
-    for (int i = 0; i < T; i++)
-    {
-        int n;
-        cin >> n;
-        cout << fact(n);
-    }
-} // Hello there

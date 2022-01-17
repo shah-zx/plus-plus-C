@@ -36,5 +36,6 @@ int main()
         int n;
         cin >> n;
         cout << fact(n);
+        
     }
-} // Hello there
+} // Hello there 
