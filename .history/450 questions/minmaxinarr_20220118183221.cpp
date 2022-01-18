@@ -21,13 +21,13 @@ signed main()
         cin >> arr[i];
     }
     sort(arr, arr + n);
-    // int d;
-    // cin >> d;
-    for (int i = 0; i < n; i++)
+    int d;
+    cin >> d;
+    for (int i = 1; i <=n; i++)
     {
-        // if(i == d){
-        //     cout << arr[i] << endl;
-        // }
+        if(i == d){
+            cout << arr[i] << endl;
+        }
         cout << arr[i] << " ";
     }
 

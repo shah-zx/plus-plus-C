@@ -16,19 +16,19 @@ signed main()
     int n;
     cin >> n;
     int arr[n];
-    for (int i = 0; i < n; i++)
+    for (int i = 1; i <=n; i++)
     {
         cin >> arr[i];
     }
     sort(arr, arr + n);
-    // int d;
-    // cin >> d;
-    for (int i = 0; i < n; i++)
+    int d;
+    cin >> d;
+    for (int i = 1; i <=n; i++)
     {
-        // if(i == d){
-        //     cout << arr[i] << endl;
-        // }
-        cout << arr[i] << " ";
+        if(i == d){
+            cout << arr[i] << endl;
+        }
+        // cout << arr[i] << " ";
     }
 
     // int minNo = INT_MAX;

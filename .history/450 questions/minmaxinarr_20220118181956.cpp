@@ -20,16 +20,17 @@ signed main()
     {
         cin >> arr[i];
     }
-    sort(arr, arr + n);
-    // int d;
-    // cin >> d;
+    sort(arr , arr + n);
+    int d;
+    cin>>d;
     for (int i = 0; i < n; i++)
     {
-        // if(i == d){
-        //     cout << arr[i] << endl;
-        // }
-        cout << arr[i] << " ";
+        
     }
+    
+
+
+
 
     // int minNo = INT_MAX;
     // int maxNo = INT_MIN;

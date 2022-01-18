@@ -21,8 +21,8 @@ signed main()
         cin >> arr[i];
     }
     sort(arr, arr + n);
-    // int d;
-    // cin >> d;
+    int d;
+    cin >> d;
     for (int i = 0; i < n; i++)
     {
         // if(i == d){
