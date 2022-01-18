@@ -11,22 +11,21 @@ using namespace std;
 #define vii vector<pair<int, int>>
 #define pii pair<int, int>
 #define rep(i, a, b) for (int i = a; i < b; i++)
-signed main()
+signed main(){
+int n;
+cin>>n;
+int arr[n];
+for (int i = 0; i < n; i++)
 {
+    cin>>arr[i];
+}
 
-    int T;
-    cin >> T;
-    for (int i = 0; i < T; i++)
-    {
-        int n;
-        cin >> n;
-        if (n > -20 && n < 10)
-        {
-            cout << "Thanks for helping Chef!";
-        }
-        else
-        {
-            cout << "-1";
-        } cout<<endl;
-    }
+int minNo = INT_MAX;
+int maxNo = INT_MIN;
+for (int i = 0; i < n; i++)
+{
+    
+}
+
+
 }

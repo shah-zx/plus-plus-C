@@ -18,15 +18,19 @@ signed main()
     cin >> T;
     for (int i = 0; i < T; i++)
     {
-        int n;
-        cin >> n;
-        if (n > -20 && n < 10)
+        int n1, n2;
+        cin >> n1 >> n2;
+        if (n1 > n2)
         {
-            cout << "Thanks for helping Chef!";
+            cout << ">";
+        }
+        else if (n1 < n2)
+        {
+            cout << "<";
         }
         else
         {
-            cout << "-1";
-        } cout<<endl;
+            cout << "=";
+        }
     }
 }

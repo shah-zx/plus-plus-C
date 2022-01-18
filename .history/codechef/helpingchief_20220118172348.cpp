@@ -20,7 +20,7 @@ signed main()
     {
         int n;
         cin >> n;
-        if (n > -20 && n < 10)
+        if (n > -20 && n < 20)
         {
             cout << "Thanks for helping Chef!";
         }

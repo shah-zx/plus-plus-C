@@ -11,22 +11,8 @@ using namespace std;
 #define vii vector<pair<int, int>>
 #define pii pair<int, int>
 #define rep(i, a, b) for (int i = a; i < b; i++)
-signed main()
-{
+signed main(){
 
-    int T;
-    cin >> T;
-    for (int i = 0; i < T; i++)
-    {
-        int n;
-        cin >> n;
-        if (n > -20 && n < 10)
-        {
-            cout << "Thanks for helping Chef!";
-        }
-        else
-        {
-            cout << "-1";
-        } cout<<endl;
-    }
+int T;
+
 }
