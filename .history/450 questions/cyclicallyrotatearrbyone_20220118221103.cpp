@@ -2,6 +2,7 @@
 #include <stack>
 #include <queue>
 #include <math.h>
+#include <limits.h>
 #include <algorithm>
 #include <unordered_set>
 #include <unordered_map>
@@ -12,24 +13,23 @@ using namespace std;
 #define rep(i, a, b) for (int i = a; i < b; i++)
 signed main()
 {
-
     int n;
     cin >> n;
     int arr[n];
     for (int i = 0; i < n; i++)
     {
-        cin >> arr[i];
+        cin>>arr[i];
     }
-    for (int i = 0; i < n - 1; i++)
+    
+    int lastd = arr[n - 1];
+    for (int i = n - 1; i > 0; i--)
     {
-        swap(arr[i], arr[i + 1]);
+        arr[i] = arr[i - 1];
     }
-    // for (int i = 0; i < n - 1; i++)
-    // {
-    //     swap(arr[i], arr[i + 1]);
-    // }
+    lastd = arr[0];
     for (int i = 0; i < n; i++)
     {
-        cout << arr[i] << " ";
+        cout<<arr[i]<< " ";
     }
+    
 }
