@@ -26,6 +26,7 @@ signed main()
     int Min = arr[0];
     int res = Max - Min;
     int k;
+
     cin >> k;
     for (int i = 0; i < n; i++)
     {

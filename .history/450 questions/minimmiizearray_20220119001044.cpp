@@ -24,8 +24,8 @@ signed main()
     sort(arr, arr + n);
     int Max = arr[n - 1];
     int Min = arr[0];
-    int res = Max - Min;
     int k;
+    int res = Max - Min;
     cin >> k;
     for (int i = 0; i < n; i++)
     {
