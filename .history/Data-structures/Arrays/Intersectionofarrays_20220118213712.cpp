@@ -40,6 +40,7 @@ int main()
     int arr2[m];
     for (int i = 0; i < m; i++)
     {
-        cin >> arr2[i];
+        cin>>arr2[i];
     }
+    
 }
