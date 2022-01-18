@@ -34,5 +34,6 @@ signed main()
         {
             cur = 0;
         }
+        cout << max << endl;
     }
 }

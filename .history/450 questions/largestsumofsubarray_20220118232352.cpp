@@ -18,9 +18,9 @@ signed main()
     int arr[n];
     for (int i = 0; i < n; i++)
     {
-        cin >> arr[i];
+        cin>>arr[i];
     }
-
+    
     for (int i = 0; i < n; i++)
     {
         int max = 0;
@@ -33,6 +33,6 @@ signed main()
         if (cur < 0)
         {
             cur = 0;
-        }
-    }
+        } cout << max << endl;
+    } 
 }

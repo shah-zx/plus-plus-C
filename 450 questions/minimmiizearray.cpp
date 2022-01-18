@@ -13,6 +13,7 @@ using namespace std;
 #define rep(i, a, b) for (int i = a; i < b; i++)
 signed main()
 {
+
     int n;
     cin >> n;
     int arr[n];
@@ -20,19 +21,16 @@ signed main()
     {
         cin >> arr[i];
     }
-
+    sort(arr, arr + n);
+    int Max = arr[n - 1];
+    int Min = arr[0];
+    int k;
+    int res = Max - Min;
+    cin >> k;
     for (int i = 0; i < n; i++)
     {
-        int max = 0;
-        int cur = 0;
-        cur += arr[i];
-        if (cur > max)
-        {
-            max = cur;
-        }
-        if (cur < 0)
-        {
-            cur = 0;
-        }
-    }
+        Max = max(arr[i - 1] + k, arr[n - 1] - k);
+        Min = min(arr[i] - k, arr[0] + k);
+        res = min(res, Max - Min);
+    }  cout << res << endl;
 }

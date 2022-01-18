@@ -13,14 +13,10 @@ using namespace std;
 #define rep(i, a, b) for (int i = a; i < b; i++)
 signed main()
 {
+
     int n;
     cin >> n;
     int arr[n];
-    for (int i = 0; i < n; i++)
-    {
-        cin >> arr[i];
-    }
-
     for (int i = 0; i < n; i++)
     {
         int max = 0;
@@ -30,8 +26,7 @@ signed main()
         {
             max = cur;
         }
-        if (cur < 0)
-        {
+        if(cur < 0){
             cur = 0;
         }
     }
