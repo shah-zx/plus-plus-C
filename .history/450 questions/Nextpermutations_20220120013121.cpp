@@ -14,22 +14,21 @@ using namespace std;
 signed main()
 {
 
+    unordered_set<int> m;
     int n;
     cin >> n;
     int arr[n];
     for (int i = 0; i < n; i++)
     {
-        cin >> arr[i];
+        cin>>arr[i];
     }
-    int count = 0;
-    for (int i = 0; i < n-1; i++)
+    
+    for (int i = 0; i < n; i++)
     {
-        for (int j = i + 1; j < n; j++)
-        {
-            if (arr[i] > arr[j] && i < j)
-            {
-                count++;
-            }
-        }
-    } cout << count;
+        m.insert(arr[i]);
+    }
+    for (auto i = m.begin(); i != m.end(); i++)
+    {
+        cout << *i;
+    }
 }
