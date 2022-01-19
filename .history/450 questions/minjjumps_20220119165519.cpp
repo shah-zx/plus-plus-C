@@ -21,24 +21,28 @@ signed main()
     {
         cin >> arr[i];
     }
-    if( n <= 1){    // only one element present in the array
+    if( n <= 1){
        cout << "0";
     }
-    if(n == 0){   // No element present in the array
+    if(n == 0){
         cout <<"-1";
+    }
+    if (arr[0] == 0)
+    {
+        cout << "-1";
     }
     int step = arr[0];
     int maxr = arr[0];
     int jump = 1;
     for (int i = 0; i < n - 1; i++)
     {
-        if (i == n - 1)   // Reached to the end of the array
+        if (i == n - 1)
         {
             cout <<  jump;
         }
-        maxr = max(maxr, i + arr[i]); 
+        maxr = max(maxr, i + arr[i]);
         step--;
-        if (step == 0)  
+        if (step == 0)
         {
             jump++;
 
@@ -51,5 +55,3 @@ signed main()
     }
     cout << jump;
 }
-
-// 1 3 5 8 9 2 6 7 6 8 9

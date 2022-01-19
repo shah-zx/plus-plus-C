@@ -8,12 +8,12 @@ Array	Write a program to cyclically rotate an array by one.	Yes
 Array	find Largest sum contiguous Subarray [V. IMP]	Hold
 Array	Minimise the maximum difference between heights [V.IMP]	Yes
 Array	Minimum no. of Jumps to reach end of an array	Yes
-Array	find duplicate in an array of N+1 Integers.    Yes
+Array	find duplicate in an array of N+1 Integers	<->
 Array	Merge 2 sorted arrays without using Extra space.	<->
 Array	Kadane&apos;s Algo [V.V.V.V.V IMP]	<->
 Array	Merge Intervals	<->
 Array	Next Permutation	<->
-Array	Count Inversion	<->  Target
+Array	Count Inversion	<->
 Array	Best time to buy and Sell stock	<->
 Array	find all pairs on integer array whose sum is equal to given number	<->
 Array	find common elements In 3 sorted arrays	<->
