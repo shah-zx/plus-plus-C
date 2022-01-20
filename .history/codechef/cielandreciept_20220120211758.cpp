@@ -23,6 +23,7 @@ signed main()
         int Maxp = 2048;
         while (T > 0)
         {
+
             ans += T / Maxp;
             T = T % Maxp;
             Maxp /= 2;

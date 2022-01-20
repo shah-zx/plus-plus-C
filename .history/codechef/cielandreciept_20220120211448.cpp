@@ -19,14 +19,13 @@ signed main()
     {
         int T;
         cin >> T;
-        int ans = 0;
-        int Maxp = 2048;
         while (T > 0)
         {
+            int ans = 0;
+            int Maxp = 2048;
             ans += T / Maxp;
             T = T % Maxp;
             Maxp /= 2;
         }
-        cout << ans << endl;
     }
 }
