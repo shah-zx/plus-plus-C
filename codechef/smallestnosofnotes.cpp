@@ -11,29 +11,18 @@ using namespace std;
 #define vii vector<pair<int, int>>
 #define pii pair<int, int>
 #define rep(i, a, b) for (int i = a; i < b; i++)
-
-bool isPalindrome(int n)
+signed main()
 {
-    int num = n;
-    int rev = 0;
-    while (n > 0)
-    {
-        int lastd = n % 10;
-        rev = (rev * 10) + lastd;
-        n /= 10;
-    }
-    if (rev == num)
-    {
-        return true;
-    }
-    else
-    {
-        return false;
-    }
-}
 
-int main()
-{
+    vector<int> v;
+    v.push_back(100);
+    v.push_back(50);
+    v.push_back(10);
+    v.push_back(5);
+    v.push_back(2);
+    v.push_back(1);
+
+    sort(v.begin(), v.end(), greater<int>());
     int n;
     cin >> n;
 
@@ -41,14 +30,15 @@ int main()
     {
         int t;
         cin >> t;
-        if (isPalindrome(t))
+        int d = 0;
+        for (auto j : v)
         {
-            cout << "wins";
+            while (t > 0)
+            {
+                d += t / v[i];
+                t -= t / v[i] * v[i];
+            }
         }
-        else
-        {
-            cout << "loses";
-        }
-        cout << endl;
+        cout << d << endl;
     }
 }

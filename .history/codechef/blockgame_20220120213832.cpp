@@ -32,7 +32,7 @@ bool isPalindrome(int n)
     }
 }
 
-int main()
+signed main()
 {
     int n;
     cin >> n;

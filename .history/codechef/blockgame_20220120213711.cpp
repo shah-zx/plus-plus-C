@@ -32,23 +32,18 @@ bool isPalindrome(int n)
     }
 }
 
-int main()
+signed main()
 {
     int n;
     cin >> n;
 
-    for (int i = 0; i < n; i++)
-    {
-        int t;
-        cin >> t;
-        if (isPalindrome(t))
-        {
-            cout << "wins";
-        }
-        else
-        {
-            cout << "loses";
-        }
-        cout << endl;
-    }
+    // for (int i = 0; i < n; i++)
+    // {
+    //     int t;
+    //     cin >> t;
+    // }
+    
+    if(isPalindrome(n)){
+        cout<<"Bhaiyya ji palindrome";
+    } else{ cout << "Na bhaiyya";}
 }

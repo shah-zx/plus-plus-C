@@ -32,7 +32,7 @@ bool isPalindrome(int n)
     }
 }
 
-int main()
+signed main()
 {
     int n;
     cin >> n;
@@ -41,14 +41,10 @@ int main()
     {
         int t;
         cin >> t;
-        if (isPalindrome(t))
-        {
+        if(isPalindrome(t)){
             cout << "wins";
-        }
-        else
-        {
-            cout << "loses";
-        }
-        cout << endl;
+        } else { cout <<"loses"}
     }
+    
+  
 }
