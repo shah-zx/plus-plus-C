@@ -24,7 +24,6 @@ signed main()
 {
 
     int n;
-    cin>>n;
     int arr1[n];
     for (int i = 0; i < n; i++)
     {
@@ -58,6 +57,7 @@ signed main()
     }
     for (int i = 0; i < n; i++)
     {
-        cout << arr1[i] << " ";
+        /* code */
     }
+    
 }

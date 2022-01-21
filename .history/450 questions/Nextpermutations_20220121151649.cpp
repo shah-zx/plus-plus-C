@@ -24,7 +24,6 @@ signed main()
 {
 
     int n;
-    cin>>n;
     int arr1[n];
     for (int i = 0; i < n; i++)
     {
@@ -55,9 +54,5 @@ signed main()
             }
         }
         swap(arr1[idx1], arr1[idx2]);
-    }
-    for (int i = 0; i < n; i++)
-    {
-        cout << arr1[i] << " ";
     }
 }

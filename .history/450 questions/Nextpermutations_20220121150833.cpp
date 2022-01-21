@@ -11,4 +11,24 @@ using namespace std;
 #define vii vector<pair<int, int>>
 #define pii pair<int, int>
 #define rep(i, a, b) for (int i = a; i < b; i++)
+signed main()
+{
 
+    unordered_set<int> m;
+    int n;
+    cin >> n;
+    int arr[n];
+    for (int i = 0; i < n; i++)
+    {
+        cin>>arr[i];
+    }
+    
+    for (int i = 0; i < n; i++)
+    {
+        m.insert(arr[i]);
+    }
+    for (auto i = m.begin(); i != m.end(); i++)
+    {
+        cout << *i << " ";
+    }
+}

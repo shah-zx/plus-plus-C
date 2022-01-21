@@ -11,4 +11,11 @@ using namespace std;
 #define vii vector<pair<int, int>>
 #define pii pair<int, int>
 #define rep(i, a, b) for (int i = a; i < b; i++)
+signed main()
+{
 
+  int n;
+  cin>>n;
+  int arr[n];
+  
+}
