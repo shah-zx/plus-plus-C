@@ -33,7 +33,7 @@ vector<int> Fact(int n)
     }  reverse(res.begin(), res.end());
     for (auto i : res)
     {
-        cout << res[i]<<" ";
+        cout << *res<<" ";
     }
     
 }
@@ -44,5 +44,4 @@ signed main()
     int n;
     cin >> n;
     Fact(n);
-    
 }

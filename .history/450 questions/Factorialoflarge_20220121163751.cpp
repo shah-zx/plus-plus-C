@@ -44,5 +44,4 @@ signed main()
     int n;
     cin >> n;
     Fact(n);
-    
 }

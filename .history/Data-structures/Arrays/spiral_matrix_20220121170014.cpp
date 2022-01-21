@@ -28,7 +28,7 @@ int main()
         {
             cout << array[row_start][col];
         }
-        row_start++;
+        row_start++;  // Will increase the row so that it points to the next row 
 
         // For top to bottom in last cloumn :
 

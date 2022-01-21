@@ -31,11 +31,7 @@ vector<int> Fact(int n)
             carry /= 10;
         }
     }  reverse(res.begin(), res.end());
-    for (auto i : res)
-    {
-        cout << res[i]<<" ";
-    }
-    
+    return res;
 }
 
 signed main()
@@ -44,5 +40,4 @@ signed main()
     int n;
     cin >> n;
     Fact(n);
-    
 }
