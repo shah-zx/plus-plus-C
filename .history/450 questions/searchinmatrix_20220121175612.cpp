@@ -44,5 +44,5 @@ signed main()
             high = mid - 1;
         }
     }
-    cout << arr[mid % m][mid / m];
+    
 }
