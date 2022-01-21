@@ -11,22 +11,32 @@ using namespace std;
 #define vii vector<pair<int, int>>
 #define pii pair<int, int>
 #define rep(i, a, b) for (int i = a; i < b; i++)
-signed main()
+
+int GCD(int a, int b)
+{
+    int rem = 0;
+    while (b != 0)
+    {
+        rem = a % b;
+        a = b;
+        rem = b;
+    }
+    cout << a;
+}
+
+int LCM(int a , int b)
+{
+    int rem = (a * b ) / GCD(a,b)
+}
+
+int main()
 {
 
     int T;
     cin >> T;
-    while (T--)
+    for (int i = 0; i < T; i++)
     {
-        int q;
-        int p;
-        cin >> q >> p;
-        double total1 = q * p;
-        if (q > 1000)
-        {
-            total1 -= total1 * 0.1;
-        }
-        cout << setprecision(10) << fixed;
-        cout << total1 << endl;
+        int n;
+        cin >> n;
     }
 }

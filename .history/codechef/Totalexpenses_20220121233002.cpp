@@ -16,17 +16,24 @@ signed main()
 
     int T;
     cin >> T;
-    while (T--)
+    for (int i = 0; i < T; i++)
     {
         int q;
         int p;
         cin >> q >> p;
-        double total1 = q * p;
         if (q > 1000)
         {
-            total1 -= total1 * 0.1;
+            float d = 0.1 * p; // dis
+            float tt = p - d;
+            double total1 = float(q) * tt;
+            cout<<setprecision(6)<<fixed;
+            cout << total1 << endl;
         }
-        cout << setprecision(10) << fixed;
-        cout << total1 << endl;
+        else
+        {
+            double total = float(q) * p;
+            cout<<setprecision(10)<<fixed;
+            cout << total << endl;
+        }
     }
 }

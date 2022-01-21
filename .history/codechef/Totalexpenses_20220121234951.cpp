@@ -16,8 +16,7 @@ signed main()
 
     int T;
     cin >> T;
-    while (T--)
-    {
+    while (T--){
         int q;
         int p;
         cin >> q >> p;
@@ -26,7 +25,7 @@ signed main()
         {
             total1 -= total1 * 0.1;
         }
-        cout << setprecision(10) << fixed;
-        cout << total1 << endl;
+            cout<<setprecision(10)<<fixed;
+            cout << total1 << endl;
     }
 }
