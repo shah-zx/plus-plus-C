@@ -45,8 +45,8 @@ int main()
             n1 = n2;
             n2 = rem;
         }
-        int d = n1;
-        cout << d;
+        cout << n1 << s;
+
     }
     return 0;
 }

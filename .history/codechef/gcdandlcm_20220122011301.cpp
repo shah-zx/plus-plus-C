@@ -46,7 +46,8 @@ int main()
             n2 = rem;
         }
         int d = n1;
-        cout << d;
+        int r = (s * n2) / n1;
+        cout << " " << r;
     }
     return 0;
 }
