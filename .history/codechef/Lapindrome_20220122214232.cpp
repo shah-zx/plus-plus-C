@@ -31,7 +31,6 @@ signed main()
         }
         if (n % 2 != 0)
         {
-            bool lap = true;
             mid +=1;
             // For second half
             for (int i = mid; i < n; i++)
@@ -43,7 +42,7 @@ signed main()
             {
                 if (hash[j] != 0)
                 {
-                   lap = false;
+                    /* code */
                 }
                 
             }

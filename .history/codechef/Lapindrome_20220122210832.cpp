@@ -20,38 +20,50 @@ signed main()
     {
         string s;
         cin >> s;
-        int hash[26];
+        unordered_map<char, int> mp;
+        unordered_map<char, int> np;
         int mid = s.size() / 2;
-        int n = s.size();
-        // For first half
-        for (int i = 0; i < mid; i++)
+        if (s.size() % 2 != 0)
         {
-            int k = s[i] - 'a';
-            hash[k]++;
+            for (int i = 0; i < mid; i++)
+            {
+                int k = s[i];
+                mp[k]++;
+            }
+            for (int j = mid + 1; j < s.size(); j++)
+            {
+                int e = s[j];
+                np[e]++;
+            }
+            if (mp == np)
+            {
+                cout << "Yes";
+            }
+            else
+            {
+                cout << "No";
+            }
         }
-        if (n % 2 != 0)
+        else
         {
-            bool lap = true;
-            mid +=1;
-            // For second half
-            for (int i = mid; i < n; i++)
+            for (auto y : mp)
             {
-                int m = s[i] - 'a';
-                hash[m]--;
-            }
-            for (int j = 0; j < 26; j++)
-            {
-                if (hash[j] != 0)
+                for (auto e : np)
                 {
-                   lap = false;
+                    if (y.second == e.second)
+                    {
+                        cout << "Yes";
+                    }
+                    else
+                    {
+                        cout << "No";
+                    }
                 }
-                
             }
-            
-            
         }
     }
 
+}
     // for (auto y : mp)
     //         {
     //             cout << y.first << " " << y.second << endl;

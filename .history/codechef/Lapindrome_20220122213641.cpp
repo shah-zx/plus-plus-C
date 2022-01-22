@@ -26,29 +26,19 @@ signed main()
         // For first half
         for (int i = 0; i < mid; i++)
         {
-            int k = s[i] - 'a';
+            int k = s[i];
             hash[k]++;
         }
         if (n % 2 != 0)
         {
-            bool lap = true;
             mid +=1;
             // For second half
-            for (int i = mid; i < n; i++)
+            for (int i = mid + 1; i < n; i++)
             {
-                int m = s[i] - 'a';
+                int m = s[i];
                 hash[m]--;
             }
-            for (int j = 0; j < 26; j++)
-            {
-                if (hash[j] != 0)
-                {
-                   lap = false;
-                }
-                
-            }
-            
-            
+
         }
     }
 
