@@ -46,6 +46,6 @@ int main()
 
     for (auto element : v)
     {
-        cout << element << endl;
+        cout << v[0] << endl;
     }
 }
