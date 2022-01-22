@@ -23,7 +23,6 @@ signed main()
         unordered_map<char, int> mp;
         unordered_map<char, int> np;
         int mid = s.size() / 2;
-        
         for (int i = 0; i < mid; i++)
         {
             int k = s[i];
