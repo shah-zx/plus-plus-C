@@ -12,7 +12,7 @@ using namespace std;
 #define pii pair<int, int>
 #define rep(i, a, b) for (int i = a; i < b; i++)
 
-// Optimised version : 
+// Optimised version
 
 signed main()
 {

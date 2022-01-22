@@ -11,9 +11,6 @@ using namespace std;
 #define vii vector<pair<int, int>>
 #define pii pair<int, int>
 #define rep(i, a, b) for (int i = a; i < b; i++)
-
-// Optimised version : 
-
 signed main()
 {
 
@@ -64,8 +61,6 @@ signed main()
     }
     return 0;
 }
-
-// Naive approach :
 
 // int n1 , n3;
 //         float n2;

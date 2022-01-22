@@ -11,49 +11,46 @@ using namespace std;
 #define vii vector<pair<int, int>>
 #define pii pair<int, int>
 #define rep(i, a, b) for (int i = a; i < b; i++)
-
-// Optimised version : 
-
 signed main()
 {
 
-    int T;
+   
+     int T;
     cin >> T;
     while (T--)
     {
-        int n1, n3;
+        int n1 , n3;
         double n2;
         cin >> n1 >> n2 >> n3;
-        bool h = false, c = false, tt = false;
-        if (n1 > 50)
-        {
+        bool h = false  , c = false , tt = false;
+        if(n1 > 50){
             h = true;
         }
-        if (n2 < 0.7)
+        if(n2 < 0.7)
         {
             c = true;
         }
-        if (n3 > 5600)
+        if(n3 > 5600)
         {
             tt = true;
         }
-        if (h && c && tt)
+        if (n1 && n2 && n3)
         {
             cout << "10" << endl;
         }
-        else if (h && c)
+        else if (n1 && n2 )
         {
             cout << "9" << endl;
         }
-        else if (c && tt)
+        else if (n2 && n3)
         {
             cout << "8" << endl;
         }
-        else if (h && tt)
+        else if (n1 && n3)
         {
             cout << "7" << endl;
         }
-        else if (h || c || tt)
+        else if (n1 || n2 || n3)
         {
             cout << "6" << endl;
         }
@@ -65,7 +62,8 @@ signed main()
     return 0;
 }
 
-// Naive approach :
+
+
 
 // int n1 , n3;
 //         float n2;
