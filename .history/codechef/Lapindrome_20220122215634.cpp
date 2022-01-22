@@ -20,7 +20,7 @@ signed main()
     {
         string s;
         cin >> s;
-        int hash[26] = {0};
+        int hash[26];
         int mid = s.size() / 2;
         int n = s.size();
         // For first half
