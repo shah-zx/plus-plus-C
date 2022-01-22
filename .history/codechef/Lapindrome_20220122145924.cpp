@@ -14,19 +14,17 @@ using namespace std;
 signed main()
 {
 
-    int t;
-    cin >> t;
-    while (t--)
+    int n;
+    cin >> n;
+    while (n--)
     {
-        int n;
-        cin >> n;
-        int arr[n];
-        for (int i = 0; i < n; i++)
-        {
-            cin >> arr[i];
-        }
-        sort(arr, arr + n);
-        int sum = arr[0] + arr[1];
-        cout << sum << endl;
+        string s;
+        cin >> s;
+        int mid = s.size() / 2;
+        // for (int i = 0; i < s.size(); i++)
+        // {
+        
+        // }
+        cout<< s[mid] << s[0];
     }
 }

@@ -14,19 +14,13 @@ using namespace std;
 signed main()
 {
 
-    int t;
-    cin >> t;
-    while (t--)
+    int n;
+    cin >> n;
+    while (n--)
     {
-        int n;
-        cin >> n;
-        int arr[n];
-        for (int i = 0; i < n; i++)
-        {
-            cin >> arr[i];
-        }
-        sort(arr, arr + n);
-        int sum = arr[0] + arr[1];
-        cout << sum << endl;
+        string s;
+        cin >> s;
+        unordered_map<char,int> mp;
+        
     }
 }

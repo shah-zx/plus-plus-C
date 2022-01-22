@@ -19,14 +19,23 @@ signed main()
     while (t--)
     {
         int n;
-        cin >> n;
         int arr[n];
         for (int i = 0; i < n; i++)
         {
             cin >> arr[i];
+            int currSum = 0;
+            int minSum = 0;
+            for (int i = 0; i < n - 1; i++)
+            {
+                for (int j = i + 1; j < n; j++)
+                {
+                    currSum += arr[i] + arr[j];
+                    if (currSum < minSum)
+                    {
+                        minSum = currSum;
+                    }
+                }
+            }
         }
-        sort(arr, arr + n);
-        int sum = arr[0] + arr[1];
-        cout << sum << endl;
     }
 }

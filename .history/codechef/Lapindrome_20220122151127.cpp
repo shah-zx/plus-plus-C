@@ -14,19 +14,23 @@ using namespace std;
 signed main()
 {
 
-    int t;
-    cin >> t;
-    while (t--)
+    int n;
+    cin >> n;
+    while (n--)
     {
-        int n;
-        cin >> n;
-        int arr[n];
-        for (int i = 0; i < n; i++)
+        string s;
+        cin >> s;
+        vector<char> v;
+        int mid = s.size() / 2;
+        for (int i = 0; i < s.size(); i++)
         {
-            cin >> arr[i];
+            if (s.size() % 2 != 0)
+            {
+                for (int i = 0; i < mid; i++)
+                {
+                    v.push_back(s[i]);
+                }
+            }
         }
-        sort(arr, arr + n);
-        int sum = arr[0] + arr[1];
-        cout << sum << endl;
     }
 }

@@ -14,19 +14,19 @@ using namespace std;
 signed main()
 {
 
-    int t;
-    cin >> t;
-    while (t--)
+    int n;
+    cin >> n;
+    while (n--)
     {
-        int n;
-        cin >> n;
-        int arr[n];
-        for (int i = 0; i < n; i++)
+        string s;
+        cin >> s;
+        if (s.size() % 2 != 0)
         {
-            cin >> arr[i];
+            cout << "Odd length";
         }
-        sort(arr, arr + n);
-        int sum = arr[0] + arr[1];
-        cout << sum << endl;
+        else
+        {
+            cout << "even lenght";
+        }
     }
 }
