@@ -25,6 +25,8 @@ signed main()
         }
     }
     sort(v.begin(), v.end());
-    int d = *max_element(v.begin(), v.end());
-    cout << d << endl;
+    for (auto i : v)
+    {
+        cout << i << endl;
+    }
 }

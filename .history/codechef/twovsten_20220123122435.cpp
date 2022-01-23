@@ -11,20 +11,22 @@ using namespace std;
 #define vii vector<pair<int, int>>
 #define pii pair<int, int>
 #define rep(i, a, b) for (int i = a; i < b; i++)
-signed main()
-{
+signed main(){
 
-    int T;
-    cin >> T;
-    vector<int> v;
-    for (int i = 1; i <= 10; i++)
+int n;
+cin>>n;
+while (n--)
+{
+    int g;
+    cin>>g;
+    int count = 0;
+    while (g % 2 == 0)
     {
-        if (T % i == 0)
-        {
-            v.push_back(i);
-        }
+        g *= 2;
+        count ++;
     }
-    sort(v.begin(), v.end());
-    int d = *max_element(v.begin(), v.end());
-    cout << d << endl;
+    
+}
+
+
 }

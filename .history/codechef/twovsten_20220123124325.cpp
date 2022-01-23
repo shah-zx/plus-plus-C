@@ -14,17 +14,24 @@ using namespace std;
 signed main()
 {
 
-    int T;
-    cin >> T;
-    vector<int> v;
-    for (int i = 1; i <= 10; i++)
+    int n; // Test cases
+    cin >> n;
+    while (n--)
     {
-        if (T % i == 0)
+        int count = 0;
+        int g; // value of x
+        cin >> g;
+        if (g == 1)
         {
-            v.push_back(i);
+            count = -1;
+            cout<<count;
+            break;
         }
+        while (g % 10 != 0)
+        {
+            g *= 2;
+            count++; // steps
+        }
+        cout << count;
     }
-    sort(v.begin(), v.end());
-    int d = *max_element(v.begin(), v.end());
-    cout << d << endl;
 }

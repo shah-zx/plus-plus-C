@@ -17,6 +17,7 @@ signed main()
     int T;
     cin >> T;
     vector<int> v;
+    int f = 10;
     for (int i = 1; i <= 10; i++)
     {
         if (T % i == 0)
