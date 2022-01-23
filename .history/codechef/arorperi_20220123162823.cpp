@@ -16,10 +16,8 @@ signed main()
 
     int l, b;
     cin >> l >> b;
-    int lm = max(l,b);
-    int bm = min(l,b);
-    int area = lm * bm;
-    int peri = lm * (lm + bm);
+    int area = l * b;
+    int peri = l * (l + b);
     if (area > peri)
     {
         cout << "Area" << endl;
