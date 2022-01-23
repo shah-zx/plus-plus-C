@@ -35,9 +35,9 @@ bool Prime(int n)
 
 void solve()
 {
-
-    int f, s;
-    cin >> f >> s;
+    
+        int f, s;
+        cin >> f >> s;
     int a = f + s;
     for (int currsum = a + 1;; currsum++)
     {
@@ -54,8 +54,7 @@ signed main()
 
     int T;
     cin >> T;
-    while (T--)
+    for (int i = 0; i < T; i++)
     {
-        solve();
     }
 }
