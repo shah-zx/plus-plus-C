@@ -44,7 +44,7 @@ signed main()
         {
             for (int j = i+1; j < n; j++)
             {
-                product = arr[i] * arr[j];
+                product += arr[i] * arr[j];
                 answer = max(sod(product) , answer);
             }
         }

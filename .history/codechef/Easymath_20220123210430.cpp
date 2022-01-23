@@ -32,7 +32,6 @@ signed main()
     while (T--)
     {
         int n;
-        cin>>n;
         int arr[n];
         for (int j = 0; j < n; j++)
         {
@@ -42,10 +41,10 @@ signed main()
         int answer = 0;
         for (int i = 0; i < n - 1; i++)
         {
-            for (int j = i+1; j < n; j++)
+            for (int j = 0; j < n; j++)
             {
-                product = arr[i] * arr[j];
-                answer = max(sod(product) , answer);
+                product += arr[i] * arr[j];
+                answer += max(sod(product) , answer);
             }
         }
         cout << answer << endl;
