@@ -13,23 +13,22 @@ using namespace std;
 #define rep(i, a, b) for (int i = a; i < b; i++)
 signed main()
 {
-    int T;
-    cin >> T;
-    while (T--)
+    int n;
+    cin >> n;
+    int arr[n];
+    for (int i = 0; i < n; i++)
     {
-        int arr[4];
-        for (int i = 0; i < 4; i++)
+        cin >> arr[i];
+    }
+
+    for (int i = 0; i < n - 1; i++)
+    {
+        for (int j = i + 1; j < n; j++)
         {
-            cin >> arr[i];
-        }
-        sort(arr, arr + 4);
-        if (arr[0] == arr[1] && arr[2] == arr[3])
-        {
-            cout << "Yes" << endl;
-        }
-        else
-        {
-            cout << "No" << endl;
+            if (arr[i] == arr[j])
+            {
+                cout << arr[i] << " " << arr[j] << endl;
+            }
         }
     }
 }

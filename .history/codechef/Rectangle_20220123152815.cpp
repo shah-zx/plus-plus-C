@@ -13,8 +13,10 @@ using namespace std;
 #define rep(i, a, b) for (int i = a; i < b; i++)
 signed main()
 {
+
     int T;
     cin >> T;
+    unordered_map<int, int> mp;
     while (T--)
     {
         int arr[4];
@@ -22,14 +24,14 @@ signed main()
         {
             cin >> arr[i];
         }
-        sort(arr, arr + 4);
-        if (arr[0] == arr[1] && arr[2] == arr[3])
+        for (int i = 0; i < 4; i++)
         {
-            cout << "Yes" << endl;
+            int k = arr[i];
+            mp[k]++;
         }
-        else
+        for (auto i : mp)
         {
-            cout << "No" << endl;
+            cout << i.first << " " << endl;
         }
     }
 }

@@ -15,6 +15,8 @@ signed main()
 {
     int T;
     cin >> T;
+    unordered_map<int, int> mp;
+    vector<int> v;
     while (T--)
     {
         int arr[4];
@@ -22,14 +24,17 @@ signed main()
         {
             cin >> arr[i];
         }
-        sort(arr, arr + 4);
-        if (arr[0] == arr[1] && arr[2] == arr[3])
+        for (int i = 0; i < 4; i++)
         {
-            cout << "Yes" << endl;
+            int k = arr[i];
+            mp[k]++;
         }
-        else
+        for (auto i : mp)
         {
-            cout << "No" << endl;
+            v.push_back(i.first);
+        }
+        for (auto i : v){
+            cout << v[i] * v[i+1];
         }
     }
 }
