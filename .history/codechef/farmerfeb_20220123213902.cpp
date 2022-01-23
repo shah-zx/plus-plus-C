@@ -11,16 +11,15 @@ using namespace std;
 #define vii vector<pair<int, int>>
 #define pii pair<int, int>
 #define rep(i, a, b) for (int i = a; i < b; i++)
-signed main()
-{
+signed main(){
 
-    int T;
-    cin >> T;
-    while (T--)
-    {
-        int n, k, m;
-        cin >> n >> k >> m;
-        // n = apples  // m = oranges  // m = coins
-        
-    }
+int T;
+cin>>T;
+for (int i = 0; i < T; i++)
+{
+    int f , s;
+    cin>>f>>s;
+}
+
+
 }

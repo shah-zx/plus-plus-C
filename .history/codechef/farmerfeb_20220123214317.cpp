@@ -11,16 +11,31 @@ using namespace std;
 #define vii vector<pair<int, int>>
 #define pii pair<int, int>
 #define rep(i, a, b) for (int i = a; i < b; i++)
-signed main()
-{
 
-    int T;
-    cin >> T;
-    while (T--)
+
+int Prime(int n){
+    bool hai = 1;
+    for (int i = 0; i <= sqrt(n); i++)
     {
-        int n, k, m;
-        cin >> n >> k >> m;
-        // n = apples  // m = oranges  // m = coins
-        
+        if(n % 2 == 0){
+            hai = 0
+        }
     }
+    
+}
+
+
+signed main(){
+
+int T;
+cin>>T;
+for (int i = 0; i < T; i++)
+{
+    int f , s;
+    cin>>f>>s;
+    int a = f + s;
+    
+}
+
+
 }
