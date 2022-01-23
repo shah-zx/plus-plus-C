@@ -20,6 +20,6 @@ int Duplicate(int arr[], int n)
 int main()
 {
 
-int arr[] = {4,2,1,3,1};
-cout<<Duplicate(arr , 5);
+int arr[] = {1,1,2,2};
+cout<<Duplicate(arr , 4);
 }

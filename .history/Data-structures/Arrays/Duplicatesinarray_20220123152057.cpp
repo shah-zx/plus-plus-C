@@ -8,7 +8,7 @@ int Duplicate(int arr[], int n)
     int ans = 0;
     for (int i = 0; i < n; i++)
     {
-        ans = ans ^ arr[i];
+        ans = ans ^ arr[i]; // This will take out the unique one 
     }
     for (int i = 1; i < n; i++)
     {

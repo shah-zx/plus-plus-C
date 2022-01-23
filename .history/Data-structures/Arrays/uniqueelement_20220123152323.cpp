@@ -15,6 +15,6 @@ int Unique(int arr[], int n)
 
 int main()
 {
-    int arr[5] = {2, 4, 7, 2, 7};
-    cout << Unique(arr, 5);
+    int arr[] = {1,1,2,2};
+    cout << Unique(arr, 4);
 }

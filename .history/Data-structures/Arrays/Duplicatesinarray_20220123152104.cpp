@@ -8,9 +8,9 @@ int Duplicate(int arr[], int n)
     int ans = 0;
     for (int i = 0; i < n; i++)
     {
-        ans = ans ^ arr[i];
+        ans = ans ^ arr[i]; // This will take out the unique one 
     }
-    for (int i = 1; i < n - 1; i++)
+    for (int i = 1; i < n; i++)
     {
         ans = ans ^ i;
     }
@@ -20,6 +20,6 @@ int Duplicate(int arr[], int n)
 int main()
 {
 
-int arr[5] = {4,2,1,3,1};
+int arr[] = {1,1,2,2};
 cout<<Duplicate(arr , 5);
 }
