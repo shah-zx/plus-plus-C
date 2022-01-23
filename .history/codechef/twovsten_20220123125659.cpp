@@ -21,13 +21,21 @@ signed main()
         int count = 0;
         int g; // value of x
         cin >> g;
-        if(g == 10){
-            cout << 0 << endl;
+        if (g == 1)
+        {
+            count = -1;
+            cout << count << endl;
+            break;
         }
-        else if(g % 10 == 5){
-            cout <<  1 << endl;
-        } else {
-            cout << -1  << endl;
+        while (g % 10 != 0)
+        {
+            int ld = g % 10;
+            if (ld == 0 or ld == 5)
+            {
+                g *= 2;
+                count++;
+            }
         }
+        cout << count << endl;
     }
 }

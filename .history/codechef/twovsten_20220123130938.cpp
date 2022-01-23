@@ -22,12 +22,12 @@ signed main()
         int g; // value of x
         cin >> g;
         if(g == 10){
-            cout << 0 << endl;
+            cout << "0"<< endl;
         }
         else if(g % 10 == 5){
-            cout <<  1 << endl;
+            cout << "1"<< endl;
         } else {
-            cout << -1  << endl;
+            cout << "-1" << endl;
         }
     }
 }
