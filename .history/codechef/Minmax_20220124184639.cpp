@@ -36,7 +36,7 @@ signed main()
 
                 if (g > o)
                 {
-                    o *= (n-1);
+                    o *= 2;
                 }
             }
         }
