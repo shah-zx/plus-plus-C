@@ -62,11 +62,7 @@ signed main()
         }
         cout << count << endl;
 
-        
-    }
-}
-
-// int arr[n];
+        // int arr[n];
         // for (int i = 0; i < n; i++)
         // {
         //     cin >> arr[i];
@@ -89,3 +85,5 @@ signed main()
         //     }
         // }
         // cout << count << endl;
+    }
+}

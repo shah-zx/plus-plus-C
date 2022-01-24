@@ -52,7 +52,7 @@ signed main()
         {
             arr[i] += k;
         }
-
+        
         for (int j = 0; j < n; j++)
         {
             if (arr[j] % 7 == 0)
@@ -60,13 +60,8 @@ signed main()
                 count++;
             }
         }
-        cout << count << endl;
 
-        
-    }
-}
-
-// int arr[n];
+        // int arr[n];
         // for (int i = 0; i < n; i++)
         // {
         //     cin >> arr[i];
@@ -89,3 +84,5 @@ signed main()
         //     }
         // }
         // cout << count << endl;
+    }
+}

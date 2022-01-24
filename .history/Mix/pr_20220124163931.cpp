@@ -28,7 +28,7 @@ bool DivbySev(int n)
     if (rem % 7 == 0 || rem == 0)
     {
         return true;
-    } else { return false; }
+    }
 }
 signed main()
 {
@@ -42,28 +42,7 @@ signed main()
     {
         cout << "No" << endl;
     }
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     // int arr[n];
-    // int count  = 0;
     // for (int i = 0; i < n; i++)
     // {
     //     cin >> arr[i];
@@ -73,9 +52,9 @@ signed main()
     // {
     //     for (int j = i + 1; j < n; j++)
     //     {
-    //         if (arr[i] % 7 == 0)
+    //         if (arr[i] == arr[j])
     //         {
-    //             
+    //             cout << arr[i] << " " << arr[j] << endl;
     //         }
     //     }
     // }

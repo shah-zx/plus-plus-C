@@ -48,25 +48,18 @@ signed main()
             cin >> arr[i];
         }
 
-        for (int i = 0; i < n; i++)
+        for (int i = 0; i < n - 1; i++)
         {
-            arr[i] += k;
-        }
-
-        for (int j = 0; j < n; j++)
-        {
-            if (arr[j] % 7 == 0)
+            for (int j = i + 1; j < n; j++)
             {
-                count++;
+                if (arr[i] % 7 == 0)
+                {
+                    count++;
+                }
             }
         }
-        cout << count << endl;
 
-        
-    }
-}
-
-// int arr[n];
+        // int arr[n];
         // for (int i = 0; i < n; i++)
         // {
         //     cin >> arr[i];
@@ -89,3 +82,5 @@ signed main()
         //     }
         // }
         // cout << count << endl;
+    }
+}

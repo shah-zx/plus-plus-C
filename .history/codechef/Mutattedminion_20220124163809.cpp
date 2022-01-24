@@ -40,9 +40,7 @@ signed main()
     {
         int n, k;
         cin >> n >> k;
-
         int arr[n];
-        int count = 0;
         for (int i = 0; i < n; i++)
         {
             cin >> arr[i];
@@ -52,40 +50,18 @@ signed main()
         {
             arr[i] += k;
         }
-
-        for (int j = 0; j < n; j++)
+        int count = 0;
+        for (int i = 0; i < n; i++)
         {
-            if (arr[j] % 7 == 0)
+            if (DivbySev(arr[i]))
             {
                 count++;
             }
+            else
+            {
+                count--;
+            }
         }
         cout << count << endl;
-
-        
     }
 }
-
-// int arr[n];
-        // for (int i = 0; i < n; i++)
-        // {
-        //     cin >> arr[i];
-        // }
-
-        // for (int i = 0; i < n; i++)
-        // {
-        //     arr[i] += k;
-        // }
-        // int count = 0;
-        // for (int i = 0; i < n; i++)
-        // {
-        //     if (DivbySev(arr[i]))
-        //     {
-        //         count++;
-        //     }
-        //     else
-        //     {
-        //         count--;
-        //     }
-        // }
-        // cout << count << endl;
