@@ -36,11 +36,9 @@ signed main()
         {
             cout << amber << endl;
         }
-        else if (amber > brass)
+        else if ( brass < amber)
         {
             cout << brass << endl;
-        } else {
-            cout << "0" << endl;
         }
     }
 
