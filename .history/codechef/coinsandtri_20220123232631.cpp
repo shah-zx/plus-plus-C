@@ -22,8 +22,8 @@ signed main()
         cin >> n;
         if(n <= 5){
             cout << "2" <<endl;
-        } else if( n >= 6){
-            cout << "3" <<endl;
+        } else if( n > 3 && n <= 6){
+
         }
     }
 }

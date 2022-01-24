@@ -20,10 +20,8 @@ signed main()
 
         int n;
         cin >> n;
-        if(n <= 5){
-            cout << "2" <<endl;
-        } else if( n >= 6){
-            cout << "3" <<endl;
+        if(n < = 3){
+            cout << "" <<endl;
         }
     }
 }

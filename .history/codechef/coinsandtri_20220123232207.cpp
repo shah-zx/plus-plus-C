@@ -11,19 +11,14 @@ using namespace std;
 #define vii vector<pair<int, int>>
 #define pii pair<int, int>
 #define rep(i, a, b) for (int i = a; i < b; i++)
-signed main()
-{
-    int T;
-    cin >> T;
-    while (T--)
-    {
+signed main(){
+int T;
+cin >> T;
+while (T--){
 
-        int n;
-        cin >> n;
-        if(n <= 5){
-            cout << "2" <<endl;
-        } else if( n >= 6){
-            cout << "3" <<endl;
-        }
-    }
+int T;
+cin>>T;
+
+
+}
 }

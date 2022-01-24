@@ -17,13 +17,22 @@ signed main()
     cin >> T;
     while (T--)
     {
-
-        int n;
-        cin >> n;
-        if(n <= 5){
-            cout << "2" <<endl;
-        } else if( n >= 6){
-            cout << "3" <<endl;
+        string s;
+        cin >> s;
+        int count = 0;
+        for (int i = 0; i < s.size(); i++)
+        {
+            if (s[i] == 'a')
+            {
+                s[i]  += '1';
+                count++;
+            }
+            if (s[i] == 'b')
+            {
+                s[i] == 'a';
+                count++;
+            }
+            cout << count << endl;
         }
     }
 }

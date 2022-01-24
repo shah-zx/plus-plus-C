@@ -15,15 +15,24 @@ signed main()
 {
     int T;
     cin >> T;
+    int amber = 0;
+    int brass = 0;
     while (T--)
     {
+        string s;
+        cin >> s;
+        for (int i = 0; i < s.size(); i++)
+        {
+            if(s[i] == 'a'){
 
-        int n;
-        cin >> n;
-        if(n <= 5){
-            cout << "2" <<endl;
-        } else if( n >= 6){
-            cout << "3" <<endl;
+            }
         }
     }
+
+    // char c;
+    // cin>>c;
+    // char b =  c - '0' + c - '0';
+    // char a = c - '0' + c - '1';
+    // cout << b << endl;
+    // cout << a << endl;
 }
