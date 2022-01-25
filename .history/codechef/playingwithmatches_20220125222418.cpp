@@ -31,7 +31,7 @@ int FindSum(int n)
 
             if (i == j)
             {
-                sum += array[i];
+                sum = array[i] + j;
             }
         }
     }
@@ -48,5 +48,5 @@ signed main()
     //     cin >> n1 >> n2;
     //     int s = n1 + n2;
     // }
-    FindSum(11111);
+    FindSum(357);
 }

@@ -35,7 +35,8 @@ int FindSum(int n)
             }
         }
     }
-    cout << sum << endl;
+        cout << sum << endl;
+
 }
 signed main()
 {
@@ -48,5 +49,5 @@ signed main()
     //     cin >> n1 >> n2;
     //     int s = n1 + n2;
     // }
-    FindSum(11111);
+    FindSum(357);
 }

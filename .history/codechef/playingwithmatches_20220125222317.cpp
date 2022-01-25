@@ -26,13 +26,13 @@ int FindSum(int n)
     int array[10] = {6, 2, 5, 5, 4, 5, 6, 3, 7, 6};
     for (int i = 0; i < 10; i++)
     {
-        for (auto j : v)
+        for ( auto  j : v)
         {
-
-            if (i == j)
-            {
-                sum += array[i];
-            }
+            
+        if (i == v[i])
+        {
+            sum += array[i] + v[i];
+        }
         }
     }
     cout << sum << endl;
@@ -48,5 +48,5 @@ signed main()
     //     cin >> n1 >> n2;
     //     int s = n1 + n2;
     // }
-    FindSum(11111);
+    FindSum(357);
 }
