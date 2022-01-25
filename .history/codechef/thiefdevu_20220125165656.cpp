@@ -18,7 +18,6 @@ signed main()
     while (T--)
     {
         int m, x, y;
-        cin>>m >> x >> y;
         int cops[101]{0};
         for (int i = 0; i < m; i++)
         {
@@ -31,25 +30,24 @@ signed main()
             bool safe = true;
             for (int i = 0; i < m; i++)
             {
-                int mi = max(cops[i] - d, 1);
-                int ma = min(cops[i] + d, 100);
-                if (h >= mi && h <= ma)
-                {
+                int mi = max(m - d, 1);
+                int ma = min(m + d, 100);
+                if(h >= mi && h <= ma){
                     safe = false;
                 }
-            }
-            if (safe)
-            {
-                count+=1;
+                count ++;
             }
         }
-        cout << count << endl;
     }
 }
+
+
+
+
+
+
 
 // int d = x * y; // Distance of cops
 //                 if(mi == 0){
 //                     mi = 1;
 //                 }
-
-

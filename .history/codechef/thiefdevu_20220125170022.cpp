@@ -31,8 +31,8 @@ signed main()
             bool safe = true;
             for (int i = 0; i < m; i++)
             {
-                int mi = max(cops[i] - d, 1);
-                int ma = min(cops[i] + d, 100);
+                int mi = max(m - d, 1);
+                int ma = min(m + d, 100);
                 if (h >= mi && h <= ma)
                 {
                     safe = false;
