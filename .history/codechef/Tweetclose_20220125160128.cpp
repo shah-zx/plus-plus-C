@@ -17,20 +17,10 @@ signed main()
     cin >> T;
     while (T--)
     {
-     
+
         
     }
 }
-
-
-
-
-
-
-
-
-
-
 
 
 
