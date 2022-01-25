@@ -12,9 +12,10 @@ using namespace std;
 #define pii pair<int, int>
 #define rep(i, a, b) for (int i = a; i < b; i++)
 
-void solve()
+int solve(int n)
 {
     unordered_map<int, int> mp;
+
     int n;
     cin >> n;
     int arr[n];

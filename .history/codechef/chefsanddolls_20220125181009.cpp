@@ -11,39 +11,34 @@ using namespace std;
 #define vii vector<pair<int, int>>
 #define pii pair<int, int>
 #define rep(i, a, b) for (int i = a; i < b; i++)
-
-void solve()
-{
-    unordered_map<int, int> mp;
-    int n;
-    cin >> n;
-    int arr[n];
-    for (int i = 0; i < n; i++)
-    {
-        cin >> arr[i];
-    }
-    for (int i = 0; i < n; i++)
-    {
-        int k;
-        mp[k]++;
-    }
-    for (auto i : mp)
-    {
-        int key = i.first;
-        int value = i.second;
-        if (i.second % 2 == 1)
-        {
-            cout << key << endl;
-        }
-    }
-}
-
 signed main()
 {
     int T;
     cin >> T;
+    unordered_map<int, int> mp;
     while (T--)
     {
+        int n;
+        cin >> n;
+        int arr[n];
+        for (int i = 0; i < n; i++)
+        {
+            cin >> arr[i];
+        }
+        for (int i = 0; i < n; i++)
+        {
+            int k;
+            mp[k]++;
+        }
+        for (auto i : mp)
+        {
+            int key = i.first;
+            int value = i.second;
+            if (i.second % 2 == 1)
+            {
+                cout << key << endl;
+            }
+        }
     }
 }
 
