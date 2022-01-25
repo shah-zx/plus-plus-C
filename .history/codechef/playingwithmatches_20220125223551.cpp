@@ -40,13 +40,13 @@ int FindSum(int n)
 signed main()
 {
 
-    int T;
-    cin >> T;
-    while (T--)
-    {
-        int n1, n2;
-        cin >> n1 >> n2;
-        int s = n1 + n2;
-        FindSum(s);
-    }
+    // int T;
+    // cin >> T;
+    // while (T--)
+    // {
+    //     int n1, n2;
+    //     cin >> n1 >> n2;
+    //     int s = n1 + n2;
+    // }
+    FindSum(11111);
 }

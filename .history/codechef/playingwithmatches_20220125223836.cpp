@@ -47,6 +47,7 @@ signed main()
         int n1, n2;
         cin >> n1 >> n2;
         int s = n1 + n2;
-        FindSum(s);
     }
+
+    // FindSum(11111);
 }
