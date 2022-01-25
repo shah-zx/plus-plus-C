@@ -20,14 +20,14 @@ void solve()
     for (int i = 0; i < n; i++)
     {
         int k;
-        cin>>k;   // These are the types of dolls 
+        cin>>k;
         mp[k]++;
     }
     for (auto i : mp)
     {
         int key = i.first;
         int value = i.second;
-        if (value % 2 == 1)
+        if (i.second % 2 == 1)
         {
             cout << key << endl;
             return;

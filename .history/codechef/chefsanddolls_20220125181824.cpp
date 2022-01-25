@@ -27,7 +27,7 @@ void solve()
     {
         int key = i.first;
         int value = i.second;
-        if (value % 2 == 1)
+        if (i.second % 2 == 1)
         {
             cout << key << endl;
             return;

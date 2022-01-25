@@ -16,18 +16,22 @@ void solve()
 {
     unordered_map<int, int> mp;
     int n;
-    cin >> n;  // This is size of map 
+    cin >> n;
+    int arr[n];
+    for (int i = 0; i < n; i++)
+    {
+        cin >> arr[i];
+    }
     for (int i = 0; i < n; i++)
     {
         int k;
-        cin>>k;   // These are the types of dolls 
         mp[k]++;
     }
     for (auto i : mp)
     {
         int key = i.first;
         int value = i.second;
-        if (value % 2 == 1)
+        if (i.second % 2 == 1)
         {
             cout << key << endl;
             return;
