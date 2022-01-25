@@ -37,6 +37,10 @@ signed main()
                 cout << "0";
             }
         }
-        cout << endl;
+
+        // for (auto i : v)
+        // {
+        //     cout << v[i];
+        // }
     }
 }

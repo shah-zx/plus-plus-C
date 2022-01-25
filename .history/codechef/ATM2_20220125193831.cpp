@@ -20,6 +20,7 @@ signed main()
     {
         int n, k;
         cin >> n >> k;
+        vector<int> v(n);
         int arr[n];
         for (int i = 0; i < n; i++)
         {
@@ -37,6 +38,10 @@ signed main()
                 cout << "0";
             }
         }
-        cout << endl;
+
+        // for (auto i : v)
+        // {
+        //     cout << v[i];
+        // }
     }
 }

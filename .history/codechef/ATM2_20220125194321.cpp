@@ -37,6 +37,5 @@ signed main()
                 cout << "0";
             }
         }
-        cout << endl;
     }
 }

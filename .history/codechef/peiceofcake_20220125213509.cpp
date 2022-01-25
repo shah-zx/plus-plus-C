@@ -11,32 +11,28 @@ using namespace std;
 #define vii vector<pair<int, int>>
 #define pii pair<int, int>
 #define rep(i, a, b) for (int i = a; i < b; i++)
+#define l long long int
 
 signed main()
 {
-    int T;
+    l T;
     cin >> T;
     while (T--)
     {
-        int n, k;
-        cin >> n >> k;
-        int arr[n];
+        string s;
+        cin>>s;
+        unordered_map<char, int> mp;
+        int n = s.length();
         for (int i = 0; i < n; i++)
         {
-            cin >> arr[i];
+            int k;
+            mp[k]++;
         }
-        for (int i = 0; i < n; i++)
+        int ax = INT_MIN;
+        for (auto f : mp)
         {
-            if (k >= arr[i])
-            {
-                k -= arr[i];
-                cout << "1";
-            }
-            else
-            {
-                cout << "0";
-            }
+            int v = f.second;
+            cout << max(v, ax);
         }
-        cout << endl;
     }
 }
