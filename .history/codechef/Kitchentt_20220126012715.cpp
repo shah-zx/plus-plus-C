@@ -34,7 +34,7 @@ signed main()
         int sub = 0;
         for (int i = 0; i < n; i++)
         {
-            sub += arr1[i] - arr1[i-1];
+            sub += arr1[i + 1] - arr1[i];
         }
         cout << sub << endl;
     }

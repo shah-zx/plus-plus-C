@@ -11,7 +11,6 @@ using namespace std;
 #define vii vector<pair<int, int>>
 #define pii pair<int, int>
 #define rep(i, a, b) for (int i = a; i < b; i++)
-
 signed main()
 {
     int T;
@@ -34,7 +33,7 @@ signed main()
         int sub = 0;
         for (int i = 0; i < n; i++)
         {
-            sub += arr1[i] - arr1[i-1];
+            sub += arr1[i + 1] - arr1[i];
         }
         cout << sub << endl;
     }
