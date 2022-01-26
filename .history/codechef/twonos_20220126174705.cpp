@@ -33,15 +33,12 @@ signed main()
 
         int a, b, t;
         cin >> a >> b >> t;
-        if (t % 2 == 1)
-        {
-            int ans = max(2 * a, b) / min(2 * a, b);
-            cout << ans << endl;
-        }
-        else
-        {
-            int ans = max(a, b) / min(a, b);
-            cout << ans << endl;
+        int x = (t+1)/2;
+        int c = pow(2 , x+1) * a;
+        int d = pow(2 , x) * b;
+        if(c > d){
+            int total = (2 * a) / b;
+            cout << total << endl;
         }
     }
 }

@@ -11,19 +11,6 @@ using namespace std;
 #define vii vector<pair<int, int>>
 #define pii pair<int, int>
 #define rep(i, a, b) for (int i = a; i < b; i++)
-
-bool Even(int n)
-{
-    if (n % 2 == 0)
-    {
-        return true;
-    }
-    else
-    {
-        return false;
-    }
-}
-
 signed main()
 {
     int T;
@@ -31,17 +18,16 @@ signed main()
     while (T--)
     {
 
-        int a, b, t;
-        cin >> a >> b >> t;
-        if (t % 2 == 1)
+        int n1, n2, n3, n4, n5;
+        int rem = n1 + n2 + n3 + n4 + n5;
+        switch (rem)
         {
-            int ans = max(2 * a, b) / min(2 * a, b);
-            cout << ans << endl;
-        }
-        else
-        {
-            int ans = max(a, b) / min(a, b);
-            cout << ans << endl;
+        case 0:
+            cout << "Beginner" << endl;
+            break;
+
+        default:
+            break;
         }
     }
 }

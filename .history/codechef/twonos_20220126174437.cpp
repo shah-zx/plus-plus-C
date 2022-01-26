@@ -33,15 +33,22 @@ signed main()
 
         int a, b, t;
         cin >> a >> b >> t;
-        if (t % 2 == 1)
+        int counta = 0;
+        int countb = 0;
+        for (int i = t; i >0; i--)
         {
-            int ans = max(2 * a, b) / min(2 * a, b);
-            cout << ans << endl;
+            if (Even(i))
+            {
+                counta += b * 2;
+            }
+            else
+            {
+                countb += a * 2;
+            }
         }
-        else
-        {
-            int ans = max(a, b) / min(a, b);
-            cout << ans << endl;
-        }
+        int y = max(counta, countb);
+        int z = min(counta, countb);
+        int x = y / z;
+        cout << z << endl;
     }
 }
