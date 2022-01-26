@@ -32,13 +32,10 @@ signed main()
         bool ans = 1;
         for (char c : s)
         {
-            if (!isKnown[c - 'a'])
-            {
+            if (!isKnown[c]){
                 ans = false;
             }
+
         }
-        if(ans){
-            cout << "Yes" << endl;
-        } else { cout << "No" << endl; }
     }
 }

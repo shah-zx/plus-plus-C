@@ -16,12 +16,6 @@ signed main()
 {
     string w;
     cin >> w;
-
-    vector<char> isKnown(26, false);
-    for (char c : w)
-    {
-        isKnown[c - 'a'] = true;
-    }
     int n;
     cin >> n;
     while (n--)
@@ -29,16 +23,8 @@ signed main()
 
         string s;
         cin >> s;
-        bool ans = 1;
-        for (char c : s)
-        {
-            if (!isKnown[c - 'a'])
-            {
-                ans = false;
-            }
-        }
-        if(ans){
-            cout << "Yes" << endl;
-        } else { cout << "No" << endl; }
+
+        vector<char> isKnown(26, false);
+        
     }
 }
