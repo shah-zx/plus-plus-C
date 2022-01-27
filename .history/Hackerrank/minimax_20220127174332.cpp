@@ -14,20 +14,21 @@ using namespace std;
 signed main()
 {
 
-
-    int arr[5];
-    for (int i = 0; i < 5; i++)
+    int n;
+    cin >> n;
+    int arr[n];
+    for (int i = 0; i < n; i++)
     {
         cin >> arr[i];
     }
-    sort(arr, arr + 5);
+    sort(arr, arr + n);
     int sum = 0;
     int sume = 0;
-    for (int i = 1; i < 5; i++)
+    for (int i = 1; i < n; i++)
     {
         sum += arr[i];
     }
-    for (int i = 0; i < 5 - 1; i++)
+    for (int i = 0; i < n - 1; i++)
     {
         sume += arr[i];
     }

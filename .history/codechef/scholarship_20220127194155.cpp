@@ -13,24 +13,14 @@ using namespace std;
 #define rep(i, a, b) for (int i = a; i < b; i++)
 signed main()
 {
-
-
-    int arr[5];
-    for (int i = 0; i < 5; i++)
+    int T;
+    cin >> T;
+    if (T >= 1 && T <= 50)
     {
-        cin >> arr[i];
+        cout << "100" << endl;
     }
-    sort(arr, arr + 5);
-    int sum = 0;
-    int sume = 0;
-    for (int i = 1; i < 5; i++)
+    else if (T >= 51 && T <= 100)
     {
-        sum += arr[i];
+        cout << "50" << endl;
     }
-    for (int i = 0; i < 5 - 1; i++)
-    {
-        sume += arr[i];
-    }
-
-    cout << sume << " " << sum << endl;
 }
