@@ -12,20 +12,18 @@ using namespace std;
 #define pii pair<int, int>
 #define rep(i, a, b) for (int i = a; i < b; i++)
 
-int CountappOr()
-{
-    int s, t, a, b; // a = location of apple tree // b id location of orange tree
+int CountappOr(){
+ int s, t, a, b; // a = location of apple tree // b id location of orange tree
     int m, n;
     cin >> s >> t;
     cin >> a >> b;
     cin >> m >> n;
     int apples[m];
     int oranges[n];
-    int counta = 0;
-    int countb = 0;
 
-    vector<int> v; // vector containing apples after adding a
-    vector<int> z; // vector containing apples after adding b
+    vector <int> v;
+    vector <int> z;     
+
 
     for (int i = 0; i < m; i++)
     {
@@ -37,31 +35,24 @@ int CountappOr()
     }
     for (int k = 0; k < m; k++)
     {
-        v.push_back(a + apples[k]);
+         v.push_back(a += apples[k])
     }
     for (int o = 0; o < n; o++)
     {
-        z.push_back(b + oranges[o]);
+        b += oranges[o];
     }
-    for (auto i : v)
+    for (int p = 0; p < m; p++)
     {
-        if (i >= s && i <= t)
-        {
-            counta++;
-        }
+        cout << apples[p] << " ";
     }
-    for (auto j : z)
+    cout << endl;
+    for (int q = 0; q < n; q++)
     {
-        if (j >= s && j <= t)
-        {
-            countb++;
-        }
+        cout << oranges[q] << " ";
     }
-    cout << counta << endl;
-    cout << countb << endl;
 }
 
 signed main()
 {
-    CountappOr();
+   CountappOr();
 }

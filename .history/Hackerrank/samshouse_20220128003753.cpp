@@ -52,7 +52,7 @@ int CountappOr()
     }
     for (auto j : z)
     {
-        if (j >= s && j <= t)
+        if (j <= s && j >= t)
         {
             countb++;
         }

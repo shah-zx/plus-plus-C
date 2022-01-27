@@ -45,20 +45,19 @@ int CountappOr()
     }
     for (auto i : v)
     {
-        if (i >= s && i <= t)
+        if (i <= s && i >= t)
         {
             counta++;
         }
     }
     for (auto j : z)
     {
-        if (j >= s && j <= t)
+        if (j <= s && j >= t)
         {
             countb++;
         }
     }
-    cout << counta << endl;
-    cout << countb << endl;
+    count << counta <<endl;
 }
 
 signed main()

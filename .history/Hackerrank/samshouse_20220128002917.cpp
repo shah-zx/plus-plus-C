@@ -21,11 +21,9 @@ int CountappOr()
     cin >> m >> n;
     int apples[m];
     int oranges[n];
-    int counta = 0;
-    int countb = 0;
 
-    vector<int> v; // vector containing apples after adding a
-    vector<int> z; // vector containing apples after adding b
+    vector<int> v;   // vector containing apples after adding a
+    vector<int> z;   // vector containing apples after adding b
 
     for (int i = 0; i < m; i++)
     {
@@ -45,20 +43,13 @@ int CountappOr()
     }
     for (auto i : v)
     {
-        if (i >= s && i <= t)
-        {
-            counta++;
-        }
+        cout << i << " ";
     }
+    cout << endl;
     for (auto j : z)
     {
-        if (j >= s && j <= t)
-        {
-            countb++;
-        }
+        cout << j << " ";
     }
-    cout << counta << endl;
-    cout << countb << endl;
 }
 
 signed main()
