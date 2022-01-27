@@ -20,31 +20,30 @@ signed main()
         int n;
         cin >> n;
         int num = n;
-        if (n >= 0 && n <= 100)
+        int count = 0;
+        while (n % 5 != 0 && n > 33 && (n <= 0 && n >= 100))
         {
-            while (n % 5 != 0 && n > 33)
-            {
-                if (n <= 33)
-                {
-                    cout << n << endl;
-                }
-
-                n += 1;
-            }
-            int y = n - num;
-
-            if (y < 3)
+            if (n <= 33)
             {
                 cout << n << endl;
             }
-            if (y >= 3)
-            {
-                cout << num << endl;
-            }
+            n += 1;
+            count++;
+        }
+        int y = n - num;
+
+        if (y < 3)
+        {
+            cout << n << endl;
+        }
+        if (y >= 3)
+        {
+            cout << num << endl;
         }
     }
 }
-    // 73
-    // 67
-    // 38
-    // 33
+
+// 73
+// 67
+// 38
+// 33
