@@ -32,5 +32,4 @@ signed main()
     {
         sume += arr[i];
     }
-    
 }

@@ -22,15 +22,10 @@ signed main()
         cin >> arr[i];
     }
     sort(arr, arr + n);
-    int sum = 0;
-    int sume = 0;
     for (int i = 1; i < n; i++)
     {
-        sum += arr[i];
+        cout << arr[i];
     }
-    for (int i = 0; i < n - 1; i++)
-    {
-        sume += arr[i];
-    }
+
     
 }

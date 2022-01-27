@@ -17,20 +17,27 @@ signed main()
     int n;
     cin >> n;
     int arr[n];
-    for (int i = 0; i < n; i++)
+    for (int i = 0; i < 5; i++)
     {
         cin >> arr[i];
-    }
-    sort(arr, arr + n);
-    int sum = 0;
-    int sume = 0;
-    for (int i = 1; i < n; i++)
+    } // input
+
+    int t;
+    for (int i = 0; i < 5; i++)
     {
-        sum += arr[i];
+        for (int j = i + 1; j < 5; j++)
+        {
+            if (arr[j] < arr[i])
+            {
+                t = arr[j];
+                arr[j] = arr[i];
+                arr[i] = t;
+            }
+        } // swapping
     }
-    for (int i = 0; i < n - 1; i++)
+    //
+    for (int i = 0; i < 5; i++)
     {
-        sume += arr[i];
-    }
-    
+        cout << arr[i] << " ";
+    } // output
 }
