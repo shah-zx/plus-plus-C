@@ -20,11 +20,15 @@ signed main()
         int n;
         cin >> n;
         int num = n;
-        int count = 0;
-        while (n % 5 != 0 && n > 33)
+        if (num <= 33)
         {
-            if (n <= 33)
-            {
+            cout << num << endl;
+            break;
+        }
+        int count = 0;
+        while (n % 5 != 0)
+        {
+            if(n <= 33){
                 cout << n << endl;
             }
             n += 1;

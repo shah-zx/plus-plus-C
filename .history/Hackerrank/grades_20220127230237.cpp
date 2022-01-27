@@ -18,32 +18,15 @@ signed main()
     while (T--)
     {
         int n;
-        cin >> n;
         int num = n;
+        cin >> n;
         int count = 0;
-        while (n % 5 != 0 && n > 33)
+        if (n % 5 != 0)
         {
-            if (n <= 33)
-            {
-                cout << n << endl;
-            }
             n += 1;
             count++;
         }
         int y = n - num;
-
-        if (y < 3)
-        {
-            cout << n << endl;
-        }
-        if (y >= 3)
-        {
-            cout << num << endl;
-        }
+        
     }
 }
-
-// 73
-// 67
-// 38
-// 33
