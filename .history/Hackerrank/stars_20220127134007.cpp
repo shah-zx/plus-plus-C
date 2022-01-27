@@ -13,27 +13,20 @@ using namespace std;
 #define rep(i, a, b) for (int i = a; i < b; i++)
 signed main()
 {
-    int n;
-    cin >> n;
-    int arr[n];
-    unordered_map<int, int> m;
-    for (int i = 0; i < n; i++)
+    int T;
+    cin >> T;
+    for (int i = 1; i <= T; i++)
     {
-        cin >> arr[i];
-    }
-    sort(arr, arr + n);
-    int g = arr[n - 1];
-
-    for (int i = 0; i < n; i++)
-    {
-        int k = arr[i];
-        m[k]++;
-    }
-    for (auto i : m)
-    {
-        if (i.first == g)
+        for (int j = 1; j <= i; j++)
         {
-            cout << i.second << endl;
+            int n = T - i;
+            for (int i = n; i >= 1; i--)
+            {
+                cout << " ";
+            }
+
+            cout << "#";
         }
     }
+    cout << endl;
 }

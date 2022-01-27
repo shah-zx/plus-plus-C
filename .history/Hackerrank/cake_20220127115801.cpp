@@ -23,6 +23,7 @@ signed main()
     }
     sort(arr, arr + n);
     int g = arr[n - 1];
+    // cout << g << endl;
 
     for (int i = 0; i < n; i++)
     {
@@ -31,8 +32,7 @@ signed main()
     }
     for (auto i : m)
     {
-        if (i.first == g)
-        {
+        if(i.first == g){
             cout << i.second << endl;
         }
     }
