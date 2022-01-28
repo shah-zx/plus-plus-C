@@ -18,8 +18,9 @@ signed main()
     int min = 1;
     int max = n;
     int count = 0;
-    while (min != k)
+    while (min < k)
     {
         count++;
     }
+    cout << count;
 }

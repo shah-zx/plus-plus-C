@@ -11,15 +11,8 @@ using namespace std;
 #define vii vector<pair<int, int>>
 #define pii pair<int, int>
 #define rep(i, a, b) for (int i = a; i < b; i++)
-signed main()
-{
-    int n, k;
-    cin >> n >> k;
-    int min = 1;
-    int max = n;
-    int count = 0;
-    while (min != k)
-    {
-        count++;
-    }
+signed main(){
+  int n , k ;
+  cin>>n >> k;
+  
 }

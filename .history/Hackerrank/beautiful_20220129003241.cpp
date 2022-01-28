@@ -11,30 +11,31 @@ using namespace std;
 #define vii vector<pair<int, int>>
 #define pii pair<int, int>
 #define rep(i, a, b) for (int i = a; i < b; i++)
+
+int Rev(int n)
+{
+    int rem 0;
+    while (n != 0)
+    {
+        int ld = n % 10;
+        int rem = ld;
+        n /= 10;
+    }
+    cout << rem << endl;
+}
+
 signed main()
 {
 
-    int n;
-    cin >> n;
-    int arr[n];
-    int x = n * (n + 1) / 2;
-    vector<int> v[x];
-    for (int i = 0; i < n; i++)
+    int i, j, k;
+    cin >> i >> j >> k;
+    vector<int> n;
+    for (int s = i; s <= j; s++)
     {
-        cin >> arr[i];
+        n.push_back(s);
     }
-    int d, m;
-    cin >> d;
-    cin >> m;
-
-    for (int i = 0; i < n; i++)
+    for (auto i : n)
     {
-        for (int j = i; j < n; j++)
-        {
-            for (int k = i; k <= j; k++)
-            {
-             
-            }
-        }
+        cout << i << " ";
     }
 }

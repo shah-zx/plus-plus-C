@@ -33,7 +33,7 @@ signed main()
         {
             for (int k = i; k <= j; k++)
             {
-             
+             v[k].push_back(arr[i][j]);
             }
         }
     }

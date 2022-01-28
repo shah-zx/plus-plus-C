@@ -13,13 +13,16 @@ using namespace std;
 #define rep(i, a, b) for (int i = a; i < b; i++)
 signed main()
 {
-    int n, k;
-    cin >> n >> k;
-    int min = 1;
-    int max = n;
-    int count = 0;
-    while (min != k)
+
+    int i, j, k;
+    cin >> i >> j >> k;
+    vector<int> n;
+    for (int s = i; s <= j; s++)
     {
-        count++;
+        n.push_back(s);
+    }
+    reverse(n.begin(), n.end());
+    for(auto i : n){
+        cout << i << " ";
     }
 }
