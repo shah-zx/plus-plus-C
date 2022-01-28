@@ -13,7 +13,7 @@ using namespace std;
 #define rep(i, a, b) for (int i = a; i < b; i++)
 signed main()
 {
-    int n, k;
+    int n ,k;
     cin >> n >> k;
     int arr[n];
     int count = 0;
@@ -34,4 +34,5 @@ signed main()
     cout << count << endl;
 }
 
-// cout << "[" << arr[i] << "," << arr[j] << "]";
+
+                // cout << "[" << arr[i] << "," << arr[j] << "]";

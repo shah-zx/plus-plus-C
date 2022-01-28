@@ -13,25 +13,21 @@ using namespace std;
 #define rep(i, a, b) for (int i = a; i < b; i++)
 signed main()
 {
-    int n, k;
-    cin >> n >> k;
+    int n;
     int arr[n];
-    int count = 0;
+    int k;
+    cin >> n >> k;
     for (int i = 0; i < n; i++)
     {
         cin >> arr[i];
     }
-    for (int i = 0; i < n - 1; i++)
+    for (int i = 0; i < n-1; i++)
     {
         for (int j = 1; j < n; j++)
         {
-            if ((arr[i] < arr[j]) && ((arr[i] + arr[j]) % k == 0))
-            {
-                count++;
-            }
+            
         }
+        
     }
-    cout << count << endl;
+    
 }
-
-// cout << "[" << arr[i] << "," << arr[j] << "]";
