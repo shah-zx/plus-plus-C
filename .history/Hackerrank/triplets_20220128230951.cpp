@@ -11,42 +11,42 @@ using namespace std;
 #define vii vector<pair<int, int>>
 #define pii pair<int, int>
 #define rep(i, a, b) for (int i = a; i < b; i++)
-
 signed main()
 {
 
-    int n;
-    cin >> n;
-    int arr[n][n];
+    int alice = 0;
+    int bob = 0;
+    int n = 3;
+    int a[n];
+    int b[n];
     for (int i = 0; i < n; i++)
     {
-        for (int j = 0; j < n; j++)
-        {
-            cin >> arr[i][j];
-        }
+        cin>>a[i];
     }
-    int sum = 0;
-    int sc = 0;
     for (int i = 0; i < n; i++)
     {
-        for (int j = 0; j < n; j++)
+        cin>>b[i];
+    }
+    
+    
+    for (int i = 0; i < n; i++)
+    {
+        for (int j = i; j < n; j++)
         {
-            if (i == j)
+            if (a[i] > b[i])
             {
-                sum += arr[i][j];
+                alice++;
             }
-            if (i + j == (n - 1))
+            if (b[i] > a[i])
             {
-                sc += arr[i][j];
+                bob++;
+            }
+            if (a[i] == b[i])
+            {
+                alice += 0;
+                bob += 0;
             }
         }
     }
-    // int r = 0;
-    // int s = n;
-    // while (r < n && s >= 0)
-    // {
-    //     cout << arr[r][s] << endl;
-    //     r++;
-    //     s--;
-    // }
+    cout << alice << " " << bob << endl;
 }
