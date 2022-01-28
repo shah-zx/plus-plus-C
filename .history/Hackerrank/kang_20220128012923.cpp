@@ -23,8 +23,6 @@ signed main()
         x2 += v2;
         if(v1 == v2){
             cout << "YES";
-        } else{
-            cout << "NO";
         }
     }
     

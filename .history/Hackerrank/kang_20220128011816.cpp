@@ -11,21 +11,16 @@ using namespace std;
 #define vii vector<pair<int, int>>
 #define pii pair<int, int>
 #define rep(i, a, b) for (int i = a; i < b; i++)
-signed main()
-{
+signed main(){
 
-    int x1, x2, v1, v2;
-    cin >> x1 >> v1;
-    cin >> x2 >> v2;
-    for (v1 != v2;;)
-    {
-        x1 += v1;
-        x2 += v2;
-        if(v1 == v2){
-            cout << "YES";
-        } else{
-            cout << "NO";
-        }
-    }
-    
+int x1 , x2 , v1 , v2;
+cin>> x1 >> v1;
+cin>> x2 >> v2;
+if(v1 > v2){
+    cout << "YES";
+} else{
+    cout << "NO";
+}
+
+
 }

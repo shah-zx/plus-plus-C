@@ -13,19 +13,12 @@ using namespace std;
 #define rep(i, a, b) for (int i = a; i < b; i++)
 signed main()
 {
-
-    int x1, x2, v1, v2;
-    cin >> x1 >> v1;
-    cin >> x2 >> v2;
-    for (v1 != v2;;)
+    int n;
+    int arr[n];
+    int k;
+    cin >> n >> k;
+    for (int i = 0; i < n; i++)
     {
-        x1 += v1;
-        x2 += v2;
-        if(v1 == v2){
-            cout << "YES";
-        } else{
-            cout << "NO";
-        }
+        cin >> arr[i];
     }
-    
 }
