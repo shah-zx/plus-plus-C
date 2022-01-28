@@ -13,26 +13,32 @@ using namespace std;
 #define rep(i, a, b) for (int i = a; i < b; i++)
 signed main()
 {
-    int n, k;
-    cin >> n >> k;
+    int n;
+    cin >> n;
     int arr[n];
-    int count = 0;
+    int counto = 0;
+    int countt = 0;
+    int countth = 0;
+    int countf = 0;
+    int countfi = 0;
     for (int i = 0; i < n; i++)
     {
         cin >> arr[i];
     }
-    sort(arr, arr + n);
-    for (int i = 0; i < n - 1; i++)
+    unordered_map<int, int> m;
+    for (int i = 0; i < n; i++)
     {
-        for (int j = 1; j < n; j++)
+        int k = arr[i];
+        m[k]++;
+    }
+    for (auto i : m)
+    {
+        if (i.first >= 1 && i.first <= 5)
         {
-            if ((arr[i] < arr[j]) && ((arr[i] + arr[j]) % k == 0))
+            if (i.first == 1)
             {
-                count++;
+                counto = i.second;
             }
         }
     }
-    cout << count << endl;
 }
-
-// cout << "[" << arr[i] << "," << arr[j] << "]";
