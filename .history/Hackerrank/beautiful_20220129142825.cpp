@@ -14,14 +14,13 @@ using namespace std;
 
 int Rev(int n)
 {
-    int u = 0;
+    int ld = 0;
     while (n != 0)
     {
         int ld = n % 10;
         n /= 10;
-        u = ld;
+        cout << ld;
     }
-    return u;
 }
 
 signed main()
@@ -39,8 +38,8 @@ signed main()
     //     cout << i << " ";
     // }
 
-    int n;
-    cin >> n;
+    int n, u;
+    cin >> n >> u;
     int r = Rev(n);
     // int h = u - y;
     cout << r;

@@ -39,8 +39,8 @@ signed main()
     //     cout << i << " ";
     // }
 
-    int n;
-    cin >> n;
+    int n, u;
+    cin >> n >> u;
     int r = Rev(n);
     // int h = u - y;
     cout << r;

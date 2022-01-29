@@ -21,7 +21,6 @@ int Rev(int n)
         n /= 10;
         u = ld;
     }
-    return u;
 }
 
 signed main()
@@ -39,8 +38,8 @@ signed main()
     //     cout << i << " ";
     // }
 
-    int n;
-    cin >> n;
+    int n, u;
+    cin >> n >> u;
     int r = Rev(n);
     // int h = u - y;
     cout << r;
