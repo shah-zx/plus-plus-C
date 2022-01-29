@@ -17,8 +17,6 @@ signed main()
     cin >> b >> n >> m;
     int a[n];
     int c[m];
-    vector<int> v;
-    vector<int> l;
     for (int i = 0; i < n; i++)
     {
         cin >> a[i];
@@ -27,21 +25,17 @@ signed main()
     {
         cin >> c[j];
     }
-    for (int i = 0; i < n; i++)
-    {
-        for (int j = 0; j < m; j++)
-        {
-            int s = a[i] + c[j];
-            v.push_back(s);
-        }
+    unordered_map<int, int> o;
+    unordered_map<int, int> k;
+    for(int i = 0; i < n; i++){
+        int g = a[i];
+        o[g]++;
     }
-    for (auto z : v)
+    for (int i = 0; i < m; i++)
     {
-        if (z < b)
-        {
-            l.push_back(z);
-        }
+        int v = c[i];
+        k[v]++;
     }
-    int e = *max_element(l.begin(), l.end());
-    cout << e << endl;
+    
+    
 }

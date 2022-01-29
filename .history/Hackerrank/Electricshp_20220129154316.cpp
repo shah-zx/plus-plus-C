@@ -43,5 +43,4 @@ signed main()
         }
     }
     int e = *max_element(l.begin(), l.end());
-    cout << e << endl;
 }

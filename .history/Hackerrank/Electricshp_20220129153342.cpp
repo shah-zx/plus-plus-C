@@ -17,8 +17,7 @@ signed main()
     cin >> b >> n >> m;
     int a[n];
     int c[m];
-    vector<int> v;
-    vector<int> l;
+    vector <int> v
     for (int i = 0; i < n; i++)
     {
         cin >> a[i];
@@ -32,16 +31,7 @@ signed main()
         for (int j = 0; j < m; j++)
         {
             int s = a[i] + c[j];
-            v.push_back(s);
+            
         }
     }
-    for (auto z : v)
-    {
-        if (z < b)
-        {
-            l.push_back(z);
-        }
-    }
-    int e = *max_element(l.begin(), l.end());
-    cout << e << endl;
 }
