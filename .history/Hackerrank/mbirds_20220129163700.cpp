@@ -1,4 +1,3 @@
-#include<iostream>
 #include <bits/stdc++.h>
 #include <stack>
 #include <queue>
@@ -55,8 +54,9 @@ signed main()
     vector<int>::iterator it, st;
 it:
     set_intersection(f.begin(), f.end(), q.begin(), q.end(), l);
-    for (st = l.begin(); st != it; st++)
+    for (st = l.begin(); st != it; ++st)
     {
-        cout << *st << " ";
+      
+
     }
 }

@@ -46,9 +46,6 @@ signed main()
     if (e < b)
     {
         cout << e << endl;
-    }
-    else
-    {
-        cout << "-1" << endl;
-    }
+    } else{ cout << "-1" << endl; }
+   
 }

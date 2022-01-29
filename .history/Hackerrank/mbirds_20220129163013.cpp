@@ -1,4 +1,3 @@
-#include<iostream>
 #include <bits/stdc++.h>
 #include <stack>
 #include <queue>
@@ -19,6 +18,8 @@ signed main()
     cin >> n;
     int arr[n];
 
+
+
     vector<int> f;
     vector<int> q;
     for (int i = 0; i < n; i++)
@@ -26,12 +27,14 @@ signed main()
         cin >> arr[i];
     }
 
+
     unordered_map<int, int> m;
     for (int i = 0; i < n; i++)
     {
         int k = arr[i];
         m[k]++;
     }
+
 
     for (auto i : m)
     {
@@ -46,17 +49,6 @@ signed main()
         q.push_back(x); // This is the vector containing the count (second vector)
     }
 
-    // sorted both the arrays  :
-
     sort(f.begin(), f.end());
     sort(q.begin(), q.end());
-
-    vector<int> l(f.size() + q.size());
-    vector<int>::iterator it, st;
-it:
-    set_intersection(f.begin(), f.end(), q.begin(), q.end(), l);
-    for (st = l.begin(); st != it; st++)
-    {
-        cout << *st << " ";
-    }
 }

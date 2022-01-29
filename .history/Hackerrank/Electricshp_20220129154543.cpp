@@ -43,12 +43,5 @@ signed main()
         }
     }
     int e = *max_element(l.begin(), l.end());
-    if (e < b)
-    {
-        cout << e << endl;
-    }
-    else
-    {
-        cout << "-1" << endl;
-    }
+    cout << e << endl;
 }

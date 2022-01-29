@@ -41,6 +41,11 @@ signed main()
         {
             l.push_back(z);
         }
+        else
+        {
+            cout << "-1";
+            break;
+        }
     }
     int e = *max_element(l.begin(), l.end());
     if (e < b)

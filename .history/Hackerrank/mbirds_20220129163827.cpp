@@ -1,4 +1,3 @@
-#include<iostream>
 #include <bits/stdc++.h>
 #include <stack>
 #include <queue>
@@ -57,6 +56,6 @@ it:
     set_intersection(f.begin(), f.end(), q.begin(), q.end(), l);
     for (st = l.begin(); st != it; st++)
     {
-        cout << *st << " ";
+        cout << *it << " ";
     }
 }
