@@ -24,35 +24,31 @@ signed main()
     }
     string s;
     cin >> s;
-    int q = s.size();
     // This is the code for making the string gp into a vector
 
-    vector<char> v(s.begin(), s.end());
-    vector<int> u; // This is for storing the indexes
-    vector<int> z; // This will contain the number from the nos array given
+    vector<char> v(s.begin(), s.end());  
+    vector <int> u; // This is for storing the indexes
+    vector <int> z; // This will contain the number from the nos array given 
     for (int i = 1; i <= 26; i++)
     {
-        for (auto j : v)
-        {
-            if (arr[i] == j)
-            {
-                u.push_back(i);
+        for(auto j : v){
+            if(arr[i] == j){
+               u.push_back(i);
             }
         }
     }
-
+    
     for (int i = 1; i <= 26; i++)
     {
-        for (auto k : u)
-        {
-            if (i == k)
-            {
+        for(auto k : u){
+            if(i == k){
                 z.push_back(nos[i]);
             }
         }
     }
-
+    
     int h = *max_element(z.begin(), z.end());
-    int rem = h * q;
-    cout << rem << endl;
+    cout << h;
+
+
 }

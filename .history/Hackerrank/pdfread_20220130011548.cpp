@@ -53,6 +53,5 @@ signed main()
     }
 
     int h = *max_element(z.begin(), z.end());
-    int rem = h * q;
-    cout << rem << endl;
+    cout << q;
 }

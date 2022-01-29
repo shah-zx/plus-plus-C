@@ -24,7 +24,6 @@ signed main()
     }
     string s;
     cin >> s;
-    int q = s.size();
     // This is the code for making the string gp into a vector
 
     vector<char> v(s.begin(), s.end());
@@ -53,6 +52,5 @@ signed main()
     }
 
     int h = *max_element(z.begin(), z.end());
-    int rem = h * q;
-    cout << rem << endl;
+    cout << h;
 }
