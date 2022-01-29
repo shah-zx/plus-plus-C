@@ -12,34 +12,36 @@ using namespace std;
 #define pii pair<int, int>
 #define rep(i, a, b) for (int i = a; i < b; i++)
 
-int Rev(int n)
+void Rev(int n)
 {
-    vector<int> v;
+    vector <int> v;
     while (n != 0)
     {
         int ld = n % 10;
         v.push_back(ld);
         n /= 10;
     }
-    for (auto i : v)
-    {
-        cout << i << " ";
+    for(auto i : v){
+        cout << i;
     }
-    
 }
 
 signed main()
 {
 
-    int i, j, k;
-    cin >> i >> j >> k;
-    vector<int> n;
-    for (int s = i; s <= j; s++)
-    {
-        n.push_back(s);
-    }
-    for (auto i : n)
-    {
-        cout << i << " ";
-    }    
+    // int i, j, k;
+    // cin >> i >> j >> k;
+    // vector<int> n;
+    // for (int s = i; s <= j; s++)
+    // {
+    //     n.push_back(s);
+    // }
+    // for (auto i : n)
+    // {
+    //     cout << i << " ";
+    // }
+
+    int n;
+    cin >> n;
+    Rev(n);
 }

@@ -12,7 +12,7 @@ using namespace std;
 #define pii pair<int, int>
 #define rep(i, a, b) for (int i = a; i < b; i++)
 
-int Rev(int n)
+vector <int> Rev(int n)
 {
     vector<int> v;
     while (n != 0)
@@ -23,7 +23,7 @@ int Rev(int n)
     }
     for (auto i : v)
     {
-        cout << i << " ";
+        cout << i;
     }
     
 }
@@ -41,5 +41,9 @@ signed main()
     for (auto i : n)
     {
         cout << i << " ";
-    }    
+    }
+    for (auto i : n)
+    {
+        Rev(i);
+    }
 }

@@ -41,5 +41,9 @@ signed main()
     for (auto i : n)
     {
         cout << i << " ";
-    }    
+    }
+    for (auto i : n)
+    {
+        Rev(i);
+    }
 }
