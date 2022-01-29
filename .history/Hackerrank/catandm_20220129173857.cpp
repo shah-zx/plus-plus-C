@@ -25,14 +25,8 @@ signed main()
         if (f > d)
         {
             cout << "Cat B" << endl;
-        }
-        if (d > f)
-        {
+        } else if ( d > f) {
             cout << "Cat A" << endl;
-        }
-        if (d == f)
-        {
-            cout << "Mouse C";
         }
     }
 }

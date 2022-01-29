@@ -20,19 +20,6 @@ signed main()
 
         int a, b, c;
         cin >> a >> b >> c;
-        int f = abs(c - a);
-        int d = abs(c - b);
-        if (f > d)
-        {
-            cout << "Cat B" << endl;
-        }
-        if (d > f)
-        {
-            cout << "Cat A" << endl;
-        }
-        if (d == f)
-        {
-            cout << "Mouse C";
-        }
+        
     }
 }
