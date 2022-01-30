@@ -23,24 +23,25 @@ void Reverse(int arr[], int n)
                 e--;
             }
         }
-    }
 }
-    signed main()
+
+
+
+signed main()
+{
+    int n, y;
+    cin >> n >> y;
+    int arr[n];
+    for (int i = 0; i < n; i++)
     {
-        int n, y;
-        cin >> n >> y;
-        int arr[n];
-        for (int i = 0; i < n; i++)
-        {
-            cin >> arr[i];
-        }
-        for (int i = 0 ; i < y; i++)
-        {
-            Reverse(arr, n);
-        }
-        for (int i = 0; i < n; i++)
-        {
-            cout << arr[i] << " ";
-        }
+        cin>>arr[i];
     }
+    
+    Reverse(arr, n);
+    for (int i = 0; i < n; i++)
+    {
+        cout << arr[i] << " ";
+    }
+    
+}
 

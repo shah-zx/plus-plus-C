@@ -9,10 +9,11 @@ using namespace std;
 #define pii pair<int, int>
 #define rep(i, a, b) for (int i = a; i < b; i++)
 
-void Reverse(int arr[], int n)
+void Reverse(int arr[], int n, int y)
 {
     int s = 0;
     int e = n - 1;
+    for (int j = 0; j < y; j++)
     {
         for (int i = 0; i < n; i++)
         {
@@ -25,22 +26,19 @@ void Reverse(int arr[], int n)
         }
     }
 }
-    signed main()
+
+
+
+signed main()
+{
+    int n, y;
+    cin >> n >> y;
+    int arr[n];
+    Reverse(arr, n, y);
+    for (int i = 0; i < n; i++)
     {
-        int n, y;
-        cin >> n >> y;
-        int arr[n];
-        for (int i = 0; i < n; i++)
-        {
-            cin >> arr[i];
-        }
-        for (int i = 0 ; i < y; i++)
-        {
-            Reverse(arr, n);
-        }
-        for (int i = 0; i < n; i++)
-        {
-            cout << arr[i] << " ";
-        }
+        /* code */
     }
+    
+}
 
