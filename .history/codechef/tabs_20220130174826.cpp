@@ -19,23 +19,22 @@ signed main()
     {
 
         int n, b; // n =  no. of tabs  , b = budget
-        cin >> n >> b;
+        cin >> n;
         vector<int> v;
-        vector<string> g;
         int f;
-        int w, h, p;
+        int w , h , p;
         for (int i = 0; i < n; i++)
         {
             cin >> w >> h >> p;
+        }
+        for (int i = 0; i < 3; i++)
+        {
             int f = w * h;
-            if (p < b)
-            {
+            if(p < b){
                 v.push_back(f);
             }
         }
-        for (auto r : v)
-        {
-            cout << r << " ";
-        }
+        
+
     }
 }

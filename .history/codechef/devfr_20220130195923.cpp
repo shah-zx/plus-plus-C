@@ -17,25 +17,28 @@ signed main()
     cin >> T;
     while (T--)
     {
-
-        int n, b; // n =  no. of tabs  , b = budget
-        cin >> n >> b;
+        int g;
+        cin >> g;
+        unordered_map<int, int> c;
         vector<int> v;
-        vector<string> g;
-        int f;
-        int w, h, p;
-        for (int i = 0; i < n; i++)
+        int arr[g];
+        for (int i = 0; i < g; i++)
         {
-            cin >> w >> h >> p;
-            int f = w * h;
-            if (p < b)
-            {
-                v.push_back(f);
-            }
+            cin >> arr[i];
         }
-        for (auto r : v)
+
+        for (int i = 0; i < g; i++)
         {
-            cout << r << " ";
+
+            int h = arr[i];
+            c[h]++;
         }
+
+        for (auto d : c)
+        {
+            v.push_back(d.first);
+        }
+        int rem = v.size();
+        cout << rem << endl;
     }
 }

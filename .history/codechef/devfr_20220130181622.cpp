@@ -17,25 +17,21 @@ signed main()
     cin >> T;
     while (T--)
     {
-
-        int n, b; // n =  no. of tabs  , b = budget
-        cin >> n >> b;
-        vector<int> v;
-        vector<string> g;
-        int f;
-        int w, h, p;
-        for (int i = 0; i < n; i++)
+        int g;
+        cin >> g;
+        int arr[g];
+        for (int i = 0; i < g; i++)
         {
-            cin >> w >> h >> p;
-            int f = w * h;
-            if (p < b)
+            cin >> arr[i];
+        }
+        int count = 0;
+        for (int i = 0; i < g; i++)
+        {
+            if (arr[i] != arr[i + 1])
             {
-                v.push_back(f);
-            }
+                count++;
+            } else { cout << "1";}
         }
-        for (auto r : v)
-        {
-            cout << r << " ";
-        }
+        cout << count << endl;
     }
 }

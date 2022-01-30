@@ -21,7 +21,6 @@ signed main()
         int n, b; // n =  no. of tabs  , b = budget
         cin >> n >> b;
         vector<int> v;
-        vector<string> g;
         int f;
         int w, h, p;
         for (int i = 0; i < n; i++)
@@ -31,7 +30,7 @@ signed main()
             if (p < b)
             {
                 v.push_back(f);
-            }
+            } else { cout << "No Tablet";}
         }
         for (auto r : v)
         {

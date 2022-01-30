@@ -32,6 +32,10 @@ signed main()
             {
                 v.push_back(f);
             }
+            else
+            {
+                cout << "No Tablet";
+            }
         }
         for (auto r : v)
         {
