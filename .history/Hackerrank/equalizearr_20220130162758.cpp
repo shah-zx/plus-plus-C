@@ -14,24 +14,25 @@ using namespace std;
 signed main()
 {
 
-    int n, k;
-    cin >> n >> k;
-    int energy = 100;
+    int n;
+    cin >> n;
     int arr[n];
+    unordered_map<int, int> m;
+    vector<int> d;
     for (int i = 0; i < n; i++)
     {
         cin >> arr[i];
     }
-    for (int i = 0; i < n; i += k)
+    for (int i = 0; i < n; i++)
     {
-        if (arr[i] == 0)
-        {
-            energy -= 1;
-        }
-        if (arr[i] == 1)
-        {
-            energy -= 2;
-        }
+        int k = arr[i];
+        m[k]++;
     }
-    cout << energy << endl;
+    for (auto n : m)
+    {
+        d.push_back(n.second);
+    }
+    int g = *max_element(d.begin(), d.end());
+    int rem = n - g;
+    
 }

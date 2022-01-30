@@ -24,9 +24,8 @@ signed main()
     }
     for (int i = 0; i < n; i += k)
     {
-        if (arr[i] == 0)
-        {
-            energy -= 1;
+        if(arr[i] == 0){
+        energy -= 1;
         }
         if (arr[i] == 1)
         {

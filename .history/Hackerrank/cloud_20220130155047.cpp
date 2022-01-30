@@ -22,14 +22,10 @@ signed main()
     {
         cin >> arr[i];
     }
-    for (int i = 0; i < n; i += k)
+    for (int i = 0; i < n; i+=k)
     {
-        if (arr[i] == 0)
-        {
-            energy -= 1;
-        }
-        if (arr[i] == 1)
-        {
+        energy -= 1;
+        if(i == 1){
             energy -= 2;
         }
     }

@@ -14,24 +14,23 @@ using namespace std;
 signed main()
 {
 
-    int n, k;
-    cin >> n >> k;
-    int energy = 100;
+    int n;
+    cin >> n;
     int arr[n];
     for (int i = 0; i < n; i++)
     {
         cin >> arr[i];
     }
-    for (int i = 0; i < n; i += k)
+    int count = 0;
+    for (int i = 0; i < n - 1; i++)
     {
-        if (arr[i] == 0)
+        for (int j = 1; j < n; j++)
         {
-            energy -= 1;
-        }
-        if (arr[i] == 1)
-        {
-            energy -= 2;
+            if (arr[i] == arr[j])
+            {
+                count++;
+            }
         }
     }
-    cout << energy << endl;
+    cout << count << endl;
 }

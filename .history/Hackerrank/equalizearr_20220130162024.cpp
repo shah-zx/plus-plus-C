@@ -14,24 +14,14 @@ using namespace std;
 signed main()
 {
 
-    int n, k;
-    cin >> n >> k;
-    int energy = 100;
+    int n;
+    cin >> n;
     int arr[n];
+    unordered_map<int, int> m;
     for (int i = 0; i < n; i++)
     {
         cin >> arr[i];
     }
-    for (int i = 0; i < n; i += k)
-    {
-        if (arr[i] == 0)
-        {
-            energy -= 1;
-        }
-        if (arr[i] == 1)
-        {
-            energy -= 2;
-        }
-    }
-    cout << energy << endl;
+    int count = 0;
+    
 }

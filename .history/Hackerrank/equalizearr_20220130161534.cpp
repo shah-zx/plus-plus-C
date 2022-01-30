@@ -11,27 +11,26 @@ using namespace std;
 #define vii vector<pair<int, int>>
 #define pii pair<int, int>
 #define rep(i, a, b) for (int i = a; i < b; i++)
-signed main()
-{
+signed main(){
 
-    int n, k;
-    cin >> n >> k;
-    int energy = 100;
-    int arr[n];
-    for (int i = 0; i < n; i++)
+int n;
+int arr[n];
+for (int i = 0; i < n; i++)
+{
+    cin >> arr[i];
+}
+int count = 0;
+for (int i = 0; i < n-1; i++)
+{
+    for (int j = 1; j < n; j++)
     {
-        cin >> arr[i];
-    }
-    for (int i = 0; i < n; i += k)
-    {
-        if (arr[i] == 0)
-        {
-            energy -= 1;
-        }
-        if (arr[i] == 1)
-        {
-            energy -= 2;
+        if(arr[i] ==arr[j]){
+
         }
     }
-    cout << energy << endl;
+    
+}
+
+
+
 }
