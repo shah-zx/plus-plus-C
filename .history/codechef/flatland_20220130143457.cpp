@@ -28,23 +28,17 @@ bool PerSq(int n)
 
 signed main()
 {
-
-    int n;
-    cin >> n;
-    int count = 0;
-    vector<int> v;
-    for (int i = 1; i <= n; i++)
+    int T;
+    cin >> T;
+    while (T--)
     {
-        if (PerSq(i))
+
+        int n;
+        cin >> n;
+        for (int i = 1; i < n; i++)
         {
-            v.push_back(i);
+            /* code */
         }
-        int w = *max_element(v.begin(), v.end());
-        int s = n - (w * w);
-        if (PerSq(s))
-        {
-            count++;
-        }
+        
     }
-    cout << count << endl;
 }

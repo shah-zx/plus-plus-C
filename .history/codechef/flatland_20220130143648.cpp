@@ -31,20 +31,12 @@ signed main()
 
     int n;
     cin >> n;
-    int count = 0;
-    vector<int> v;
     for (int i = 1; i <= n; i++)
     {
         if (PerSq(i))
         {
-            v.push_back(i);
-        }
-        int w = *max_element(v.begin(), v.end());
-        int s = n - (w * w);
-        if (PerSq(s))
-        {
-            count++;
+            cout << sqrt(i) << " ";
         }
     }
-    cout << count << endl;
+    // }
 }

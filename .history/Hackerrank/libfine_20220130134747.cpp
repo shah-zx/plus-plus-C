@@ -19,22 +19,17 @@ signed main()
     cin >> ddr >> mmr >> yyyyr;
     cin >> ddd >> mmd >> yyyyd;
     int rem;
-    if (ddr > ddd && mmr == mmd && yyyyr == yyyyd)
+    if (ddr > ddd)
     {
         int date = ddr - ddd;
         rem = date * 15;
         cout << rem << endl;
     }
-    if (ddr > ddd && mmr > mmd && yyyyr == yyyyd)
+    if (ddr == ddd)
     {
-        int f = ddr - ddd;
-        int g = mmr - mmd;
-        int i = f * 15;
-        int k = g * 500;
-        rem = i + k;
-        cout << rem << endl;
+        rem = 0;
     }
-    if (ddr == ddd && mmr > mmd && yyyyr == yyyyd)
+    if (mmr > mmd)
     {
         int month = mmr - mmd;
         rem = month * 500;
@@ -44,20 +39,14 @@ signed main()
     {
         rem = 0;
     }
-    if (ddr == ddd && mmr == mmd && yyyyr > yyyyd)
+    if (yyyyr > yyyyd)
     {
         int h = 10000;
         rem = h;
         cout << h << endl;
     }
-    if (ddr > ddd && mmr > mmd && yyyyr > yyyyd)
+    if (yyyyr == yyyyd)
     {
-        int i = ddr - ddd;
-        int u = mmr - mmd;
-        int h = 10000;
-        int x = i * 15;
-        int n = u * 500;
-        rem = h + x + n;
-        cout << rem << endl;
+        rem = 0;
     }
 }

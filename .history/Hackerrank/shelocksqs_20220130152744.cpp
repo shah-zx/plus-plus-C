@@ -12,11 +12,11 @@ using namespace std;
 #define pii pair<int, int>
 #define rep(i, a, b) for (int i = a; i < b; i++)
 
-bool PerSq(int n)
+bool Persq(int n)
 {
-    int u = sqrt(n);
-    int v = n / sqrt(n);
-    if (v == sqrt(n))
+    int d = sqrt(n);
+    int r = n / sqrt(n);
+    if (r == sqrt(n))
     {
         return true;
     }
@@ -28,23 +28,19 @@ bool PerSq(int n)
 
 signed main()
 {
-
-    int n;
-    cin >> n;
-    int count = 0;
-    vector<int> v;
-    for (int i = 1; i <= n; i++)
+    int T;
+    cin >> T;
+    while (T--)
     {
-        if (PerSq(i))
-        {
-            v.push_back(i);
-        }
-        int w = *max_element(v.begin(), v.end());
-        int s = n - (w * w);
-        if (PerSq(s))
-        {
-            count++;
-        }
+
+        int n1;
+        int n2;
+        cin >> n1 >> n2;
+        int count = 0;
+           int l = n1;
+           int r = n2;
+           int mid = (n1 + n2) / 2;
+
+        
     }
-    cout << count << endl;
 }

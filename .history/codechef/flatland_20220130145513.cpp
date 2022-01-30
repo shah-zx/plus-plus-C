@@ -38,6 +38,7 @@ signed main()
         if (PerSq(i))
         {
             v.push_back(i);
+            count++;
         }
         int w = *max_element(v.begin(), v.end());
         int s = n - (w * w);
@@ -46,5 +47,4 @@ signed main()
             count++;
         }
     }
-    cout << count << endl;
 }

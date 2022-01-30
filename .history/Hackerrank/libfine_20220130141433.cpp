@@ -50,14 +50,16 @@ signed main()
         rem = h;
         cout << h << endl;
     }
-    if (ddr > ddd && mmr > mmd && yyyyr > yyyyd)
+     if (ddr > ddd && mmr > mmd && yyyyr > yyyyd)
     {
-        int i = ddr - ddd;
-        int u = mmr - mmd;
-        int h = 10000;
-        int x = i * 15;
-        int n = u * 500;
-        rem = h + x + n;
-        cout << rem << endl;
+       int i = ddr - ddd;
+       int u = mmr - mmd;
+       int h  = 10000;
+       int x = i * 15;
+       int n = u * 500;
+       rem = h + x + n;
+       cout << rem << endl;
     }
+
+
 }
