@@ -27,11 +27,7 @@ int Dig(int n)
     {
         if (n / i == 0)
         {
-            if( i == 0){
-            count - 1;
-        } else{
             count++;
-        }
         } 
     }
     return count;
@@ -39,11 +35,7 @@ int Dig(int n)
 
 signed main()
 {
-    int t;
-    cin>>t;
-    while(t--){
     int n;
     cin >> n;
     cout << Dig(n);
-    }
 }

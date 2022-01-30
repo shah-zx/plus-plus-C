@@ -15,7 +15,6 @@ using namespace std;
 int Dig(int n)
 {
     vector<int> v;
-    int count = 0;
     while (n != 0)
     {
         int ld = n % 10;
@@ -25,25 +24,13 @@ int Dig(int n)
     reverse(v.begin(), v.end());
     for (auto i : v)
     {
-        if (n / i == 0)
-        {
-            if( i == 0){
-            count - 1;
-        } else{
-            count++;
-        }
-        } 
+        cout << i;
     }
-    return count;
 }
 
 signed main()
 {
-    int t;
-    cin>>t;
-    while(t--){
     int n;
     cin >> n;
-    cout << Dig(n);
-    }
+    
 }

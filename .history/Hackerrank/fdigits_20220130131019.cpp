@@ -39,9 +39,7 @@ int Dig(int n)
 
 signed main()
 {
-    int t;
-    cin>>t;
-    while(t--){
+    while(){
     int n;
     cin >> n;
     cout << Dig(n);

@@ -25,25 +25,13 @@ int Dig(int n)
     reverse(v.begin(), v.end());
     for (auto i : v)
     {
-        if (n / i == 0)
-        {
-            if( i == 0){
-            count - 1;
-        } else{
-            count++;
-        }
-        } 
+        if(n / i == 0)
     }
-    return count;
 }
 
 signed main()
 {
-    int t;
-    cin>>t;
-    while(t--){
     int n;
     cin >> n;
-    cout << Dig(n);
-    }
+
 }
