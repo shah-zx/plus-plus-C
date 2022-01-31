@@ -36,7 +36,7 @@ signed main()
         {
             max = v[pos];
         }
-        area = max * l;
+        int area = max * l;
     }
     cout << area << endl;
 }

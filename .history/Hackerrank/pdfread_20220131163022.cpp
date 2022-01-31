@@ -27,7 +27,6 @@ signed main()
 
     string s;
     cin >> s;
-    int area;
     int l = s.size();
     for (int i = 0; i < l; i++)
     {
@@ -36,9 +35,10 @@ signed main()
         {
             max = v[pos];
         }
-        area = max * l;
+        int area = max * l;
     }
-    cout << area << endl;
+        cout << area << endl;
+
 }
 
 // int arr[26] = {'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'};

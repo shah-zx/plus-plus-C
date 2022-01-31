@@ -13,32 +13,21 @@ using namespace std;
 #define rep(i, a, b) for (int i = a; i < b; i++)
 signed main()
 {
-    int max = 0, pos;
     vector<int> v;
     int arr[26];
     for (int i = 0; i < 26; i++)
     {
         cin >> arr[i];
     }
-    for (int i = 0; i < 26; i++)
-    {
-        v.push_back(arr[i]);
-    }
-
     string s;
-    cin >> s;
-    int area;
+    cin>>s;
     int l = s.size();
-    for (int i = 0; i < l; i++)
+    for (size_t i = 0; i < count; i++)
     {
-        pos = s[i] - 97;
-        if (v[pos] > max)
-        {
-            max = v[pos];
-        }
-        area = max * l;
+        /* code */
     }
-    cout << area << endl;
+    
+
 }
 
 // int arr[26] = {'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'};
