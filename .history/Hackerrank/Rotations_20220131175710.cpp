@@ -39,11 +39,11 @@ signed main()
     {
         cin >> arr[i];
     }
-    Rotate(arr, n, k);
-    for (int i = 0; i < n; i++)
+    for (int i = 0; i < q; i++)
     {
-        cout << arr[i] << " ";
+        cin >> in[i];
     }
+    Rotate(arr , n , k);
 }
 
 // Brute force approach :

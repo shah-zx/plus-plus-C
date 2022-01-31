@@ -12,9 +12,18 @@ using namespace std;
 #define pii pair<int, int>
 #define rep(i, a, b) for (int i = a; i < b; i++)
 
+int Rotate(int arr[], int n, int k)
+{
+    int len = arr.length();
+    k = k % len;
+    Rev(0, n - k - 1, arr);
+    Rev(n-k-1 , n-1 , arr);
+    Rev(0 , n-1 , arr);
+}
+
 int Rev(int s, int e, int arr[])
 {
-    while (s < e)
+    while (s <= e)
     {
         swap(s, e);
         s++;
@@ -22,27 +31,19 @@ int Rev(int s, int e, int arr[])
     }
 }
 
-int Rotate(int arr[], int n, int k)
-{
-    k = k % n;
-    Rev(0, n - k - 1, arr);
-    Rev(n - k - 1, n - 1, arr);
-    Rev(0, n - 1, arr);
-}
-
 signed main()
 {
-    int n, k;
-    cin >> n >> k;
+    int n, k, q;
+    cin >> n >> k >> q;
     int arr[n];
+    int in[q];
     for (int i = 0; i < n; i++)
     {
         cin >> arr[i];
     }
-    Rotate(arr, n, k);
-    for (int i = 0; i < n; i++)
+    for (int i = 0; i < q; i++)
     {
-        cout << arr[i] << " ";
+        cin >> in[i];
     }
 }
 
