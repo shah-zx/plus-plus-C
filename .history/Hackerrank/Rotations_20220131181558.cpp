@@ -12,7 +12,8 @@ using namespace std;
 #define pii pair<int, int>
 #define rep(i, a, b) for (int i = a; i < b; i++)
 
-// optimal approach
+
+// optimal approach 
 
 int Rev(int s, int e, int arr[])
 {
@@ -50,15 +51,21 @@ signed main()
 
     for (int i = 0; i < n; i++)
     {
-        for (int j = 0; j < q; j++)
+        for (int i = 0; i < q; i++)
         {
-            if (i == in[j])
-            {
+            if(i == q){
                 cout << arr[i] << endl;
             }
         }
+        
     }
+
+    
 }
+
+
+
+
 
 
 // Brute force approach :

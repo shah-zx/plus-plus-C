@@ -12,13 +12,11 @@ using namespace std;
 #define pii pair<int, int>
 #define rep(i, a, b) for (int i = a; i < b; i++)
 
-// optimal approach
-
 int Rev(int s, int e, int arr[])
 {
     while (s < e)
     {
-        swap(arr[s], arr[e]);
+        swap(s, e);
         s++;
         e--;
     }
@@ -28,38 +26,25 @@ int Rotate(int arr[], int n, int k)
 {
     k = k % n;
     Rev(0, n - k - 1, arr);
-    Rev(n - k, n - 1, arr);
+    Rev(n - k - 1, n - 1, arr);
     Rev(0, n - 1, arr);
 }
 
 signed main()
 {
-    int n, k, q;
-    cin >> n >> k >> q;
+    int n, k;
+    cin >> n >> k;
     int arr[n];
-    int in[q];
     for (int i = 0; i < n; i++)
     {
         cin >> arr[i];
     }
-    for (int i = 0; i < q; i++)
-    {
-        cin >> in[i];
-    }
     Rotate(arr, n, k);
-
     for (int i = 0; i < n; i++)
     {
-        for (int j = 0; j < q; j++)
-        {
-            if (i == in[j])
-            {
-                cout << arr[i] << endl;
-            }
-        }
+        cout << arr[i] << " ";
     }
 }
-
 
 // Brute force approach :
 

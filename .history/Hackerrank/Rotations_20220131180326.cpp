@@ -12,8 +12,6 @@ using namespace std;
 #define pii pair<int, int>
 #define rep(i, a, b) for (int i = a; i < b; i++)
 
-// optimal approach
-
 int Rev(int s, int e, int arr[])
 {
     while (s < e)
@@ -38,6 +36,7 @@ signed main()
     cin >> n >> k >> q;
     int arr[n];
     int in[q];
+    vector<int> s;
     for (int i = 0; i < n; i++)
     {
         cin >> arr[i];
@@ -46,20 +45,18 @@ signed main()
     {
         cin >> in[i];
     }
-    Rotate(arr, n, k);
+    for (int i = 0; i < q; i++)
+    {
+        s.push_back(in[i]);
+    }
+    
 
+    Rotate(arr, n, k);
     for (int i = 0; i < n; i++)
     {
-        for (int j = 0; j < q; j++)
-        {
-            if (i == in[j])
-            {
-                cout << arr[i] << endl;
-            }
-        }
+        cout << arr[i] << " ";
     }
 }
-
 
 // Brute force approach :
 

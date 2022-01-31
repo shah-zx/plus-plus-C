@@ -50,9 +50,9 @@ signed main()
 
     for (int i = 0; i < n; i++)
     {
-        for (int j = 0; j < q; j++)
+        for (int i = 0; i < q; i++)
         {
-            if (i == in[j])
+            if (i == in[q])
             {
                 cout << arr[i] << endl;
             }

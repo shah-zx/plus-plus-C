@@ -52,7 +52,7 @@ signed main()
     {
         for (int j = 0; j < q; j++)
         {
-            if (i == in[j])
+            if (i == in[q])
             {
                 cout << arr[i] << endl;
             }
