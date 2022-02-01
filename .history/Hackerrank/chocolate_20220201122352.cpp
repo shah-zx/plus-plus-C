@@ -27,12 +27,12 @@ signed main()
             while (y >= 0 && y >= m)
             {
                 y -= m;
+                cout << y << " ";
                 count++;
             }
-            int o = r + count;
-            cout << o << endl;
-        } else {
-        cout << r << endl;
+            // int o = y + count;
+            // cout << o << endl;
+
         }
     }
 }

@@ -28,11 +28,11 @@ signed main()
             {
                 y -= m;
                 count++;
+                // cout << count << " ";
             }
             int o = r + count;
             cout << o << endl;
-        } else {
-        cout << r << endl;
+
         }
     }
 }

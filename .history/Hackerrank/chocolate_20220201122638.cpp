@@ -31,8 +31,7 @@ signed main()
             }
             int o = r + count;
             cout << o << endl;
-        } else {
-        cout << r << endl;
         }
+        cout << r << endl;
     }
 }

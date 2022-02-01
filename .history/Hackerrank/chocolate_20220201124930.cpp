@@ -28,6 +28,9 @@ signed main()
             {
                 y -= m;
                 count++;
+                while(m != 0){
+                    m /= m;
+                }
             }
             int o = r + count;
             cout << o << endl;

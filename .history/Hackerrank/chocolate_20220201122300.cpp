@@ -29,10 +29,9 @@ signed main()
                 y -= m;
                 count++;
             }
-            int o = r + count;
+            int o = y + count;
             cout << o << endl;
-        } else {
-        cout << r << endl;
+
         }
     }
 }
