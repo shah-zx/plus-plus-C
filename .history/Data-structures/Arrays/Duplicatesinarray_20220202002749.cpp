@@ -10,10 +10,10 @@ int Duplicate(int arr[], int n)
     {
         ans = ans ^ arr[i]; // This will take out the unique one 
     }
-    // for (int i = 1; i < n; i++)
-    // {
-    //     ans = ans ^ i;
-    // }
+    for (int i = 1; i < n; i++)
+    {
+        ans = ans ^ i;
+    }
     return ans;
 }
 
@@ -21,6 +21,5 @@ int main()
 {
 
 int arr[] = {1,1,2,2};
-int u = Duplicate(arr , 4);
-cout << u << endl;
+cout<<Duplicate(arr , 4);
 }
