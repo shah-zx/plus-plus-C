@@ -22,41 +22,21 @@ int LCM(int arr[], int n)
     return lcm;
 }
 
-int GCD(int arr[], int m)
-{
-    int gcd = arr[0];
-    int j = 0;
-    while (m < 0)
-    {
-        if (arr[j] % gcd == 0)
-        {
-            j++;
-        }
-        else
-        {
-            gcd = arr[j] % gcd;
-        }
-    }
-    return gcd;
-}
-
 signed main()
 {
-    int n, m;
-    cin >> n >> m;
+    int  m;
+    cin  >> m;
     int arr[n];
     int arr2[m];
-    for (int i = 0; i < n; i++)
+    for (int i = 0; i < m; i++)
     {
-        cin >> arr[i];
+        cin >> arr2[i];
     }
-    for (int j = 0; j < m; j++)
+    for (int i = 0; i < m - 1; i++)
     {
-        cin >> arr2[j];
+        for (int j = 1; j < m; j++)
+        {
+            __gcd(arr[i], arr[j]);
+        }
     }
-    int y = LCM(arr , n);
-    int x = GCD(arr2 , m);
-    int count = 1;
-    
-
 }

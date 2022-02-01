@@ -54,9 +54,4 @@ signed main()
     {
         cin >> arr2[j];
     }
-    int y = LCM(arr , n);
-    int x = GCD(arr2 , m);
-    int count = 1;
-    
-
 }

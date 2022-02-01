@@ -32,8 +32,7 @@ int GCD(int arr[], int m)
         {
             j++;
         }
-        else
-        {
+        else{
             gcd = arr[j] % gcd;
         }
     }
@@ -50,13 +49,11 @@ signed main()
     {
         cin >> arr[i];
     }
-    for (int j = 0; j < m; j++)
+    for (int i = 0; i < m - 1; i++)
     {
-        cin >> arr2[j];
+        for (int j = 1; j < m; j++)
+        {
+            /* code */
+        }
     }
-    int y = LCM(arr , n);
-    int x = GCD(arr2 , m);
-    int count = 1;
-    
-
 }

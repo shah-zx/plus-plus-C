@@ -57,6 +57,10 @@ signed main()
     int y = LCM(arr , n);
     int x = GCD(arr2 , m);
     int count = 1;
+    for (int i = 0; i < m; i++)
+    {
+        
+    }
     
 
 }
