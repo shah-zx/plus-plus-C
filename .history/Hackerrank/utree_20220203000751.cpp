@@ -11,21 +11,6 @@ using namespace std;
 #define vii vector<pair<int, int>>
 #define pii pair<int, int>
 #define rep(i, a, b) for (int i = a; i < b; i++)
-
-bool Persq(int n)
-{
-    int d = sqrt(n);
-    int r = n / sqrt(n);
-    if (r == sqrt(n))
-    {
-        return true;
-    }
-    else
-    {
-        return false;
-    }
-}
-
 signed main()
 {
     int T;
@@ -33,12 +18,19 @@ signed main()
     while (T--)
     {
 
-        int n1;
-        int n2;
-        cin >> n1 >> n2;
-        int g = floor(sqrt(n2));
-        int k = ceil(sqrt(n1));
-        int r = g - k + 1;
-        cout << r << endl;
+        int n;
+        cin >> n;
+        int sumo = 0;
+        int sume = 0;
+        for (int i = 0; i <= n; i++)
+        {
+           if(i % 2 == 0){
+               sume += 1;
+           }
+           else{
+               sumo = sume * 2;
+           }
+        }
+        cout << sumo << endl;
     }
 }

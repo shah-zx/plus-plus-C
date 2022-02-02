@@ -24,20 +24,6 @@ bool Odd(int n)
     }
 }
 
-int utopianTree(int n) {
-    if(n==0)
-    return 1;
-    
-int ans=1;
-for(int i=1;i<=n;i++){
-    if(i%2==0)
-    ans+=1;
-    else 
-    ans+=ans;
-}
-return ans;
-}  
-
 signed main()
 {
     int T;
@@ -52,10 +38,8 @@ signed main()
             int f = n * 2;
             cout << f << endl;
         }
-        else
-        {
-            int h = (n * 1) + 1;
-            cout << h << endl;
+        else{
+
         }
     }
 }

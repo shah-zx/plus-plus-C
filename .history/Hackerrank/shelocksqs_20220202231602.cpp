@@ -25,6 +25,27 @@ bool Persq(int n)
         return false;
     }
 }
+int binarySearch(vector <int> l)
+{
+    int s = 0; // start of our  array
+    int e = n; // end of the array
+    while (s <= e)
+    {
+        int mid = (s + e) / 2;
+        if (array[mid] == key)
+        {
+            return mid;
+        }
+        else if (key < array[mid])
+        {
+            e = mid - 1;
+        }
+        else
+        {
+            s = mid + 1;
+        }
+    }
+}
 
 signed main()
 {
@@ -32,13 +53,15 @@ signed main()
     cin >> T;
     while (T--)
     {
-
         int n1;
         int n2;
         cin >> n1 >> n2;
-        int g = floor(sqrt(n2));
-        int k = ceil(sqrt(n1));
-        int r = g - k + 1;
-        cout << r << endl;
+        int count = 0;
+        vector<int> y;
+        for (int i = n1; i <= n2; i++)
+        {
+           y.push_back(i);
+        }
+
     }
 }

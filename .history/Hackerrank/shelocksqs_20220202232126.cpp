@@ -36,9 +36,25 @@ signed main()
         int n1;
         int n2;
         cin >> n1 >> n2;
-        int g = floor(sqrt(n2));
-        int k = ceil(sqrt(n1));
-        int r = g - k + 1;
-        cout << r << endl;
+        int count = 0;
+        int s = n1;
+        int e = n2;
+        int mid = (s + e) / 2;
+        count  = 0;
+        while(n1 <= n2){
+          if(Persq(mid)){
+             count++;
+          }
+          if(Persq(n1) < mid){
+             e = mid - 1;
+          }
+          else{
+              s = mid + 1;
+          }
+
+          n1++;
+        }
+
+        cout << count << endl;
     }
 }

@@ -12,9 +12,11 @@ using namespace std;
 #define pii pair<int, int>
 #define rep(i, a, b) for (int i = a; i < b; i++)
 
-bool Odd(int n)
+bool Persq(int n)
 {
-    if (n % 2 == 1)
+    int d = sqrt(n);
+    int r = n / sqrt(n);
+    if (r == sqrt(n))
     {
         return true;
     }
@@ -24,20 +26,6 @@ bool Odd(int n)
     }
 }
 
-int utopianTree(int n) {
-    if(n==0)
-    return 1;
-    
-int ans=1;
-for(int i=1;i<=n;i++){
-    if(i%2==0)
-    ans+=1;
-    else 
-    ans+=ans;
-}
-return ans;
-}  
-
 signed main()
 {
     int T;
@@ -45,17 +33,17 @@ signed main()
     while (T--)
     {
 
-        int n;
-        cin >> n;
-        if (Odd(n))
-        {
-            int f = n * 2;
-            cout << f << endl;
+        int n1;
+        int n2;
+        cin >> n1 >> n2;
+        int count = 0;
+        int s = n1;
+        int e = n2;
+        int mid = (s + e) / 2;
+        while(n1 <= n2){
+
         }
-        else
-        {
-            int h = (n * 1) + 1;
-            cout << h << endl;
-        }
+
+        cout << count << endl;
     }
 }
