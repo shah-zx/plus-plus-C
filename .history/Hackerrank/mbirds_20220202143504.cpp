@@ -1,4 +1,4 @@
-#include <iostream>
+#include<iostream>
 #include <bits/stdc++.h>
 #include <stack>
 #include <queue>
@@ -40,14 +40,10 @@ signed main()
 
     int g = *max_element(f.begin(), f.end());
 
-    for (auto n : m)
-    {
-        if (n.second == g)
-        {
+    for(auto n : m){
+        if(n.second == g){
             q.push_back(n.first);
         }
     }
-
-    int rem = *min_element(q.begin(), q.end());
-    cout << rem << endl;
+    
 }

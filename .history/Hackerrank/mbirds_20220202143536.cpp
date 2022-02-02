@@ -47,7 +47,4 @@ signed main()
             q.push_back(n.first);
         }
     }
-
-    int rem = *min_element(q.begin(), q.end());
-    cout << rem << endl;
 }

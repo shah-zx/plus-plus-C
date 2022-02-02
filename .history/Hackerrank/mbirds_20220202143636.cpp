@@ -48,6 +48,6 @@ signed main()
         }
     }
 
-    int rem = *min_element(q.begin(), q.end());
+    int rem = *min_element(f.begin(), f.end());
     cout << rem << endl;
 }
