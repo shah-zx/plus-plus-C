@@ -41,10 +41,6 @@ signed main()
         {
             l.push_back(z);
         }
-        else
-        {
-            l.push_back(-1);
-        }
     }
     int e = *max_element(l.begin(), l.end());
     if (e < b)

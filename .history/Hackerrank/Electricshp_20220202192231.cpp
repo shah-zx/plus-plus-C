@@ -32,27 +32,27 @@ signed main()
         for (int j = 0; j < m; j++)
         {
             int s = a[i] + c[j];
-            v.push_back(s);
         }
-    }
-    for (auto z : v)
-    {
-        if (z < b)
-        {
-            l.push_back(z);
-        }
-        else
-        {
-            l.push_back(-1);
-        }
-    }
-    int e = *max_element(l.begin(), l.end());
-    if (e < b)
-    {
-        cout << e << endl;
-    }
-    else
-    {
-        cout << "-1" << endl;
     }
 }
+
+
+
+
+
+//     for (auto z : v)
+//     {
+//         if (z < b)
+//         {
+//             l.push_back(z);
+//         }
+//     }
+//     int e = *max_element(l.begin(), l.end());
+//     if (e < b)
+//     {
+//         cout << e << endl;
+//     }
+//     else
+//     {
+//         cout << "-1" << endl;
+//     }
