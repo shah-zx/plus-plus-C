@@ -27,17 +27,13 @@ signed main()
             int g = 1 + (d - 1) / 2;
             cout << g << endl;
         }
-        else
-        {
-            int h = d / 2;
-            cout << h << endl;
-        }
-    }
-    else
+         else
     {
-        int o = k / 2;
-        cout << o << endl;
+        int h = d / 2;
+        cout << h << endl;
     }
+    }
+   
 }
 
 // int min = 1;

@@ -16,27 +16,19 @@ signed main()
     int n, k;
     cin >> n >> k;
     int d = n - k;
-    if (d < k)
+    if (n == k)
     {
-        if (n == k)
-        {
-            cout << "0" << endl;
-        }
-        if (d % 2 == 0)
-        {
-            int g = 1 + (d - 1) / 2;
-            cout << g << endl;
-        }
-        else
-        {
-            int h = d / 2;
-            cout << h << endl;
-        }
+        cout << "0" << endl;
+    }
+    if (d % 2 == 0)
+    {
+        int g = 1 + (d - 1) / 2;
+        cout << g << endl;
     }
     else
     {
-        int o = k / 2;
-        cout << o << endl;
+        int h = d / 2;
+        cout << h << endl;
     }
 }
 

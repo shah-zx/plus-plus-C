@@ -33,8 +33,7 @@ signed main()
             cout << h << endl;
         }
     }
-    else
-    {
+    else{
         int o = k / 2;
         cout << o << endl;
     }
