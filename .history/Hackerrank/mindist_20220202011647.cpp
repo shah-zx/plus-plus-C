@@ -12,6 +12,20 @@ using namespace std;
 #define pii pair<int, int>
 #define rep(i, a, b) for (int i = a; i < b; i++)
 
+int Rem(int arr[], int n)
+{
+    int s = arr[0];
+    int e = arr[n - 1];
+    while (s < e)
+    {
+        if (s == e)
+        {
+            return s;
+        }
+        s++;
+        e--;
+    }
+}
 
 signed main()
 {
@@ -24,24 +38,16 @@ signed main()
     {
         cin >> arr[i];
     }
-
+    
     for (int i = 0; i < n - 1; i++)
     {
         for (int j = i + 1; j < n; j++)
         {
             if (arr[i] == arr[j])
             {
-                v.push_back(abs(j - i));
+                 v.push_back(abs(j-i))        
             }
         }
     }
-    if (v.size() != 0)
-    {
-        int y = *min_element(v.begin(), v.end());
-        cout << y << endl;
-    }
-    else
-    {
-        cout << "-1";
-    }
 }
+

@@ -11,37 +11,23 @@ using namespace std;
 #define vii vector<pair<int, int>>
 #define pii pair<int, int>
 #define rep(i, a, b) for (int i = a; i < b; i++)
-
-
 signed main()
 {
-    int n;
-    cin >> n;
+    int n, m, d;
     int arr[n];
-    unordered_map<int, int> m;
-    vector<int> v;
     for (int i = 0; i < n; i++)
     {
         cin >> arr[i];
     }
-
+    cin >> d >> m;
     for (int i = 0; i < n - 1; i++)
     {
-        for (int j = i + 1; j < n; j++)
-        {
-            if (arr[i] == arr[j])
-            {
-                v.push_back(abs(j - i));
-            }
-        }
+       for (int j = i + 1; j < n; j++)
+       {
+           if(arr[i] + arr[j] == d && arr[i].length() + arr[j].length()== m)
+       }
+       
     }
-    if (v.size() != 0)
-    {
-        int y = *min_element(v.begin(), v.end());
-        cout << y << endl;
-    }
-    else
-    {
-        cout << "-1";
-    }
+    
+
 }

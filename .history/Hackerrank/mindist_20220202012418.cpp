@@ -12,6 +12,20 @@ using namespace std;
 #define pii pair<int, int>
 #define rep(i, a, b) for (int i = a; i < b; i++)
 
+int Rem(int arr[], int n)
+{
+    int s = arr[0];
+    int e = arr[n - 1];
+    while (s < e)
+    {
+        if (s == e)
+        {
+            return s;
+        }
+        s++;
+        e--;
+    }
+}
 
 signed main()
 {
@@ -41,7 +55,7 @@ signed main()
         cout << y << endl;
     }
     else
-    {
-        cout << "-1";
-    }
+        {
+            cout << "-1";
+        }
 }
