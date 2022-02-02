@@ -18,7 +18,7 @@ signed main()
     cin >> x1 >> v1;
     cin >> x2 >> v2;
 
-    int r = (x2 - x1) % (v1 - v2);
+    int r = (x2 - x1) / (v1 - v2);
     if (v1 > v2)
     {
         if (r == 0)

@@ -17,21 +17,19 @@ signed main()
     int x1, x2, v1, v2;
     cin >> x1 >> v1;
     cin >> x2 >> v2;
-
-    int r = (x2 - x1) % (v1 - v2);
-    if (v1 > v2)
+    
+    if (v2 > v1)
     {
-        if (r == 0)
+        cout << "No";
+    } else{
+    while (x1 != x2)
+    {
+        x1 += v1;
+        x2 += v2;
+        if (x1 == x2)
         {
-            cout << "YES";
-        }
-        else
-        {
-            cout << "NO";
+            cout << "Yes";
         }
     }
-    else
-    {
-        cout << "NO";
     }
 }
