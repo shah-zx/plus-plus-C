@@ -49,16 +49,15 @@ signed main()
 
         int n;
         cin >> n;
-        utopianTree(n);
-        // if (Odd(n))
-        // {
-        //     int f = n * 2;
-        //     cout << f << endl;
-        // }
-        // else
-        // {
-        //     int h = (n * 1) + 1;
-        //     cout << h << endl;
-        // }
+        if (Odd(n))
+        {
+            int f = n * 2;
+            cout << f << endl;
+        }
+        else
+        {
+            int h = (n * 1) + 1;
+            cout << h << endl;
+        }
     }
 }

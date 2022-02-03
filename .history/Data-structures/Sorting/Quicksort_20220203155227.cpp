@@ -25,8 +25,8 @@ int Partition(int array[], int l, int h)
             swap(array[i], array[j]);
         }
     }
-    swap(array[i + 1], array[h]);
-    return array[i + 1];
+    swap(array[i + 1], h);
+    return i + 1;
 }
 
 void QuickSort(int arr[], int l, int h)
@@ -48,7 +48,7 @@ signed main()
         cin >> arr[i];
     }
     QuickSort(arr , 0 , 4);
-    for (int i = 0; i < 5; i++)
+    for (int i = 0; i < 4; i++)
     {
         cout << arr[i] <<" ";
     }

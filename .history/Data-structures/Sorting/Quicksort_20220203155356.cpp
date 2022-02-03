@@ -25,7 +25,7 @@ int Partition(int array[], int l, int h)
             swap(array[i], array[j]);
         }
     }
-    swap(array[i + 1], array[h]);
+    swap(array[i + 1], h);
     return array[i + 1];
 }
 
