@@ -13,27 +13,30 @@ using namespace std;
 #define rep(i, a, b) for (int i = a; i < b; i++)
 signed main()
 {
+    int T;
+    cin >> T;
+    while (T--)
+    {
 
-    int n;
-    cin >> n;
-    int array[n];
-    vector<int> v;
-    for (int i = 0; i < n; i++)
-    {
-        cin >> array[i];
-    }
-    int sum = 0;
-    for (int s = 0; s < n; s++)
-    {
-        for (int e = s; e < n; e++)
+        int n;
+        cin >> n;
+        int arr[n];
+        for (int i = 0; i < n; i++)
         {
-            for (int k = s; k <= e; k++)
-            {
-                sum += array[k];
-                v.push_back(sum);
-            }
-            cout << endl;
+            cin >> arr[i];
         }
-        cout << endl;
+        for (int i = 0; i < n; i++)
+        {
+            for (int j = i; j < n; j++)
+            {
+                for (int k = i; k < j; k++)
+                {
+                    
+                }
+                
+            }
+            
+        }
+        
     }
 }

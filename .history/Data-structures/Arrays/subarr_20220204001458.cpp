@@ -17,12 +17,13 @@ signed main()
     int n;
     cin >> n;
     int array[n];
-    vector<int> v;
+    vector<int> v[n];
     for (int i = 0; i < n; i++)
     {
         cin >> array[i];
     }
     int sum = 0;
+    vector <int> v;
     for (int s = 0; s < n; s++)
     {
         for (int e = s; e < n; e++)
@@ -30,7 +31,6 @@ signed main()
             for (int k = s; k <= e; k++)
             {
                 sum += array[k];
-                v.push_back(sum);
             }
             cout << endl;
         }

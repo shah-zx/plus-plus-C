@@ -11,13 +11,16 @@ using namespace std;
 #define vii vector<pair<int, int>>
 #define pii pair<int, int>
 #define rep(i, a, b) for (int i = a; i < b; i++)
+
+
 signed main()
 {
 
-    int n;
-    cin >> n;
+    int n, k;
+    cin >> n >> k;
     int array[n];
     vector<int> v;
+    vector<int> o;
     for (int i = 0; i < n; i++)
     {
         cin >> array[i];
@@ -31,9 +34,23 @@ signed main()
             {
                 sum += array[k];
                 v.push_back(sum);
+                sum = 0;
             }
-            cout << endl;
         }
-        cout << endl;
     }
+
+
+    for(auto l : v){
+        cout << l << endl;
+    }
+
+    // int r = 0;
+    // for (auto i : v)
+    // {
+    //     r = i % k;
+    //     o.push_back(r);
+    // }
+
+    // int rem = *max_element(o.begin() , o.end());
+    // cout << rem << endl;
 }

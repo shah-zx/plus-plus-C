@@ -30,7 +30,7 @@ signed main()
             for (int k = s; k <= e; k++)
             {
                 sum += array[k];
-                v.push_back(sum);
+
             }
             cout << endl;
         }

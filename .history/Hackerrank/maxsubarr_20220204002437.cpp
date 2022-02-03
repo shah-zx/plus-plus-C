@@ -14,10 +14,11 @@ using namespace std;
 signed main()
 {
 
-    int n;
+    int n, k;
     cin >> n;
     int array[n];
     vector<int> v;
+    vector<int> o;
     for (int i = 0; i < n; i++)
     {
         cin >> array[i];
@@ -32,8 +33,18 @@ signed main()
                 sum += array[k];
                 v.push_back(sum);
             }
-            cout << endl;
         }
-        cout << endl;
     }
+    int r = 0;
+    for (auto i : v)
+    {
+        r = i % k;
+        cout << r << " ";
+    }
+
+    
+    // for (auto f : o)
+    // {
+    //     cout << f << " ";
+    // }
 }

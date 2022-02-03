@@ -36,4 +36,9 @@ signed main()
         }
         cout << endl;
     }
+    for (auto i : v)
+    {
+        
+    }
+    
 }

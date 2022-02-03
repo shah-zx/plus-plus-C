@@ -14,10 +14,11 @@ using namespace std;
 signed main()
 {
 
-    int n;
-    cin >> n;
+    int n, k;
+    cin >> n >> k;
     int array[n];
     vector<int> v;
+    vector<int> o;
     for (int i = 0; i < n; i++)
     {
         cin >> array[i];
@@ -31,9 +32,20 @@ signed main()
             {
                 sum += array[k];
                 v.push_back(sum);
+                sum = 0;
             }
-            cout << endl;
         }
-        cout << endl;
     }
+    int r = 0;
+    for (auto i : v)
+    {
+        r = i % k;
+        o.push_back(r);
+    }
+
+    for (auto f : o)
+    {
+        cout << f << " ";
+    }
+    int rem = *max_element(v.begin() , v.end());
 }
