@@ -42,5 +42,5 @@ int main()
     {
         cin >> arr2[i];
     }
-    
+    Intersection(arr, arr2 , n , m);
 }
