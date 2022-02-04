@@ -49,24 +49,12 @@ void QuickSort(int arr[], int l, int h)
 signed main()
 {
 
-    // int arr[7] = {6,3,5,2,9,8,7};
-    // QuickSort(arr, 0, 6);
-    // cout << "The sorted array is : " << endl;
-    // for (int i = 0; i < 7; i++)
-    // {
-    //     cout << arr[i] << " ";
-    // }
-    // cout << endl;
-    int n;
-    cin >> n;
-    int arr[n];
-    for (int i = 0; i < n; i++)
+    int arr[7] = {6,3,5,2,9,8,7};
+    QuickSort(arr, 0, 6);
+    cout << "The sorted array is : " << endl;
+    for (int i = 0; i < 7; i++)
     {
-        cin >> arr[i];
+        cout << arr[i] << " ";
     }
-    QuickSort(arr, 0, n - 1);
-    for (int j = 0; j < n; j++)
-    {
-        cout << arr[j] << " ";
-    }
+    cout << endl;
 }
