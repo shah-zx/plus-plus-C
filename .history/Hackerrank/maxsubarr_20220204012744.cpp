@@ -21,29 +21,31 @@ signed main()
         int n;
         cin >> n;
         int array[n];
-        for (int i = 0; i < n; i++)
-        {
-            cin >> array[i];
-        }
-
-        vector<int> v;
+        vector <int> v;
         int sum = 0;
-        int maximum = INT_MIN;
         for (int s = 0; s < n; s++)
         {
             for (int e = s; e < n; e++)
             {
-                sum += array[e];
-                if (sum > maximum)
-                {
-                    maximum = sum;
-                }
-                sum = 0;
+                    sum += array[e];
+                    v.push_back(sum);
+                cout << endl;
             }
+            cout << endl;
         }
-        cout << maximum << endl;
     }
+
+    for(auto j : v){
+        cout << j << " ";
+    }
+
 }
+
+
+
+
+
+
 
 // This one passed 3 test cases :
 

@@ -12,13 +12,6 @@ using namespace std;
 #define pii pair<int, int>
 #define rep(i, a, b) for (int i = a; i < b; i++)
 
-void Swap(int arr[], int i, int j)
-{
-    int temp = arr[i];
-    arr[i] = arr[j];
-    arr[j] = temp;
-}
-
 int Partition(int array[], int l, int h)
 {
 
@@ -29,11 +22,11 @@ int Partition(int array[], int l, int h)
         if (array[j] < pivot)
         {
             i++;
-            Swap(array, i, j);
+            swap(array[i], array[j]);
         }
     }
-    Swap(array, i + 1, h);
-    return i + 1;
+    swap(array[i + 1], array[h]);
+    return array[i + 1];
 }
 
 void QuickSort(int arr[], int l, int h)
@@ -49,12 +42,12 @@ void QuickSort(int arr[], int l, int h)
 signed main()
 {
 
-    int arr[5] = {4, 2, 5, 3, 1};
-    QuickSort(arr, 0, 4);
-    cout << "The sorted array is : " << endl;
+    int arr[5] =  {5,4,3,2,1};    
+    QuickSort(arr , 0 , 4);
     for (int i = 0; i < 5; i++)
     {
-        cout << arr[i] << " ";
-    }
-    cout << endl;
+        cout << arr[i] <<" ";
+    } cout << endl;
+
+    
 }

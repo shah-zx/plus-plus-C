@@ -19,29 +19,22 @@ signed main()
     while (T--)
     {
         int n;
-        cin >> n;
-        int array[n];
-        for (int i = 0; i < n; i++)
-        {
-            cin >> array[i];
-        }
-
-        vector<int> v;
+    cin >> n;
+    int array[n];
         int sum = 0;
-        int maximum = INT_MIN;
         for (int s = 0; s < n; s++)
         {
             for (int e = s; e < n; e++)
             {
-                sum += array[e];
-                if (sum > maximum)
+                for (int k = s; k <= e; k++)
                 {
-                    maximum = sum;
+                    sum += array[k];
+                    v.push_back(sum);
                 }
-                sum = 0;
+                cout << endl;
             }
+            cout << endl;
         }
-        cout << maximum << endl;
     }
 }
 

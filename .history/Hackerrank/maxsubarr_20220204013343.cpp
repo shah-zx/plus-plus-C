@@ -41,7 +41,6 @@ signed main()
                 sum = 0;
             }
         }
-        cout << maximum << endl;
     }
 }
 
