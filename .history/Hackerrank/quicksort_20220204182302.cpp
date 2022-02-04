@@ -42,6 +42,7 @@ void QuickSort(int arr[], int l, int h)
     int Pi = Partition(arr, l, h);
     QuickSort(arr, l, Pi - 1);
     QuickSort(arr, Pi + 1, h);
+    count++;
     }
 }
 

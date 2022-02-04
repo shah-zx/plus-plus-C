@@ -35,28 +35,32 @@ int Partition(int arr[], int l, int h)
     return i + 1;
 }
 
-void QuickSort(int arr[], int l, int h)
+int QuickSort(int arr[], int l, int h)
 {
-    int count  = 0;
-    if( l < h){
-    int Pi = Partition(arr, l, h);
-    QuickSort(arr, l, Pi - 1);
-    QuickSort(arr, Pi + 1, h);
+    int count = 0;
+    if (l < h)
+    {
+        int Pi = Partition(arr, l, h);
+        QuickSort(arr, l, Pi - 1);
+        QuickSort(arr, Pi + 1, h);
+        count++;
     }
+    return count;
 }
 
 signed main()
 {
     int n;
-    cin>>n;
+    cin >> n;
     int arr[n];
     for (int i = 0; i < n; i++)
     {
         cin >> arr[i];
     }
-    QuickSort(arr, 0, n-1);
-    for (int j = 0; j < n; j++)
-    {
-        cout << arr[j] << " ";
-    }
+    cout << QuickSort(arr, 0, n - 1);
+
+    // for (int j = 0; j < n; j++)
+    // {
+    //     cout << arr[j] << " ";
+    // }
 }

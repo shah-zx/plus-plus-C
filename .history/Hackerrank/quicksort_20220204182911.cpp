@@ -31,6 +31,7 @@ int Partition(int arr[], int l, int h)
             Swap(arr, i, j);
         }
     }
+    cout << count << endl;
     Swap(arr, i + 1, h);
     return i + 1;
 }

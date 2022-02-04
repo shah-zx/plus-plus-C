@@ -23,14 +23,17 @@ int Partition(int arr[], int l, int h)
 {
     int Pivot = arr[h];
     int i = l - 1;
+    int count  = 0;
     for (int j = l; j < h; j++)
     {
         if (arr[j] < Pivot)
         {
             i++;
             Swap(arr, i, j);
+            count ++;
         }
     }
+    cout << count << endl;
     Swap(arr, i + 1, h);
     return i + 1;
 }

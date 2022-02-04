@@ -23,12 +23,14 @@ int Partition(int arr[], int l, int h)
 {
     int Pivot = arr[h];
     int i = l - 1;
+    int count  = 0;
     for (int j = l; j < h; j++)
     {
         if (arr[j] < Pivot)
         {
             i++;
             Swap(arr, i, j);
+            count ++;
         }
     }
     Swap(arr, i + 1, h);
@@ -37,7 +39,6 @@ int Partition(int arr[], int l, int h)
 
 void QuickSort(int arr[], int l, int h)
 {
-    int count  = 0;
     if( l < h){
     int Pi = Partition(arr, l, h);
     QuickSort(arr, l, Pi - 1);

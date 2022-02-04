@@ -29,6 +29,7 @@ int Partition(int arr[], int l, int h)
         {
             i++;
             Swap(arr, i, j);
+            count ++;
         }
     }
     Swap(arr, i + 1, h);
