@@ -16,14 +16,14 @@ signed main()
     long long int n;
     cin >> n;
     long long int arr[n];
-    for (long long int i = 0; i < n; i++)
+    for (int i = 0; i < n; i++)
     {
         cin >> arr[i];
     }
-    for (long long int i = 1; i < n; i++)
+    for (int i = 1; i < n; i++)
     {
-        long long int curr = arr[i];
-        long long int j = i - 1;
+        int curr = arr[i];
+        int j = i - 1;
 
         while (j >= 0 && arr[j] > curr)
         {
@@ -31,7 +31,7 @@ signed main()
             j--;
         }
         arr[j + 1] = curr;
-        for (long long int k = 0; k < n; k++)
+        for (int k = 0; k < n; k++)
         {
             cout << arr[k] << " ";
         }
