@@ -29,12 +29,16 @@ signed main()
         {
             arr[j + 1] = arr[j];
             j--;
+            for (int k = 0; i < n; i++)
+            {
+                cout << arr[k] << " ";
+            }
         }
         arr[j + 1] = curr;
-        for (int k = 0; k < n; k++)
-        {
-            cout << arr[k] << " ";
-        }
-        cout << endl;
     }
+    for (int i = 0; i < n; i++)
+    {
+        cout << arr[i] << " ";
+    }
+    
 }

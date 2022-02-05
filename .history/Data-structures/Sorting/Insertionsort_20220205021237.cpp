@@ -11,6 +11,7 @@ using namespace std;
 #define vii vector<pair<int, int>>
 #define pii pair<int, int>
 #define rep(i, a, b) for (int i = a; i < b; i++)
+
 signed main()
 {
     int n;
@@ -20,21 +21,21 @@ signed main()
     {
         cin >> arr[i];
     }
-    for (int i = 1; i < n; i++)
+    // int count  = 0;
+    for (int i = 0; i < n; i++)
     {
-        int curr = arr[i];
+        int current = arr[i];
         int j = i - 1;
-
-        while (j >= 0 && arr[j] > curr)
+        while (j >= 0 && arr[j] > current)
         {
             arr[j + 1] = arr[j];
             j--;
         }
-        arr[j + 1] = curr;
-        for (int k = 0; k < n; k++)
-        {
-            cout << arr[k] << " ";
-        }
-        cout << endl;
+        arr[j + 1] = current;
+    }
+
+    for (int i = 0; i < n; i++)
+    {
+        cout << arr[i] << " ";
     }
 }
