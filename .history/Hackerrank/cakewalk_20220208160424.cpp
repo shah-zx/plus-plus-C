@@ -15,22 +15,17 @@ signed main()
 {
 
     int n;
-    cin >> n;
-    int arr[n];
+    cin>>n;
+    int array[n];
+    vector<int> v;
     for (int i = 0; i < n; i++)
     {
-        cin >> arr[i];
+        cin >> array[i];
     }
-    int currSum = INT_MAX;
-    int tempSum = 0;
-    sort(arr , arr + n);
-    for (int i = 0; i < n; i++)
+    sort(array, array + n);
+    for (int i = n; i >= 0; i--)
     {
-        tempSum = abs(arr[i] - arr[i - 1]);
-        if (tempSum < currSum)
-        {
-            currSum = tempSum;
-        }
+        cout << array[i] << " ";
     }
-    cout << currSum << endl;
+    
 }

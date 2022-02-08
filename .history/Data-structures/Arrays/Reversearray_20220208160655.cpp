@@ -11,16 +11,14 @@ int main()
         cin >> array[i];
     }
 
-    for (int i = 0, j = n - 1; i < n / 2; i++, j--)
+    for (int j = 0; j < n; j++)
     {
-        int temp = array[i];
-        array[i] = array[j];
-        array[j] = temp;
+        cout << array[j];
     }
-    cout << endl;
+    cout<<endl;
     cout << "This was the array before reversal" << endl;
     cout << "This is the array after reversal" << endl;
-    for (int k = 0; k < n; k++)
+    for (int k = n; k >= 0; k--)
     {
         cout << array[k];
     }

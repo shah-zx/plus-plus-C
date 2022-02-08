@@ -13,14 +13,14 @@ int main()
 
     for (int i = 0, j = n - 1; i < n / 2; i++, j--)
     {
-        int temp = array[i];
+        temp = array[i];
         array[i] = array[j];
-        array[j] = temp;
+        arr[j] = temp;
     }
     cout << endl;
     cout << "This was the array before reversal" << endl;
     cout << "This is the array after reversal" << endl;
-    for (int k = 0; k < n; k++)
+    for (int k = n; k >= 0; k--)
     {
         cout << array[k];
     }

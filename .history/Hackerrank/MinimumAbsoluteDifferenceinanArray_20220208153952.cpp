@@ -21,7 +21,7 @@ signed main()
     {
         cin >> arr[i];
     }
-    int currSum = INT_MAX;
+    int currSum = 0;
     int tempSum = 0;
     sort(arr , arr + n);
     for (int i = 0; i < n; i++)
@@ -32,5 +32,5 @@ signed main()
             currSum = tempSum;
         }
     }
-    cout << currSum << endl;
+    
 }
