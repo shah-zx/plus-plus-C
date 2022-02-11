@@ -31,11 +31,9 @@ bool isSafe(int **arr, int n , int x, int y)
         row --;
         col ++;
     }
-
        
 }
 
 int main()
 {
-    
 }

@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-bool isSafe(int **arr, int n , int x, int y)
+bool isSafe(int arr[], int n , int x, int y)
 {
     for (int row = 0; row < x; ++row)
     {
@@ -29,13 +29,11 @@ bool isSafe(int **arr, int n , int x, int y)
             return false;
         }
         row --;
-        col ++;
+        col --;
     }
-
        
 }
 
 int main()
 {
-    
 }

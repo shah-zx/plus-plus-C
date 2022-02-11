@@ -13,19 +13,12 @@ using namespace std;
 #define rep(i, a, b) for (int i = a; i < b; i++)
 signed main()
 {
-    int n, k;
-    cin >> n >> k;
+    int n;
+    cin >> n;
     int arr[n];
     for (int i = 0; i < n; i++)
     {
-        cin >> arr[i];
+        cin>> arr[i];
     }
-    sort(arr, arr + n);
-    int ans = 0;
-    for (int i = 0; i < n; i++)
-    {
-        ans += k / arr[i];
-        k -= k / arr[i] * arr[i];
-    }
-    cout << ans << endl;
+    
 }

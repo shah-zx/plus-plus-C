@@ -29,13 +29,11 @@ bool isSafe(int **arr, int n , int x, int y)
             return false;
         }
         row --;
-        col ++;
+        col --;
     }
-
        
 }
 
 int main()
 {
-    
 }
