@@ -56,8 +56,6 @@ signed main()
     {
         cin >> val[i];
     }
- 
-
 
     cin >> w;
     ll ans = knapsackR(wt, val, w, n);
