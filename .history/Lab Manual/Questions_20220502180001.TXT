@@ -1,6 +1,6 @@
 1 Analyse & Implement Insertion sort / Bubble sort algorithm 4 - Done
 2 Analyse & Implement Quick sort/ Merge sort algorithm using Divide - 
-and Conquer. Quick done
+and Conquer.
 
 3 Implement 0/1 Knapsack / Optimal Binary Search Tree using Dynamic
 Programming
