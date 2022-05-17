@@ -10,7 +10,7 @@ int_fast32_t main()
 
     int n;
     cin >> n;
-    char str[n];
+    string str[n];
     for (int i = 0; i < n; i++)
     {
         cin >> str[i];
@@ -22,11 +22,11 @@ int_fast32_t main()
 
     for (int i = 0; i < n; i++)
     {
-        int k = str[i];
+        int k = a[i];
         freq[k]++; // Increasing the frequency of elelment found
     }
 
-    map<int, char>::iterator it;
+    map<int, int>::iterator it;
     
     for (it = freq.begin(); it != freq.end(); it++)
     {
