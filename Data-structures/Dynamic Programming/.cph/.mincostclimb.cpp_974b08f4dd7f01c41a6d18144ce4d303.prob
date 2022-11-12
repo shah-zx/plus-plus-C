@@ -1,0 +1,1 @@
+{"name":"Local: mincostclimb","url":"d:\\C++ course\\Data-structures\\Dynamic Programming\\mincostclimb.cpp","tests":[{"id":1657301083084,"input":"[10,15,20]","output":"15"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\C++ course\\Data-structures\\Dynamic Programming\\mincostclimb.cpp","group":"local","local":true}
